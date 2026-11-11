@@ -1,45 +1,36 @@
 # Guida alla vita sostenibile
 
-Guida indipendente e senza scopo di lucro per mangiare, vestirsi e vivere in modo più sostenibile, con fonti verificabili.
-
-Il sito è **statico**. Online ci sono solo file, senza server, database o cookie.
-
-## Avviare in locale
-
-```bash
-python3 -m venv .venv
-source .venv/bin/activate        # su Windows: .venv\Scripts\activate
-pip install -r requirements.txt
-
-python app.py                    # anteprima su http://127.0.0.1:5000
-python scarica_foto.py           # una volta: copia le foto in static/foto/
-python freeze.py                 # genera il sito nella cartella build/
-```
-
-Le foto vengono da Unsplash (uso gratuito). 
-
-## Dove si modifica cosa
-
-| Cosa | File |
-|---|---|
-| La tua pagina "Perché" | `content/perche.md` (testo in Markdown, in alto sottotitolo e cinque idee) |
-| Voci di Cibo e Casa | `content/cibo.json`, `content/casa.json` |
-| Alternative digitali | `content/digitale.json` |
-| Schede e approfondimenti della rete | `content/conoscere.json` |
-| Tutte le fonti (codici C, V, K, D, S, R, M) | `content/fonti.json` |
-| Marchi e servizi | `content/fonti_extra.json` |
-| Foto e crediti | `content/foto.json` (poi `python scarica_foto.py`) |
-| Punti della mappa | `static/data/rete.json` (campi: nome, tipo, comune, provincia, regione, lat, lon, sito, fonte, nome fonte, attivo) |
-| Testi delle altre pagine | `templates/pages/*.html` |
-| Colori, caratteri, stili comuni | `static/css/site.css` |
+Una guida in italiano su cosa comprare, dove e da chi, per dipendere meno dalle multinazionali e da ciò che è tossico. Copre cibo, vestiti, casa, digitale, soldi ed energia, e ha una mappa di GAS, CSA, mercati contadini e cooperative in tutta Italia.
 
 
-## Struttura
+## Perché esiste
 
-```
-app.py              rotte e filtri (pagine, link alle fonti)
-freeze.py           genera build/
-content/            dati e testi
-templates/          base.html, pagine, parti riutilizzate (partials/)
-static/             css, js, caratteri , Leaflet, dati della mappa
-```
+L'ho fatta prima di tutto per me: volevo sapere cosa compro, da chi lo compro e dove finiscono i miei soldi. È un progetto personale e senza scopo di lucro.
+
+## Cosa trovi
+
+- **Cibo**: la spesa di tutti i giorni in 25 voci, dal pane al vino.
+- **Vestire**: fibre, marchi europei, usato e riparazione.
+- **Casa e cura**: pulizia, bucato, cucina e cura della persona con meno chimica.
+- **Digitale**: alternative europee alle grandi piattaforme e i diritti che hai per legge.
+- **Soldi ed energia**: banche etiche, pagamenti europei, comunità energetiche.
+- **Dove comprare**: una mappa di GAS, CSA, mercati contadini e cooperative, con schede brevi per chi non le conosce.
+
+## Le fonti
+
+Ogni consiglio ha un codice (per esempio C3 o V2) che porta alla sua fonte: una legge europea, un'agenzia pubblica come EFSA o l'Agenzia europea dell'ambiente, oppure uno studio. Molte informazioni le ho raccolte con l'aiuto dell'intelligenza artificiale e da solo non riesco a ricontrollare tutto, per questo ogni fonte ha un link che puoi aprire.
+
+## Hai trovato un errore?
+
+Scrivimelo per poterlo correggere e migliorare il sito
+
+## Come è fatto
+
+È un sito statico: le pagine vengono generate con Python (Flask e Frozen-Flask) e pubblicate con GitHub Pages
+
+## Crediti
+
+- Mappa: © contributori di [OpenStreetMap](https://www.openstreetmap.org/copyright), libreria [Leaflet](https://leafletjs.com).
+- Punti della mappa: e-circles, Rete italiana CSA, Fondazione Slow Food, Libera Terra, Rete di economia solidale. Ogni scheda indica da dove arriva.
+- Foto: [Unsplash](https://unsplash.com). Autori e link sono nella pagina Tutte le fonti.
+- Caratteri: Inter e Newsreader, SIL Open Font License.
