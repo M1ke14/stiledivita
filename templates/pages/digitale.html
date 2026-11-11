@@ -1,0 +1,96 @@
+{% extends 'base.html' %}
+{% block content %}
+  <section style="background: #1D201B; color: #F7F4EE">
+    <div style="max-width: 1180px; margin: 0 auto; padding: 120px 24px 112px; display: flex; flex-direction: column; gap: 24px">
+      <p style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #B9CBB4">Capitolo 4</p>
+      <h1 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: clamp(72px, 12vw, 152px); line-height: 0.92; font-weight: 500; letter-spacing: -0.045em">Digitale<i style="font-weight: 400; color: #B9CBB4">.</i></h1>
+      <p style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: clamp(24px, 2.8vw, 34px); line-height: 1.25; font-style: italic; color: #D7DBD0; max-width: 760px">Alternative europee alle grandi piattaforme e i diritti che hai per legge.</p>
+      <p style="margin: 0; font-size: 17px; line-height: 1.6; color: #BDBFB6; max-width: 620px">Quindici alternative europee alle grandi piattaforme. Non devi cambiare tutto: comincia da una.</p>
+    </div>
+  </section>
+
+
+  {% include 'partials/alternative.html' %}
+
+  <section style="background: #EDE7DB">
+    <div style="max-width: 1180px; margin: 0 auto; padding: 112px 24px; display: flex; flex-direction: column; gap: 40px">
+      <div style="display: flex; flex-direction: column; gap: 12px; max-width: 760px">
+        <p style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #9A5638">I tuoi diritti</p>
+        <h2 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: clamp(38px, 5vw, 60px); line-height: 1.04; font-weight: 500; letter-spacing: -0.03em">I tuoi diritti secondo la legge europea.</h2>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px">
+        <div style="background: #F7F4EE; border-radius: 22px; padding: 28px; display: flex; flex-direction: column; gap: 10px">
+          <span style="font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent)">{{ 'GDPR, D1' | fonti }}</span>
+          <h3 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: 26px; font-weight: 500">Riprenditi i dati</h3>
+          <p style="margin: 0; font-size: 15px; line-height: 1.55; color: #585C53">Puoi chiedere a qualsiasi servizio una copia dei tuoi dati, la cancellazione e il trasferimento a un altro servizio.</p>
+        </div>
+        <div style="background: #F7F4EE; border-radius: 22px; padding: 28px; display: flex; flex-direction: column; gap: 10px">
+          <span style="font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent)">{{ 'Digital Markets Act, D2' | fonti }}</span>
+          <h3 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: 26px; font-weight: 500">Scegli tu</h3>
+          <p style="margin: 0; font-size: 15px; line-height: 1.55; color: #585C53">Le grandi piattaforme devono lasciarti scegliere motore di ricerca e browser predefiniti.</p>
+        </div>
+        <div style="background: #F7F4EE; border-radius: 22px; padding: 28px; display: flex; flex-direction: column; gap: 10px">
+          <span style="font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent)">{{ 'Ecodesign, D3 D4' | fonti }}</span>
+          <h3 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: 26px; font-weight: 500">Ricambi per 7 anni</h3>
+          <p style="margin: 0; font-size: 15px; line-height: 1.55; color: #585C53">Dal 20 giugno 2025 i ricambi degli smartphone devono restare disponibili per 7 anni dopo la fine delle vendite. L'etichetta mostra riparabilità e batteria.</p>
+        </div>
+        <div style="background: #F7F4EE; border-radius: 22px; padding: 28px; display: flex; flex-direction: column; gap: 10px">
+          <span style="font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent)">{{ 'Diritto alla riparazione, D5' | fonti }}</span>
+          <h3 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: 26px; font-weight: 500">Il diritto di riparare</h3>
+          <p style="margin: 0; font-size: 15px; line-height: 1.55; color: #585C53">In Italia la direttiva è legge dal 22 ottobre 2026: per alcuni prodotti, smartphone compresi, il produttore deve offrire la riparazione.</p>
+        </div>
+        <div style="background: #F7F4EE; border-radius: 22px; padding: 28px; display: flex; flex-direction: column; gap: 10px">
+          <span style="font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent)">{{ 'Caricatore unico, D6' | fonti }}</span>
+          <h3 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: 26px; font-weight: 500">Un cavo solo</h3>
+          <p style="margin: 0; font-size: 15px; line-height: 1.55; color: #585C53">USB-C obbligatorio: non devi ricomprare il caricatore a ogni telefono.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section style="max-width: 1180px; margin: 0 auto; padding: 112px 24px; display: flex; flex-wrap: wrap; gap: 56px">
+    <div style="flex: 1 1 360px; display: flex; flex-direction: column; gap: 14px">
+      <p style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #9A5638">Come cambiare</p>
+      <h2 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: clamp(38px, 5vw, 60px); line-height: 1.04; font-weight: 500; letter-spacing: -0.03em">Come cambiare, in cinque passi.</h2>
+      
+    </div>
+    <ol style="flex: 1 1 520px; list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; border-top: 1px solid #CFC6B5">
+      <li style="padding: 22px 0; border-bottom: 1px solid #CFC6B5; display: grid; grid-template-columns: 52px minmax(0, 1fr) auto; gap: 14px; align-items: baseline"><span style="font-family: Newsreader, Georgia, serif; font-size: 28px; font-style: italic; color: var(--accent)">1</span><span style="font-size: 17px; line-height: 1.5"><b>Motore di ricerca.</b> Impostazioni del browser, poi motore predefinito.</span><span style="font-size: 13px; color: #6B6F65">1 minuto</span></li>
+      <li style="padding: 22px 0; border-bottom: 1px solid #CFC6B5; display: grid; grid-template-columns: 52px minmax(0, 1fr) auto; gap: 14px; align-items: baseline"><span style="font-family: Newsreader, Georgia, serif; font-size: 28px; font-style: italic; color: var(--accent)">2</span><span style="font-size: 17px; line-height: 1.5"><b>Browser.</b> Installa il nuovo, importa preferiti e password.</span><span style="font-size: 13px; color: #6B6F65">10 minuti</span></li>
+      <li style="padding: 22px 0; border-bottom: 1px solid #CFC6B5; display: grid; grid-template-columns: 52px minmax(0, 1fr) auto; gap: 14px; align-items: baseline"><span style="font-family: Newsreader, Georgia, serif; font-size: 28px; font-style: italic; color: var(--accent)">3</span><span style="font-size: 17px; line-height: 1.5"><b>Messaggi.</b> Porta con te tre persone con cui scrivi ogni giorno.</span><span style="font-size: 13px; color: #6B6F65">una settimana</span></li>
+      <li style="padding: 22px 0; border-bottom: 1px solid #CFC6B5; display: grid; grid-template-columns: 52px minmax(0, 1fr) auto; gap: 14px; align-items: baseline"><span style="font-family: Newsreader, Georgia, serif; font-size: 28px; font-style: italic; color: var(--accent)">4</span><span style="font-size: 17px; line-height: 1.5"><b>Email.</b> Apri il nuovo indirizzo e attiva l'inoltro dal vecchio.</span><span style="font-size: 13px; color: #6B6F65">un mese</span></li>
+      <li style="padding: 22px 0; border-bottom: 1px solid #CFC6B5; display: grid; grid-template-columns: 52px minmax(0, 1fr) auto; gap: 14px; align-items: baseline"><span style="font-family: Newsreader, Georgia, serif; font-size: 28px; font-style: italic; color: var(--accent)">5</span><span style="font-size: 17px; line-height: 1.5"><b>Foto e file.</b> Esporta l'archivio (è un tuo diritto, GDPR) e caricalo sul nuovo cloud.</span><span style="font-size: 13px; color: #6B6F65">un pomeriggio</span></li>
+    </ol>
+  </section>
+
+
+  <section style="max-width: 1180px; margin: 0 auto; padding: 0 24px 112px">
+    <div style="border: 1px solid #CFC6B5; border-radius: 26px; padding: 40px; display: flex; flex-wrap: wrap; gap: 32px">
+      <h2 style="flex: 1 1 260px; margin: 0; font-family: Newsreader, Georgia, serif; font-size: 34px; font-weight: 500; letter-spacing: -0.02em; line-height: 1.1">I limiti di queste alternative.</h2>
+      <ul style="flex: 2 1 480px; margin: 0; padding: 0 0 0 18px; display: flex; flex-direction: column; gap: 10px; font-size: 16px; line-height: 1.55; color: #3D4139">
+        <li>Svizzera e Norvegia sono in Europa ma non nell'UE: hanno buone leggi sulla privacy, diverse dal GDPR.</li>
+        <li>Ecosia e Qwant usano il loro indice solo per una parte delle ricerche: il resto arriva ancora da fornitori esterni.</li>
+        <li>Sedi e proprietari possono cambiare: ricontrollo le schede ogni tanto.</li>
+        <li>Signal e Firefox sono americani, però sono progetti open source senza scopo di lucro: vanno bene anche loro.</li>
+      </ul>
+    </div>
+  </section>
+
+
+  <section style="border-top: 1px solid #DDD6C8">
+    <div style="max-width: 1180px; margin: 0 auto; padding: 72px 24px; display: flex; flex-direction: column; gap: 24px">
+      <h2 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: 32px; font-weight: 500; letter-spacing: -0.02em">Fonti del capitolo</h2>
+      {% with codes = ['D1', 'D2', 'D3', 'D4', 'D5', 'D6', 'D7', 'D8', 'D9', 'D11'] %}{% include 'partials/fonti_lista.html' %}{% endwith %}
+      <a href="{{ url_for('page', slug='metodo') }}" style="font-size: 15px; font-weight: 500; color: var(--accent)">Link completi e punti da verificare</a>
+    </div>
+  </section>
+
+
+  <section style="max-width: 1180px; margin: 0 auto; padding: 0 24px 96px">
+    <div style="border-top: 1px solid #DDD6C8; padding-top: 36px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 24px; align-items: center">
+      <a href="{{ url_for('page', slug='casa') }}" style="display: flex; flex-direction: column; gap: 2px; color: #1D201B"><span style="font-size: 13px; color: #585C53">Capitolo 3</span><span style="font-family: Newsreader, Georgia, serif; font-size: 30px; font-weight: 500; letter-spacing: -0.02em">Casa e cura</span></a>
+      <a href="{{ url_for('page', slug='energia') }}" style="display: flex; flex-direction: column; gap: 2px; text-align: right; color: #1D201B"><span style="font-size: 13px; color: #585C53">Capitolo 5</span><span style="font-family: Newsreader, Georgia, serif; font-size: 30px; font-weight: 500; letter-spacing: -0.02em">Soldi ed energia</span></a>
+    </div>
+  </section>
+{% endblock %}

@@ -1,0 +1,134 @@
+{% extends 'base.html' %}
+{% block head %}<link rel="stylesheet" href="{{ url_for('static', filename='vendor/leaflet/leaflet.css') }}">{% endblock %}
+{% block scripts %}<script src="{{ url_for('static', filename='vendor/leaflet/leaflet.js') }}" defer></script>
+<script src="{{ url_for('static', filename='js/mappa.js') }}" defer></script>{% endblock %}
+{% block content %}
+  <section style="max-width: 1180px; margin: 0 auto; padding: 112px 24px 80px; display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-end; justify-content: space-between">
+    <div style="flex: 1 1 600px; display: flex; flex-direction: column; gap: 20px">
+      <p style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #9A5638">La rete</p>
+      <h1 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: clamp(64px, 10vw, 136px); line-height: 0.94; font-weight: 500; letter-spacing: -0.045em">Dove comprare<i style="font-weight: 400; color: var(--accent)">.</i></h1>
+      <p style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: clamp(24px, 2.8vw, 34px); line-height: 1.25; color: #3D4139; font-style: italic; max-width: 680px">GAS, CSA, mercati contadini e cooperative vicino a te.</p>
+    </div>
+    <p style="flex: 0 1 360px; margin: 0; font-size: 17px; line-height: 1.6; color: #585C53">Gruppi d'acquisto, cooperative sociali, contadini, botteghe del commercio equo. Comprare da loro tiene i soldi sul territorio e dà lavoro a chi ne ha più bisogno.</p>
+  </section>
+
+
+  {% include 'partials/mappa.html' %}
+
+  <section style="max-width: 1180px; margin: 0 auto; padding: 72px 24px 0">
+    <a href="{{ url_for('page', slug='conoscere') }}" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 20px; border: 1px solid #CFC6B5; border-radius: 24px; padding: 28px 32px; color: #1D201B">
+      <span style="display: flex; flex-direction: column; gap: 6px; max-width: 700px"><b style="font-family: Newsreader, Georgia, serif; font-size: 28px; font-weight: 500; letter-spacing: -0.02em">Non sai cosa sia un GAS o una CSA?</b><span style="font-size: 16px; color: #585C53">Otto schede da un minuto e sette approfondimenti, con le fonti.</span></span>
+      <span style="font-size: 15px; font-weight: 500; color: var(--accent); text-decoration: underline; text-underline-offset: 4px">Conoscere la rete</span>
+    </a>
+  </section>
+
+
+  <section style="background: #1D201B; color: #F7F4EE">
+    <div style="max-width: 1180px; margin: 0 auto; padding: 88px 24px; display: flex; flex-direction: column; gap: 32px">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 32px">
+        <div style="display: flex; flex-direction: column; gap: 8px"><span style="font-family: Newsreader, Georgia, serif; font-size: clamp(56px, 7vw, 84px); font-weight: 500; letter-spacing: -0.04em; line-height: 1; color: #B9CBB4">1994</span><span style="font-size: 15px; line-height: 1.5; color: #BDBFB6">{{ "nasce a Fidenza il primo gruppo d'acquisto solidale, R2" | fonti }}</span></div>
+        <div style="display: flex; flex-direction: column; gap: 8px"><span style="font-family: Newsreader, Georgia, serif; font-size: clamp(56px, 7vw, 84px); font-weight: 500; letter-spacing: -0.04em; line-height: 1; color: #B9CBB4">14.343</span><span style="font-size: 15px; line-height: 1.5; color: #BDBFB6">{{ 'cooperative sociali attive in Italia nel 2023, secondo Istat, R13' | fonti }}</span></div>
+        <div style="display: flex; flex-direction: column; gap: 8px"><span style="font-family: Newsreader, Georgia, serif; font-size: clamp(56px, 7vw, 84px); font-weight: 500; letter-spacing: -0.04em; line-height: 1; color: #B9CBB4">30%</span><span style="font-size: 15px; line-height: 1.5; color: #BDBFB6">{{ 'minimo di lavoratori svantaggiati in una cooperativa sociale di tipo B, per legge, R1' | fonti }}</span></div>
+      </div>
+    </div>
+  </section>
+
+
+  <section style="max-width: 1180px; margin: 0 auto; padding: 96px 24px 112px; display: flex; flex-direction: column; gap: 44px">
+    <div style="display: flex; flex-direction: column; gap: 12px; max-width: 760px">
+      <p style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #9A5638">L'ordine giusto</p>
+      <h2 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: clamp(38px, 5vw, 60px); line-height: 1.04; font-weight: 500; letter-spacing: -0.03em">Da chi comprare, in ordine di preferenza.</h2>
+      <p style="margin: 0; font-size: 18px; line-height: 1.55; color: #585C53">Non devi fare tutto subito. Basta spostare una spesa dalla parte bassa a quella alta.</p>
+    </div>
+    <ol style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px">
+      <li style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 28px; background: var(--accent); color: #F7F4EE; border-radius: 20px; padding: 24px 28px"><span style="font-family: Newsreader, Georgia, serif; font-size: 26px; font-style: italic; color: #CFDCCB; width: 36px">1</span><b style="flex: 0 1 300px; font-size: 19px; font-weight: 600">GAS e CSA</b><span style="flex: 1 1 360px; font-size: 15px; line-height: 1.5; color: #DCE5D9">Ordini insieme ad altre famiglie, direttamente dal produttore.</span></li>
+      <li style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 28px; background: #3E5B45; color: #F7F4EE; border-radius: 20px; padding: 24px 28px"><span style="font-family: Newsreader, Georgia, serif; font-size: 26px; font-style: italic; color: #CFDCCB; width: 36px">2</span><b style="flex: 0 1 300px; font-size: 19px; font-weight: 600">Cooperative sociali e beni confiscati</b><span style="flex: 1 1 360px; font-size: 15px; line-height: 1.5; color: #DCE5D9">Il tuo acquisto paga un lavoro a chi lo trova più difficilmente.</span></li>
+      <li style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 28px; background: #EDE7DB; border-radius: 20px; padding: 24px 28px"><span style="font-family: Newsreader, Georgia, serif; font-size: 26px; font-style: italic; color: var(--accent); width: 36px">3</span><b style="flex: 0 1 300px; font-size: 19px; font-weight: 600">Mercati contadini e aziende agricole</b><span style="flex: 1 1 360px; font-size: 15px; line-height: 1.5; color: #585C53">Compri da chi coltiva. Puoi fare domande.</span></li>
+      <li style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 28px; background: #EDE7DB; border-radius: 20px; padding: 24px 28px"><span style="font-family: Newsreader, Georgia, serif; font-size: 26px; font-style: italic; color: var(--accent); width: 36px">4</span><b style="flex: 0 1 300px; font-size: 19px; font-weight: 600">Botteghe del commercio equo</b><span style="flex: 1 1 360px; font-size: 15px; line-height: 1.5; color: #585C53">Per ciò che in Europa non cresce: caffè, cacao, tè, zucchero di canna.</span></li>
+      <li style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 28px; border: 1px solid #DDD6C8; border-radius: 20px; padding: 24px 28px"><span style="font-family: Newsreader, Georgia, serif; font-size: 26px; font-style: italic; color: #A39C8E; width: 36px">5</span><b style="flex: 0 1 300px; font-size: 19px; font-weight: 600">Negozi indipendenti di quartiere</b><span style="flex: 1 1 360px; font-size: 15px; line-height: 1.5; color: #585C53">Forno, macelleria, drogheria, negozio di sfuso.</span></li>
+      <li style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 28px; border: 1px dashed #CFC6B5; border-radius: 20px; padding: 24px 28px"><span style="font-family: Newsreader, Georgia, serif; font-size: 26px; font-style: italic; color: #A39C8E; width: 36px">6</span><b style="flex: 0 1 300px; font-size: 19px; font-weight: 600; color: #585C53">Supermercato</b><span style="flex: 1 1 360px; font-size: 15px; line-height: 1.5; color: #585C53">Quando serve, con le etichette lette bene. Vedi i capitoli.</span></li>
+    </ol>
+  </section>
+
+
+  <section style="max-width: 1180px; margin: 0 auto; padding: 112px 24px; display: flex; flex-direction: column; gap: 40px">
+    <div style="display: flex; flex-direction: column; gap: 12px; max-width: 760px">
+      <p style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #9A5638">Chi sono</p>
+      <h2 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: clamp(38px, 5vw, 60px); line-height: 1.04; font-weight: 500; letter-spacing: -0.03em">Le realtà della mappa, spiegate.</h2>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 16px">
+      <article style="border: 1px solid #DDD6C8; border-radius: 24px; padding: 30px; display: flex; flex-direction: column; gap: 10px">
+        <span style="width: 10px; height: 10px; border-radius: 50%; background: #2F4A36"></span>
+        <h3 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: 28px; font-weight: 500; letter-spacing: -0.02em">GAS, gruppi d'acquisto solidale</h3>
+        <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #3D4139">Famiglie che scelgono insieme i produttori e ordinano in gruppo. Sono informali, ognuno ha le sue regole. Quelli censiti sono almeno mille, ma si stima siano il doppio.</p>
+        <p style="margin: 0; font-size: 13px; color: #6B6F65">{{ 'R2, R3, R4' | fonti }}</p>
+      </article>
+      <article style="border: 1px solid #DDD6C8; border-radius: 24px; padding: 30px; display: flex; flex-direction: column; gap: 10px">
+        <span style="width: 10px; height: 10px; border-radius: 50%; background: #5E7F4F"></span>
+        <h3 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: 28px; font-weight: 500; letter-spacing: -0.02em">CSA, comunità che supporta l'agricoltura</h3>
+        <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #3D4139">Paghi all'inizio dell'anno la tua quota del raccolto. Il contadino pianifica, tu ricevi la cassetta ogni settimana. Rischi e benefici sono condivisi.</p>
+        <p style="margin: 0; font-size: 13px; color: #6B6F65">{{ 'R12' | fonti }}</p>
+      </article>
+      <article style="border: 1px solid #DDD6C8; border-radius: 24px; padding: 30px; display: flex; flex-direction: column; gap: 10px">
+        <span style="width: 10px; height: 10px; border-radius: 50%; background: #9A5638"></span>
+        <h3 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: 28px; font-weight: 500; letter-spacing: -0.02em">Cooperative sociali di tipo B</h3>
+        <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #3D4139">Imprese che esistono per dare lavoro a persone svantaggiate: almeno il 30% dei lavoratori, per legge. Fanno agricoltura, sartoria, pulizie, falegnameria, riuso.</p>
+        <p style="margin: 0; font-size: 13px; color: #6B6F65">{{ 'R1, R13' | fonti }}</p>
+      </article>
+      <article style="border: 1px solid #DDD6C8; border-radius: 24px; padding: 30px; display: flex; flex-direction: column; gap: 10px">
+        <span style="width: 10px; height: 10px; border-radius: 50%; background: #9A5638"></span>
+        <h3 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: 28px; font-weight: 500; letter-spacing: -0.02em">Libera Terra e beni confiscati</h3>
+        <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #3D4139">Cooperative che coltivano terreni tolti alle mafie, grazie alla legge sul riuso sociale dei beni confiscati. Pasta, legumi, olio, vino, conserve. Molti prodotti sono biologici.</p>
+        <p style="margin: 0; font-size: 13px; color: #6B6F65">{{ 'R7' | fonti }}</p>
+      </article>
+      <article style="border: 1px solid #DDD6C8; border-radius: 24px; padding: 30px; display: flex; flex-direction: column; gap: 10px">
+        <span style="width: 10px; height: 10px; border-radius: 50%; background: #B07A2A"></span>
+        <h3 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: 28px; font-weight: 500; letter-spacing: -0.02em">Mercati contadini e fattorie sociali</h3>
+        <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #3D4139">Mercati dove vendono gli agricoltori della zona, soprattutto i propri prodotti, come i Mercati della Terra di Slow Food o quelli di Campagna Amica. Le fattorie sociali, riconosciute dalla legge 141/2015, uniscono agricoltura e inclusione.</p>
+        <p style="margin: 0; font-size: 13px; color: #6B6F65">{{ 'R8, R10, R11' | fonti }}</p>
+      </article>
+      <article style="border: 1px solid #DDD6C8; border-radius: 24px; padding: 30px; display: flex; flex-direction: column; gap: 10px">
+        <span style="width: 10px; height: 10px; border-radius: 50%; background: #3B5249"></span>
+        <h3 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: 28px; font-weight: 500; letter-spacing: -0.02em">Commercio equo e solidale</h3>
+        <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #3D4139">Le botteghe del mondo. Il marchio Equo Garantito identifica le organizzazioni verificate secondo gli standard WFTO. I prodotti arrivano da fuori Europa: usalo per ciò che qui non cresce.</p>
+        <p style="margin: 0; font-size: 13px; color: #6B6F65">{{ 'R9' | fonti }}</p>
+      </article>
+    </div>
+    <div style="background: #F1E3D6; color: #4A2E1D; border-radius: 22px; padding: 24px 28px; font-size: 15px; line-height: 1.6">
+      <b>Da sapere:</b> "solidale" non è un marchio controllato. Un GAS è buono quanto le persone che lo fanno. Chiedi sempre chi sono i produttori e come li hanno scelti.
+    </div>
+  </section>
+
+
+  <section style="border-top: 1px solid #DDD6C8">
+    <div style="max-width: 1180px; margin: 0 auto; padding: 112px 24px; display: flex; flex-wrap: wrap; gap: 56px">
+      <div style="flex: 1 1 420px; display: flex; flex-direction: column; gap: 24px">
+        <h2 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: clamp(34px, 4.2vw, 50px); line-height: 1.06; font-weight: 500; letter-spacing: -0.03em">Come entrare in un GAS.</h2>
+        <ol style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 18px">
+          <li style="display: flex; gap: 18px"><span style="font-family: Newsreader, Georgia, serif; font-size: 24px; font-style: italic; color: var(--accent)">1</span><span style="font-size: 16px; line-height: 1.55; color: #3D4139">Cerca il tuo comune nelle mappe qui accanto. Prova anche a chiedere al mercato contadino: i produttori conoscono i GAS che servono.</span></li>
+          <li style="display: flex; gap: 18px"><span style="font-family: Newsreader, Georgia, serif; font-size: 24px; font-style: italic; color: var(--accent)">2</span><span style="font-size: 16px; line-height: 1.55; color: #3D4139">Scrivi e chiedi di partecipare a una riunione o a una consegna, prima di iscriverti.</span></li>
+          <li style="display: flex; gap: 18px"><span style="font-family: Newsreader, Georgia, serif; font-size: 24px; font-style: italic; color: var(--accent)">3</span><span style="font-size: 16px; line-height: 1.55; color: #3D4139">Inizia con un solo ordine: farine, legumi o olio, che si conservano a lungo.</span></li>
+          <li style="display: flex; gap: 18px"><span style="font-family: Newsreader, Georgia, serif; font-size: 24px; font-style: italic; color: var(--accent)">4</span><span style="font-size: 16px; line-height: 1.55; color: #3D4139">Non c'è un GAS vicino? Bastano poche famiglie e un produttore disposto a consegnare.</span></li>
+        </ol>
+      </div>
+      <div style="flex: 1 1 420px; display: flex; flex-direction: column; gap: 16px">
+        <h3 style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #9A5638">Mappe che esistono già</h3>
+        <a href="https://e-circles.org" style="display: flex; justify-content: space-between; gap: 16px; padding: 18px 0; border-top: 1px solid #DDD6C8; color: #1D201B"><span style="display: flex; flex-direction: column; gap: 2px"><b style="font-size: 16px">e-circles</b><span style="font-size: 14px; color: #585C53">{{ "Mappa dei gruppi d'acquisto con indirizzi, R4" | fonti(link=False) }}</span></span><span style="color: var(--accent)"></span></a>
+        <a href="https://www.economiasolidale.net" style="display: flex; justify-content: space-between; gap: 16px; padding: 18px 0; border-top: 1px solid #DDD6C8; color: #1D201B"><span style="display: flex; flex-direction: column; gap: 2px"><b style="font-size: 16px">Rete italiana di economia solidale</b><span style="font-size: 14px; color: #585C53">{{ 'Distretti (DES) e reti locali, con mappa, R5' | fonti(link=False) }}</span></span><span style="color: var(--accent)"></span></a>
+        <a href="https://www.fondazioneslowfood.com/it/cosa-facciamo/mercati-della-terra-slow-food/" style="display: flex; justify-content: space-between; gap: 16px; padding: 18px 0; border-top: 1px solid #DDD6C8; color: #1D201B"><span style="display: flex; flex-direction: column; gap: 2px"><b style="font-size: 16px">Mercati della Terra</b><span style="font-size: 14px; color: #585C53">{{ 'Fondazione Slow Food, R10' | fonti(link=False) }}</span></span><span style="color: var(--accent)"></span></a>
+        <a href="https://www.equogarantito.org" style="display: flex; justify-content: space-between; gap: 16px; padding: 18px 0; border-top: 1px solid #DDD6C8; color: #1D201B"><span style="display: flex; flex-direction: column; gap: 2px"><b style="font-size: 16px">Equo Garantito</b><span style="font-size: 14px; color: #585C53">{{ 'Organizzazioni e botteghe verificate, R9' | fonti(link=False) }}</span></span><span style="color: var(--accent)"></span></a>
+        <a href="https://bottegaliberaterra.it" style="display: flex; justify-content: space-between; gap: 16px; padding: 18px 0; border-top: 1px solid #DDD6C8; border-bottom: 1px solid #DDD6C8; color: #1D201B"><span style="display: flex; flex-direction: column; gap: 2px"><b style="font-size: 16px">Bottega Libera Terra</b><span style="font-size: 14px; color: #585C53">{{ 'Prodotti dai beni confiscati, anche online, R7' | fonti(link=False) }}</span></span><span style="color: var(--accent)"></span></a>
+        <p style="margin: 0; font-size: 14px; line-height: 1.55; color: #585C53">{{ 'Per le cooperative sociali: ogni Regione tiene un albo pubblico (L. 381/1991, art. 9, R1). Cercalo come "albo regionale cooperative sociali" più il nome della tua regione.' | fonti }}</p>
+      </div>
+    </div>
+  </section>
+
+
+  <section style="border-top: 1px solid #DDD6C8">
+    <div style="max-width: 1180px; margin: 0 auto; padding: 72px 24px; display: flex; flex-direction: column; gap: 24px">
+      <h2 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: 32px; font-weight: 500; letter-spacing: -0.02em">Fonti della pagina</h2>
+      {% with codes = ['R1', 'R2', 'R3', 'R4', 'R5', 'R6', 'R7', 'R8', 'R9', 'R10', 'R11', 'R12', 'R13'] %}{% include 'partials/fonti_lista.html' %}{% endwith %}
+      <a href="{{ url_for('page', slug='metodo') }}" style="font-size: 15px; font-weight: 500; color: var(--accent)">Link completi e punti da verificare</a>
+    </div>
+  </section>
+{% endblock %}

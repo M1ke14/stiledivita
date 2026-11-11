@@ -1,0 +1,304 @@
+{
+  "servizi": [
+    {
+      "al": "Google Search",
+      "alternativa": "Ecosia, Qwant",
+      "paese": "Germania, Francia",
+      "stato": "Verificato (D7)",
+      "links": [
+        [
+          "https://www.ecosia.org",
+          "Ecosia"
+        ],
+        [
+          "https://www.qwant.com",
+          "Qwant"
+        ]
+      ]
+    },
+    {
+      "al": "Gmail",
+      "alternativa": "Proton Mail, Tuta, Posteo, mailbox.org",
+      "paese": "Svizzera, Germania, Germania, Germania",
+      "stato": "Tuta verificato; altri da ricontrollare",
+      "links": [
+        [
+          "https://proton.me",
+          "Proton Mail"
+        ],
+        [
+          "https://tuta.com",
+          "Tuta"
+        ],
+        [
+          "https://posteo.de",
+          "Posteo"
+        ],
+        [
+          "https://mailbox.org",
+          "mailbox.org"
+        ]
+      ]
+    },
+    {
+      "al": "WhatsApp",
+      "alternativa": "Threema, Olvid",
+      "paese": "Svizzera, Francia",
+      "stato": "Olvid verificato (certificazione ANSSI); Threema da ricontrollare",
+      "links": [
+        [
+          "https://threema.ch",
+          "Threema"
+        ],
+        [
+          "https://olvid.io",
+          "Olvid"
+        ]
+      ]
+    },
+    {
+      "al": "Google Drive / iCloud",
+      "alternativa": "Nextcloud, Infomaniak kDrive, Proton Drive",
+      "paese": "Germania, Svizzera, Svizzera",
+      "stato": "Da ricontrollare",
+      "links": [
+        [
+          "https://nextcloud.com",
+          "Nextcloud"
+        ],
+        [
+          "https://www.infomaniak.com",
+          "Infomaniak kDrive"
+        ],
+        [
+          "https://proton.me/drive",
+          "Proton Drive"
+        ]
+      ]
+    },
+    {
+      "al": "Microsoft Office / Google Docs",
+      "alternativa": "LibreOffice, CryptPad",
+      "paese": "Germania (The Document Foundation), Francia",
+      "stato": "Da ricontrollare",
+      "links": [
+        [
+          "https://www.libreoffice.org",
+          "LibreOffice"
+        ],
+        [
+          "https://cryptpad.org",
+          "CryptPad"
+        ]
+      ]
+    },
+    {
+      "al": "Chrome",
+      "alternativa": "Vivaldi, Mullvad Browser",
+      "paese": "Norvegia, Svezia",
+      "stato": "Da ricontrollare",
+      "links": [
+        [
+          "https://vivaldi.com",
+          "Vivaldi"
+        ],
+        [
+          "https://mullvad.net/browser",
+          "Mullvad Browser"
+        ]
+      ]
+    },
+    {
+      "al": "Google Maps",
+      "alternativa": "OsmAnd, Organic Maps / CoMaps",
+      "paese": "Paesi Bassi, Estonia",
+      "stato": "Organic Maps verificato (società estone; nel 2025 parte della comunità ha creato il fork CoMaps)",
+      "links": [
+        [
+          "https://osmand.net",
+          "OsmAnd"
+        ],
+        [
+          "https://organicmaps.app",
+          "Organic Maps"
+        ],
+        [
+          "https://www.comaps.app",
+          "CoMaps"
+        ]
+      ]
+    },
+    {
+      "al": "Android con Google",
+      "alternativa": "/e/OS di Murena",
+      "paese": "Francia",
+      "stato": "Verificato",
+      "links": [
+        [
+          "https://murena.com",
+          "/e/OS di Murena"
+        ]
+      ]
+    },
+    {
+      "al": "Smartphone",
+      "alternativa": "Fairphone",
+      "paese": "Paesi Bassi",
+      "stato": "Da ricontrollare",
+      "links": [
+        [
+          "https://www.fairphone.com",
+          "Fairphone"
+        ]
+      ]
+    },
+    {
+      "al": "Instagram / X",
+      "alternativa": "Mastodon, Pixelfed",
+      "paese": "Germania (Mastodon gGmbH), progetto open source",
+      "stato": "Da ricontrollare",
+      "links": [
+        [
+          "https://joinmastodon.org",
+          "Mastodon"
+        ],
+        [
+          "https://pixelfed.org",
+          "Pixelfed"
+        ]
+      ]
+    },
+    {
+      "al": "YouTube",
+      "alternativa": "PeerTube",
+      "paese": "Francia (Framasoft)",
+      "stato": "Da ricontrollare",
+      "links": [
+        [
+          "https://joinpeertube.org",
+          "PeerTube"
+        ]
+      ]
+    },
+    {
+      "al": "ChatGPT",
+      "alternativa": "Le Chat di Mistral AI",
+      "paese": "Francia",
+      "stato": "Da ricontrollare",
+      "links": [
+        [
+          "https://mistral.ai",
+          "Le Chat di Mistral AI"
+        ]
+      ]
+    },
+    {
+      "al": "Google Traduttore",
+      "alternativa": "DeepL",
+      "paese": "Germania",
+      "stato": "Da ricontrollare",
+      "links": [
+        [
+          "https://www.deepl.com",
+          "DeepL"
+        ]
+      ]
+    },
+    {
+      "al": "Apple Pay / PayPal",
+      "alternativa": "Wero",
+      "paese": "Belgio (EPI)",
+      "stato": "Verificato (D8); in Italia l'arrivo dipende dalla tua banca",
+      "links": [
+        [
+          "https://epicompany.eu",
+          "Wero"
+        ]
+      ]
+    },
+    {
+      "al": "Shein / Amazon (vestiti)",
+      "alternativa": "Vinted per l'usato",
+      "paese": "Lituania",
+      "stato": "Da ricontrollare",
+      "links": [
+        [
+          "https://www.vinted.it",
+          "Vinted"
+        ]
+      ]
+    }
+  ],
+  "marchi": [
+    {
+      "nome": "Biologico UE (foglia verde)",
+      "dove": "Cibo confezionato",
+      "garantisce": "Almeno 95% di ingredienti agricoli biologici, controlli annuali",
+      "legge": "Reg. (UE) 2018/848",
+      "url": "https://eur-lex.europa.eu/eli/reg/2018/848/oj"
+    },
+    {
+      "nome": "DOP / IGP",
+      "dove": "Cibo e vino",
+      "garantisce": "Legame con la zona d'origine e disciplinare di produzione",
+      "legge": "Reg. (UE) 2024/1143",
+      "url": "https://eur-lex.europa.eu/eli/reg/2024/1143/oj/eng"
+    },
+    {
+      "nome": "Codice uova 0-1-2-3",
+      "dove": "Guscio delle uova",
+      "garantisce": "Metodo di allevamento e Paese",
+      "legge": "Reg. delegato (UE) 2023/2465",
+      "url": "https://eur-lex.europa.eu/eli/reg_del/2023/2465/oj"
+    },
+    {
+      "nome": "EU Ecolabel (fiore)",
+      "dove": "Detersivi, tessuti, carta, vernici",
+      "garantisce": "Limiti sulle sostanze pericolose, materie prime sostenibili, imballaggi riciclabili",
+      "legge": "Commissione UE – EU Ecolabel detergenti",
+      "url": "https://green-forum.ec.europa.eu/green-business/eu-ecolabel_en"
+    },
+    {
+      "nome": "Etichetta energetica A–G",
+      "dove": "Elettrodomestici, schermi, smartphone",
+      "garantisce": "Consumo e (per gli smartphone) riparabilità, batteria, resistenza",
+      "legge": "Reg. (UE) 2017/1369 e Reg. (UE) 2023/1669",
+      "url": "https://eur-lex.europa.eu/eli/reg/2017/1369/oj"
+    },
+    {
+      "nome": "GOTS",
+      "dove": "Abbigliamento",
+      "garantisce": "«Organic» = almeno 95% fibre bio; «Made with organic» = almeno 70%",
+      "legge": "GOTS – Label grades (standard privato, sede in Germania)",
+      "url": "https://global-standard.org/certification-and-labelling/labelling/label-grades"
+    },
+    {
+      "nome": "OEKO-TEX Standard 100",
+      "dove": "Tessuti",
+      "garantisce": "Tessuto testato per sostanze nocive (non dice nulla su ambiente o lavoro)",
+      "legge": "OEKO-TEX (privato)",
+      "url": "https://www.oeko-tex.com/en/our-standards/oeko-tex-standard-100"
+    },
+    {
+      "nome": "Masters of Linen / Masters of Flax Fibre",
+      "dove": "Lino",
+      "garantisce": "Filiera del lino europea tracciata",
+      "legge": "Alliance for European Flax-Linen & Hemp (associazione di settore)",
+      "url": "https://allianceflaxlinenhemp.eu"
+    },
+    {
+      "nome": "Nordic Swan",
+      "dove": "Detersivi, cosmetici, carta",
+      "garantisce": "Marchio ecologico ufficiale dei Paesi nordici",
+      "legge": "Nordic Ecolabelling",
+      "url": "https://www.nordic-swan-ecolabel.org"
+    },
+    {
+      "nome": "COSMOS",
+      "dove": "Cosmetici",
+      "garantisce": "Cosmetici biologici o naturali certificati da enti europei",
+      "legge": "COSMOS-standard (privato)",
+      "url": "https://www.cosmos-standard.org"
+    }
+  ]
+}

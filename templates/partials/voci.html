@@ -1,0 +1,68 @@
+{# Voci interattive per Cibo e Casa. Senza JavaScript si vedono tutte, una sotto l'altra. #}
+{% if slug == 'cibo' %}
+  {% set cfg = {'eyebrow': 'La spesa', 'hint': 'Scegli un reparto, poi un alimento.', 'gruppi': 'Reparti', 'col1': ('Cosa guardare', 'guarda'), 'col2': ('Dove comprarlo', 'dove')} %}
+{% else %}
+  {% set cfg = {'eyebrow': 'Stanza per stanza', 'hint': 'Scegli un ambito, poi una voce.', 'gruppi': 'Ambiti', 'col1': ('Cosa fare', 'fare'), 'col2': ('Cosa cercare', 'cerca')} %}
+{% endif %}
+{% set cats = data.CATS %}{% set voci = data.VOCI %}
+  <section id="voci" style="background: #EDE7DB" data-voci>
+    <div style="max-width: 1180px; margin: 0 auto; padding: 112px 24px; display: flex; flex-direction: column; gap: 36px">
+      <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 20px">
+        <div style="display: flex; flex-direction: column; gap: 10px">
+          <p style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #9A5638">{{ cfg.eyebrow }}</p>
+          <h2 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: clamp(38px, 5vw, 60px); line-height: 1.04; font-weight: 500; letter-spacing: -0.03em">Voce per voce.</h2>
+        </div>
+        <p style="margin: 0; font-size: 15px; color: #585C53">{{ cfg.hint }}</p>
+      </div>
+
+      <div role="tablist" aria-label="{{ cfg.gruppi }}" style="display: flex; flex-wrap: wrap; gap: 8px">
+        {% for c in cats %}
+        <button type="button" class="pill" role="tab" data-cat="{{ c.id }}" aria-selected="{{ 'true' if loop.first else 'false' }}">{{ c.nome }} ({{ voci | selectattr('cat', 'equalto', c.id) | list | length }})</button>
+        {% endfor %}
+      </div>
+
+      <div style="display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-start">
+        {% for c in cats %}
+        <div class="voci-grid" data-panel data-cat-list="{{ c.id }}">
+          {% for v in voci if v.cat == c.id %}
+          <a class="voce-btn" href="#{{ v.id }}" data-voce="{{ v.id }}" aria-pressed="false">{{ v.nome }}</a>
+          {% endfor %}
+        </div>
+        {% endfor %}
+
+        <div style="flex: 999 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
+        {% for v in voci %}
+          {% set prev = voci[loop.index0 - 1] %}{% set next = voci[(loop.index0 + 1) % (voci | length)] %}
+          <article id="{{ v.id }}" data-panel data-voce-panel="{{ v.id }}" data-cat="{{ v.cat }}" style="background: #F7F4EE; border-radius: 28px; padding: clamp(28px, 4vw, 48px); display: flex; flex-direction: column; gap: 28px; scroll-margin-top: 90px">
+            <div style="display: flex; flex-direction: column; gap: 12px">
+              <span style="font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent)">{{ (cats | selectattr('id', 'equalto', v.cat) | first).nome }}</span>
+              <h3 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: clamp(44px, 5.4vw, 68px); line-height: 1; font-weight: 500; letter-spacing: -0.035em">{{ v.nome }}</h3>
+              <p style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: 22px; line-height: 1.4; font-style: italic; color: #3D4139">{{ v.intro }}</p>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 28px">
+              {% for titolo, chiave in [cfg.col1, cfg.col2] %}
+              <div style="display: flex; flex-direction: column; gap: 12px">
+                <h4 style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #585C53">{{ titolo }}</h4>
+                <ul style="margin: 0; padding: 0 0 0 18px; display: flex; flex-direction: column; gap: 10px; font-size: 16px; line-height: 1.55; color: #1D201B">
+                  {% for t in v[chiave] %}<li>{{ t }}</li>{% endfor %}
+                </ul>
+              </div>
+              {% endfor %}
+            </div>
+            <div style="background: #F1E3D6; border-radius: 18px; padding: 20px 22px; display: flex; gap: 14px; align-items: flex-start">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7A4A2E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 auto; margin-top: 2px"><circle cx="12" cy="12" r="9"></circle><path d="M12 8v5M12 16h.01"></path></svg>
+              <p style="margin: 0; font-size: 15px; line-height: 1.55; color: #4A2E1D"><strong>Attenzione.</strong> {{ v.attenzione }}</p>
+            </div>
+            <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 16px; border-top: 1px solid #DDD6C8; padding-top: 20px">
+              <span style="font-size: 13px; color: #6B6F65">Fonti: {{ v.fonti | fonti }}</span>
+              <div style="display: flex; gap: 8px; flex-wrap: wrap">
+                <a class="ghost-btn" href="#{{ prev.id }}" data-voce="{{ prev.id }}">Indietro: {{ prev.nome }}</a>
+                <a class="ghost-btn" href="#{{ next.id }}" data-voce="{{ next.id }}">Avanti: {{ next.nome }}</a>
+              </div>
+            </div>
+          </article>
+        {% endfor %}
+        </div>
+      </div>
+    </div>
+  </section>

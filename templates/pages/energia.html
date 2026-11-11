@@ -1,0 +1,135 @@
+{% extends 'base.html' %}
+{% block content %}
+  <section style="max-width: 1180px; margin: 0 auto; padding: 112px 24px 80px; display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-end; justify-content: space-between">
+    <div style="flex: 1 1 600px; display: flex; flex-direction: column; gap: 20px">
+      <p style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #9A5638">Capitolo 5</p>
+      <h1 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: clamp(64px, 10vw, 136px); line-height: 0.94; font-weight: 500; letter-spacing: -0.045em">Soldi ed energia<i style="font-weight: 400; color: var(--accent)">.</i></h1>
+      <p style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: clamp(24px, 2.8vw, 34px); line-height: 1.25; color: #3D4139; font-style: italic; max-width: 640px">Banche, pagamenti e fornitori di energia.</p>
+    </div>
+    <p style="flex: 0 1 360px; margin: 0; font-size: 17px; line-height: 1.6; color: #585C53">Dove tieni i risparmi, come paghi, da chi compri l'elettricità: scelte che pesano più di molte spese quotidiane.</p>
+  </section>
+
+
+  <section style="background: #1D201B; color: #F7F4EE">
+    <div style="max-width: 1180px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 32px">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 32px">
+        <div style="display: flex; flex-direction: column; gap: 8px"><span style="font-family: Newsreader, Georgia, serif; font-size: clamp(56px, 7vw, 84px); font-weight: 500; letter-spacing: -0.04em; line-height: 1; color: #B9CBB4">906 mld $</span><span style="font-size: 15px; line-height: 1.5; color: #BDBFB6">dati dalle 65 banche più grandi del mondo ai combustibili fossili nel 2025</span></div>
+        <div style="display: flex; flex-direction: column; gap: 8px"><span style="font-family: Newsreader, Georgia, serif; font-size: clamp(56px, 7vw, 84px); font-weight: 500; letter-spacing: -0.04em; line-height: 1; color: #B9CBB4">8.700 mld $</span><span style="font-size: 15px; line-height: 1.5; color: #BDBFB6">dal 2016, l'anno dopo l'Accordo di Parigi</span></div>
+        <div style="display: flex; flex-direction: column; gap: 8px"><span style="font-family: Newsreader, Georgia, serif; font-size: clamp(56px, 7vw, 84px); font-weight: 500; letter-spacing: -0.04em; line-height: 1; color: #B9CBB4">26 su 65</span><span style="font-size: 15px; line-height: 1.5; color: #BDBFB6">banche li hanno ridotti, e molte sono europee</span></div>
+      </div>
+      <p style="margin: 0; font-size: 13px; color: #8F9388">{{ 'Fonte: Banking on Climate Chaos 2026, rapporto di ONG ambientaliste con dati pubblici, S1' | fonti }}</p>
+    </div>
+  </section>
+
+
+  <section style="max-width: 1180px; margin: 0 auto; padding: 112px 24px; display: flex; flex-direction: column; gap: 40px">
+    <div style="display: flex; flex-direction: column; gap: 12px; max-width: 760px">
+      <p style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #9A5638">Soldi</p>
+      <h2 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: clamp(38px, 5vw, 60px); line-height: 1.04; font-weight: 500; letter-spacing: -0.03em">Banca, pagamenti, risparmi.</h2>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px">
+      <article style="background: var(--accent); color: #F7F4EE; border-radius: 26px; padding: 34px; display: flex; flex-direction: column; gap: 14px">
+        <span style="font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #CFDCCB">La banca</span>
+        <h3 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: 36px; font-weight: 500; letter-spacing: -0.025em; line-height: 1.05">Una banca etica</h3>
+        <ul style="margin: 0; padding: 0 0 0 18px; display: flex; flex-direction: column; gap: 8px; font-size: 15px; line-height: 1.55; color: #E1E8DE">
+          <li>La rete internazionale GABV riunisce le banche che finanziano economia reale e ambiente.</li>
+          <li>In Italia ne fa parte Banca Etica; in Europa anche GLS (Germania) e Triodos (Paesi Bassi).</li>
+          <li>Puoi tenere il conto dove sei e spostare solo i risparmi.</li>
+        </ul>
+        <span style="font-size: 13px; color: #CFDCCB">{{ 'S2, S3' | fonti }}</span>
+      </article>
+      <article style="background: #EDE7DB; border-radius: 26px; padding: 34px; display: flex; flex-direction: column; gap: 14px">
+        <span style="font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent)">La tua banca attuale</span>
+        <h3 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: 36px; font-weight: 500; letter-spacing: -0.025em; line-height: 1.05">Fai una domanda</h3>
+        <ul style="margin: 0; padding: 0 0 0 18px; display: flex; flex-direction: column; gap: 8px; font-size: 15px; line-height: 1.55; color: #3D4139">
+          <li>Chiedi la politica sui combustibili fossili, per iscritto.</li>
+          <li>Cerca la tua banca nel database del rapporto Banking on Climate Chaos.</li>
+          <li>Se non ti piace la risposta, hai un buon motivo per cambiare.</li>
+        </ul>
+        <span style="font-size: 13px; color: #6B6F65">{{ 'S1' | fonti }}</span>
+      </article>
+      <article style="background: #EDE7DB; border-radius: 26px; padding: 34px; display: flex; flex-direction: column; gap: 14px">
+        <span style="font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent)">Pagare</span>
+        <h3 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: 36px; font-weight: 500; letter-spacing: -0.025em; line-height: 1.05">Circuiti europei</h3>
+        <ul style="margin: 0; padding: 0 0 0 18px; display: flex; flex-direction: column; gap: 8px; font-size: 15px; line-height: 1.55; color: #3D4139">
+          <li>Wero: pagamenti tra conti europei, creato da banche europee. In Italia arriva tramite le banche aderenti.</li>
+          <li>Visa e Mastercard sono statunitensi: dove puoi, usa bonifico istantaneo o contante.</li>
+        </ul>
+        <span style="font-size: 13px; color: #6B6F65">{{ 'S8' | fonti }}</span>
+      </article>
+    </div>
+    <p style="margin: 0; font-size: 14px; line-height: 1.55; color: #6B6F65; max-width: 760px">Questa guida non dà consigli di investimento. Prima di spostare risparmi o investimenti, informati sui costi e, se serve, chiedi a un consulente indipendente.</p>
+  </section>
+
+
+  <div style="max-width: 1180px; margin: 0 auto; padding: 0 24px">
+    <figure style="margin: 0; position: relative; height: 440px; border-radius: 32px; overflow: hidden; background: #DCE2D5"><img src="{{ foto('photo-1631771819642-90cee9a2ccac') }}" alt="Pannelli solari su un tetto" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; display: block"><figcaption style="position: absolute; right: 16px; bottom: 14px; font-size: 12px; color: #F7F4EE; background: rgba(29,32,27,0.45); padding: 4px 10px; border-radius: 999px">Foto: <a href="https://unsplash.com/photos/j8bxJBbLjIo" style="color: #F7F4EE; text-decoration: underline">yue chan</a>, Unsplash</figcaption></figure>
+  </div>
+
+
+  <section style="max-width: 1180px; margin: 0 auto; padding: 112px 24px; display: flex; flex-direction: column; gap: 40px">
+    <div style="display: flex; flex-direction: column; gap: 12px; max-width: 760px">
+      <p style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #9A5638">Energia</p>
+      <h2 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: clamp(38px, 5vw, 60px); line-height: 1.04; font-weight: 500; letter-spacing: -0.03em">Comunità energetiche, fornitori, fotovoltaico e consumi.</h2>
+    </div>
+    <div style="display: flex; flex-direction: column; border-top: 1px solid #CFC6B5">
+      <div style="display: flex; flex-wrap: wrap; gap: 16px 48px; padding: 36px 0; border-bottom: 1px solid #CFC6B5">
+        <div style="flex: 0 1 340px; display: flex; gap: 16px; align-items: baseline"><span style="font-family: Newsreader, Georgia, serif; font-size: 26px; font-style: italic; color: var(--accent)">1</span><h3 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: 32px; font-weight: 500; letter-spacing: -0.02em">Comunità energetiche</h3></div>
+        <div style="flex: 1 1 460px; display: flex; flex-direction: column; gap: 10px">
+          <p style="margin: 0; font-size: 17px; line-height: 1.6; color: #3D4139">Cittadini, condomini, piccole imprese, comuni e associazioni possono unirsi per produrre e condividere energia rinnovabile. L'energia condivisa riceve una tariffa incentivante per 20 anni.</p>
+          <p style="margin: 0; font-size: 15px; line-height: 1.55; color: #585C53">Puoi partecipare anche senza un impianto tuo. Chiedi al tuo comune se ne esiste una o se si sta formando. <span style="color: #6B6F65">{{ 'S4, S5' | fonti }}</span></p>
+        </div>
+      </div>
+      <div style="display: flex; flex-wrap: wrap; gap: 16px 48px; padding: 36px 0; border-bottom: 1px solid #CFC6B5">
+        <div style="flex: 0 1 340px; display: flex; gap: 16px; align-items: baseline"><span style="font-family: Newsreader, Georgia, serif; font-size: 26px; font-style: italic; color: var(--accent)">2</span><h3 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: 32px; font-weight: 500; letter-spacing: -0.02em">Fornitore cooperativo</h3></div>
+        <div style="flex: 1 1 460px; display: flex; flex-direction: column; gap: 10px">
+          <p style="margin: 0; font-size: 17px; line-height: 1.6; color: #3D4139">Una cooperativa di energia è di proprietà dei soci, cioè di chi la usa. In Italia c'è ènostra, con oltre 18.000 soci a fine 2025 e impianti rinnovabili finanziati dal basso.</p>
+          <p style="margin: 0; font-size: 15px; line-height: 1.55; color: #585C53">Diffida delle offerte «100% verde» che si basano solo su certificati comprati: chiedi da quali impianti viene l'energia. <span style="color: #6B6F65">{{ 'S6' | fonti }}</span></p>
+        </div>
+      </div>
+      <div style="display: flex; flex-wrap: wrap; gap: 16px 48px; padding: 36px 0; border-bottom: 1px solid #CFC6B5">
+        <div style="flex: 0 1 340px; display: flex; gap: 16px; align-items: baseline"><span style="font-family: Newsreader, Georgia, serif; font-size: 26px; font-style: italic; color: var(--accent)">3</span><h3 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: 32px; font-weight: 500; letter-spacing: -0.02em">Fotovoltaico sul tetto</h3></div>
+        <div style="flex: 1 1 460px; display: flex; flex-direction: column; gap: 10px">
+          <p style="margin: 0; font-size: 17px; line-height: 1.6; color: #3D4139">Produci di giorno, consumi di giorno: lavatrice e lavastoviglie nelle ore di sole. La batteria di accumulo sposta l'energia alla sera.</p>
+          <p style="margin: 0; font-size: 15px; line-height: 1.55; color: #585C53">Nel 2026 la detrazione è del 50% sull'abitazione principale e del 36% sugli altri immobili, in 10 rate annuali. Dal 2027 la legge prevede che scenda. L'energia che non consumi la ritira il GSE con il Ritiro Dedicato. Chiedi sempre più preventivi. <span style="color: #6B6F65">{{ 'S9, S10' | fonti }}</span></p>
+        </div>
+      </div>
+      <div style="display: flex; flex-wrap: wrap; gap: 16px 48px; padding: 36px 0; border-bottom: 1px solid #CFC6B5">
+        <div style="flex: 0 1 340px; display: flex; gap: 16px; align-items: baseline"><span style="font-family: Newsreader, Georgia, serif; font-size: 26px; font-style: italic; color: var(--accent)">4</span><h3 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: 32px; font-weight: 500; letter-spacing: -0.02em">Elettrodomestici</h3></div>
+        <div style="flex: 1 1 460px; display: flex; flex-direction: column; gap: 10px">
+          <p style="margin: 0; font-size: 17px; line-height: 1.6; color: #3D4139">L'etichetta energetica va da A a G. Inquadra il QR code: apre la scheda ufficiale del prodotto nel database europeo EPREL, con i consumi reali.</p>
+          <p style="margin: 0; font-size: 15px; line-height: 1.55; color: #585C53">Il frigorifero è acceso giorno e notte: lì la classe energetica pesa ogni giorno. <span style="color: #6B6F65">{{ 'S7' | fonti }}</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section style="max-width: 1180px; margin: 0 auto; padding: 0 24px 112px">
+    <a href="{{ url_for('page', slug='dove-comprare') }}" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 24px; background: #EDE7DB; color: #1D201B; border-radius: 28px; padding: 40px 44px">
+      <span style="display: flex; flex-direction: column; gap: 8px; max-width: 680px">
+        <span style="font-size: 13px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #9A5638">Compra dalla rete</span>
+        <span style="font-family: Newsreader, Georgia, serif; font-size: clamp(28px, 3.2vw, 40px); font-weight: 500; letter-spacing: -0.025em; line-height: 1.12">Cooperative e comunità energetiche.</span>
+        <span style="font-size: 16px; line-height: 1.55; color: #585C53">{{ "Cooperative energetiche e comunità energetiche funzionano come un GAS dell'elettricità. Nella mappa trovi le altre realtà dell'economia solidale. S4, S6" | fonti(link=False) }}</span>
+      </span>
+      <span style="font-size: 16px; font-weight: 500; color: var(--accent)">Apri la mappa</span>
+    </a>
+  </section>
+
+
+  <section style="border-top: 1px solid #DDD6C8">
+    <div style="max-width: 1180px; margin: 0 auto; padding: 72px 24px; display: flex; flex-direction: column; gap: 24px">
+      <h2 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: 32px; font-weight: 500; letter-spacing: -0.02em">Fonti del capitolo</h2>
+      {% with codes = ['S1', 'S2', 'S3', 'S4', 'S5', 'S6', 'S7', 'S8', 'S9', 'S10'] %}{% include 'partials/fonti_lista.html' %}{% endwith %}
+      <a href="{{ url_for('page', slug='metodo') }}" style="font-size: 15px; font-weight: 500; color: var(--accent)">Link completi e punti da verificare</a>
+    </div>
+  </section>
+
+
+  <section style="max-width: 1180px; margin: 0 auto; padding: 0 24px 96px">
+    <div style="border-top: 1px solid #DDD6C8; padding-top: 36px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 24px; align-items: center">
+      <a href="{{ url_for('page', slug='digitale') }}" style="display: flex; flex-direction: column; gap: 2px; color: #1D201B"><span style="font-size: 13px; color: #585C53">Capitolo 4</span><span style="font-family: Newsreader, Georgia, serif; font-size: 30px; font-weight: 500; letter-spacing: -0.02em">Digitale</span></a>
+      <a href="{{ url_for('page', slug='dove-comprare') }}" style="display: flex; flex-direction: column; gap: 2px; text-align: right; color: #1D201B"><span style="font-size: 13px; color: #585C53">Dove comprare</span><span style="font-family: Newsreader, Georgia, serif; font-size: 30px; font-weight: 500; letter-spacing: -0.02em">La mappa</span></a>
+    </div>
+  </section>
+{% endblock %}

@@ -1,0 +1,95 @@
+{% extends 'base.html' %}
+{% block content %}
+  <section style="max-width: 1180px; margin: 0 auto; padding: 112px 24px 80px; display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-end; justify-content: space-between">
+    <div style="flex: 1 1 560px; display: flex; flex-direction: column; gap: 20px">
+      <p style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #9A5638">Capitolo 1</p>
+      <h1 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: clamp(72px, 12vw, 152px); line-height: 0.92; font-weight: 500; letter-spacing: -0.045em">Cibo<i style="font-weight: 400; color: var(--accent)">.</i></h1>
+      <p style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: clamp(24px, 2.8vw, 34px); line-height: 1.25; color: #3D4139; font-style: italic; max-width: 620px">Cosa guardare quando fai la spesa e dove comprare.</p>
+    </div>
+    <p style="flex: 0 1 380px; margin: 0; font-size: 17px; line-height: 1.6; color: #585C53">La spesa media di una persona, divisa in 25 voci. Per ognuna: cosa guardare in etichetta, dove comprarla fuori dalla grande distribuzione e a cosa fare attenzione.</p>
+  </section>
+
+
+  <div style="max-width: 1180px; margin: 0 auto; padding: 0 24px">
+    <figure style="margin: 0; position: relative; height: 480px; border-radius: 32px; overflow: hidden; background: #E3DCCD"><img src="{{ foto('photo-1591189863430-ab87e120f312') }}" alt="Verdure fresche su un tavolo di legno" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; display: block"><figcaption style="position: absolute; right: 16px; bottom: 14px; font-size: 12px; color: #F7F4EE; background: rgba(29,32,27,0.45); padding: 4px 10px; border-radius: 999px">Foto: <a href="https://unsplash.com/photos/qPcSUERqBAc" style="color: #F7F4EE; text-decoration: underline">Gareth Hubbard</a>, Unsplash</figcaption></figure>
+  </div>
+
+
+  <section style="max-width: 1180px; margin: 0 auto; padding: 112px 24px; display: flex; flex-direction: column; gap: 48px">
+    <h2 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: clamp(38px, 5vw, 60px); line-height: 1.04; font-weight: 500; letter-spacing: -0.03em; max-width: 760px">Tre regole generali.</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 40px">
+      <div style="display: flex; flex-direction: column; gap: 12px; border-top: 2px solid var(--accent); padding-top: 22px">
+        <h3 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: 30px; font-weight: 500; letter-spacing: -0.02em">Lista corta.</h3>
+        <p style="margin: 0; font-size: 16px; line-height: 1.6; color: #585C53">Se in etichetta trovi ingredienti che non useresti mai in cucina (sciroppo di glucosio-fruttosio, aromi, emulsionanti), è un ultra-processato. Più ultra-processati sono associati a 32 esiti negativi per la salute negli studi osservazionali. <span style="color: #6B6F65">{{ 'C1, C3' | fonti }}</span></p>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 12px; border-top: 2px solid var(--accent); padding-top: 22px">
+        <h3 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: 30px; font-weight: 500; letter-spacing: -0.02em">Più piante.</h3>
+        <p style="margin: 0; font-size: 16px; line-height: 1.6; color: #585C53">Almeno 400 g di frutta e verdura al giorno, legumi più volte a settimana, poca carne rossa. È ciò che chiedono OMS, linee guida italiane ed EAT-Lancet. <span style="color: #6B6F65">{{ 'C5, C6, C7' | fonti }}</span></p>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 12px; border-top: 2px solid var(--accent); padding-top: 22px">
+        <h3 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: 30px; font-weight: 500; letter-spacing: -0.02em">Filiera corta.</h3>
+        <p style="margin: 0; font-size: 16px; line-height: 1.6; color: #585C53">Meno passaggi tra chi produce e chi mangia: mercati contadini, gruppi d'acquisto, vendita diretta. <span style="color: #6B6F65">{{ 'C21, C22' | fonti }}</span></p>
+      </div>
+    </div>
+  </section>
+
+
+  {% include 'partials/voci.html' %}
+
+  <section style="max-width: 1180px; margin: 0 auto; padding: 112px 24px; display: flex; flex-direction: column; gap: 44px">
+    <div style="display: flex; flex-direction: column; gap: 12px; max-width: 720px">
+      <h2 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: clamp(38px, 5vw, 60px); line-height: 1.04; font-weight: 500; letter-spacing: -0.03em">Dove si compra.</h2>
+      <p style="margin: 0; font-size: 18px; line-height: 1.55; color: #585C53">Anche al supermercato si compra bene, ma prima prova le altre strade.</p>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px">
+      <div style="background: #EDE7DB; border-radius: 22px; padding: 28px; display: flex; flex-direction: column; gap: 10px">
+        <span style="font-family: Newsreader, Georgia, serif; font-size: 26px; font-style: italic; color: var(--accent)">01</span>
+        <h3 style="margin: 0; font-size: 20px; font-weight: 600">Mercati contadini</h3>
+        <p style="margin: 0; font-size: 15px; line-height: 1.55; color: #585C53">Agricoltori della zona che vendono soprattutto i propri prodotti (DM 20/11/2007). Puoi chiedere come e dove. <span style="color: #6B6F65">{{ 'C21, C23' | fonti }}</span></p>
+      </div>
+      <div style="background: #EDE7DB; border-radius: 22px; padding: 28px; display: flex; flex-direction: column; gap: 10px">
+        <span style="font-family: Newsreader, Georgia, serif; font-size: 26px; font-style: italic; color: var(--accent)">02</span>
+        <h3 style="margin: 0; font-size: 20px; font-weight: 600">Gruppi d'acquisto</h3>
+        <p style="margin: 0; font-size: 15px; line-height: 1.55; color: #585C53">I GAS: famiglie che ordinano insieme dai produttori, spesso per farine, legumi, olio. <a href="{{ url_for('page', slug='dove-comprare') }}" style="color: var(--accent); font-weight: 500">Trovane uno</a> <span style="color: #6B6F65">{{ 'C22' | fonti }}</span></p>
+      </div>
+      <div style="background: #EDE7DB; border-radius: 22px; padding: 28px; display: flex; flex-direction: column; gap: 10px">
+        <span style="font-family: Newsreader, Georgia, serif; font-size: 26px; font-style: italic; color: var(--accent)">03</span>
+        <h3 style="margin: 0; font-size: 20px; font-weight: 600">Dal produttore</h3>
+        <p style="margin: 0; font-size: 15px; line-height: 1.55; color: #585C53">Frantoi, caseifici, aziende agricole, pescherie del porto, forni.</p>
+      </div>
+      <div style="background: #F7F4EE; border: 1px solid #DDD6C8; border-radius: 22px; padding: 28px; display: flex; flex-direction: column; gap: 10px">
+        <span style="font-family: Newsreader, Georgia, serif; font-size: 26px; font-style: italic; color: #A39C8E">04</span>
+        <h3 style="margin: 0; font-size: 20px; font-weight: 600">Il supermercato</h3>
+        <p style="margin: 0; font-size: 15px; line-height: 1.55; color: #585C53">Leggi le etichette con questa guida: origine, ingredienti, marchi UE.</p>
+      </div>
+    </div>
+    <a href="{{ url_for('page', slug='dove-comprare') }}" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 24px; background: #E3DCCD; color: #1D201B; border-radius: 28px; padding: 40px 44px">
+      <span style="display: flex; flex-direction: column; gap: 8px; max-width: 680px">
+        <span style="font-size: 13px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #9A5638">Compra dalla rete</span>
+        <span style="font-family: Newsreader, Georgia, serif; font-size: clamp(28px, 3.2vw, 40px); font-weight: 500; letter-spacing: -0.025em; line-height: 1.12">Pasta, legumi e olio dai beni confiscati. Verdura da una CSA.</span>
+        <span style="font-size: 16px; line-height: 1.55; color: #585C53">Con un GAS: farine, legumi secchi, riso, olio, passata, frutta secca, che si conservano e si ordinano ogni tanto. Con una CSA o al mercato contadino: verdura, frutta e uova di stagione. Dai beni confiscati: pasta, legumi, olio. Dal commercio equo: caffè, cacao, tè. <span style="color: #6B6F65">{{ 'R15, R20, R7, R9' | fonti(link=False) }}</span></span>
+      </span>
+      <span style="font-size: 16px; font-weight: 500; color: var(--accent)">Apri la mappa</span>
+    </a>
+  </section>
+
+
+  <section style="border-top: 1px solid #DDD6C8">
+    <div style="max-width: 1180px; margin: 0 auto; padding: 72px 24px; display: flex; flex-direction: column; gap: 24px">
+      <h2 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: 32px; font-weight: 500; letter-spacing: -0.02em">Fonti del capitolo</h2>
+      {% with codes = ['C1', 'C2', 'C3', 'C4', 'C5', 'C6', 'C7', 'C8', 'C9', 'C10', 'C11', 'C12', 'C13', 'C14', 'C15', 'C16', 'C17', 'C18', 'C19', 'C20', 'C21', 'C22', 'C23', 'C24', 'C25', 'C26', 'C27', 'R7', 'R9', 'R15', 'R20'] %}{% include 'partials/fonti_lista.html' %}{% endwith %}
+      <a href="{{ url_for('page', slug='metodo') }}" style="font-size: 15px; font-weight: 500; color: var(--accent)">Link completi e punti da verificare</a>
+    </div>
+  </section>
+
+
+  <section style="max-width: 1180px; margin: 0 auto; padding: 0 24px 96px">
+    <div style="border-top: 1px solid #DDD6C8; padding-top: 36px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 24px; align-items: center">
+      <a href="{{ url_for('index') }}" style="font-size: 16px; color: #3D4139; min-height: 44px; display: inline-flex; align-items: center">Indice</a>
+      <a href="{{ url_for('page', slug='vestire') }}" style="display: flex; flex-direction: column; gap: 2px; text-align: right; color: #1D201B">
+        <span style="font-size: 13px; color: #585C53">Capitolo 2</span>
+        <span style="font-family: Newsreader, Georgia, serif; font-size: 30px; font-weight: 500; letter-spacing: -0.02em">Vestire</span>
+      </a>
+    </div>
+  </section>
+{% endblock %}

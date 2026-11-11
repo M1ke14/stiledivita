@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+{% block content %}
+  <section style="max-width: 1180px; margin: 0 auto; padding: 112px 24px 56px; display: flex; flex-direction: column; gap: 20px">
+    <p style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #9A5638">Verificare</p>
+    <h1 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: clamp(56px, 9vw, 120px); line-height: 0.95; font-weight: 500; letter-spacing: -0.045em">Tutte le fonti<i style="font-weight: 400; color: var(--accent)">.</i></h1>
+    <p style="margin: 0; font-size: 18px; line-height: 1.6; color: #3D4139; max-width: 760px">Ogni codice che trovi nella guida (per esempio C3 o R15) porta qui. Apri il link e controlla che la fonte dica quello che ho scritto. Se trovi un errore, <a href="{{ url_for('page', slug='note') }}#contatti">scrivimi</a>.</p>
+    <p style="margin: 0; font-size: 15px; color: #585C53">{{ FONTI | length }} fonti. Ultima verifica completa: 4 novembre 2026.</p>
+    <nav aria-label="Gruppi di fonti" style="display: flex; flex-wrap: wrap; gap: 8px; padding-top: 8px">
+      {% for g in groups %}<a class="pill" href="#{{ g | lower | replace(' ', '-') }}">{{ g }}</a>{% endfor %}
+      <a class="pill" href="#marchi">Marchi</a>
+      <a class="pill" href="#servizi">Servizi digitali</a>
+      <a class="pill" href="#foto">Foto</a>
+    </nav>
+  </section>
+
+  {% for g, items in groups.items() %}
+  <section id="{{ g | lower | replace(' ', '-') }}" style="max-width: 1180px; margin: 0 auto; padding: 40px 24px; display: flex; flex-direction: column; gap: 16px; scroll-margin-top: 80px">
+    <h2 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: 36px; font-weight: 500; letter-spacing: -0.02em">{{ g }}</h2>
+    <table class="tabella-fonti">
+      <thead><tr><th>Codice</th><th>Fonte</th><th>Tipo</th><th>Cosa sostiene nella guida</th></tr></thead>
+      <tbody>
+        {% for f in items %}
+        <tr id="{{ f.codice }}">
+          <td>{{ f.codice }}</td>
+          <td>{% if f.url %}<a href="{{ f.url }}" rel="noopener">{{ f.titolo }}</a>{% else %}{{ f.titolo }}{% endif %}</td>
+          <td>{{ f.tipo }}</td>
+          <td>{{ f.sostiene }}{% if f.nota %}<span class="nota">{{ f.nota }}</span>{% endif %}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </section>
+  {% endfor %}
+
+  <section id="marchi" style="max-width: 1180px; margin: 0 auto; padding: 40px 24px; display: flex; flex-direction: column; gap: 16px; scroll-margin-top: 80px">
+    <h2 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: 36px; font-weight: 500; letter-spacing: -0.02em">Marchi e standard</h2>
+    <table class="tabella-fonti">
+      <thead><tr><th>Marchio</th><th>Dove lo trovi</th><th>Cosa garantisce</th><th>Regola</th></tr></thead>
+      <tbody>
+        {% for m in extra.marchi %}
+        <tr><td>{{ m.nome }}</td><td>{{ m.dove }}</td><td>{{ m.garantisce }}</td><td>{% if m.url %}<a href="{{ m.url }}" rel="noopener">{{ m.legge }}</a>{% else %}{{ m.legge }}{% endif %}</td></tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </section>
+
+  <section id="servizi" style="max-width: 1180px; margin: 0 auto; padding: 40px 24px; display: flex; flex-direction: column; gap: 16px; scroll-margin-top: 80px">
+    <h2 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: 36px; font-weight: 500; letter-spacing: -0.02em">Servizi digitali citati</h2>
+    <table class="tabella-fonti">
+      <thead><tr><th>Al posto di</th><th>Alternativa</th><th>Paese</th><th>Stato</th></tr></thead>
+      <tbody>
+        {% for s in extra.servizi %}
+        <tr><td>{{ s.al }}</td><td>{% for url, nome in s.links %}<a href="{{ url }}" rel="noopener">{{ nome }}</a>{% if not loop.last %}, {% endif %}{% else %}{{ s.alternativa }}{% endfor %}</td><td>{{ s.paese }}</td><td>{{ s.stato }}</td></tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </section>
+
+  <section id="foto" style="max-width: 1180px; margin: 0 auto; padding: 40px 24px 112px; display: flex; flex-direction: column; gap: 16px; scroll-margin-top: 80px">
+    <h2 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: 36px; font-weight: 500; letter-spacing: -0.02em">Foto</h2>
+    <p style="margin: 0; font-size: 16px; line-height: 1.6; color: #585C53; max-width: 720px">Le foto vengono da Unsplash e si possono usare gratis.</p>
+    <table class="tabella-fonti">
+      <thead><tr><th>Pagina</th><th>Foto</th><th>Autore</th><th>Licenza</th></tr></thead>
+      <tbody>
+        {% for p in foto_crediti %}
+        <tr><td>{{ p.pagina }}</td><td>{{ p.descrizione }}</td><td><a href="{{ p.url }}" rel="noopener">{{ p.autore }}</a></td><td>{{ p.licenza }}</td></tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </section>
+{% endblock %}

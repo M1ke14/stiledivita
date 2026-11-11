@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+{% block content %}
+  <section style="max-width: 1180px; margin: 0 auto; padding: 112px 24px 80px; display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-end; justify-content: space-between">
+    <div style="flex: 1 1 560px; display: flex; flex-direction: column; gap: 20px">
+      <p style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #9A5638">Capitolo 3</p>
+      <h1 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: clamp(72px, 12vw, 152px); line-height: 0.92; font-weight: 500; letter-spacing: -0.045em">Casa e cura<i style="font-weight: 400; color: var(--accent)">.</i></h1>
+      <p style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: clamp(24px, 2.8vw, 34px); line-height: 1.25; color: #3D4139; font-style: italic; max-width: 640px">Pulizia, bucato, cucina e cura della persona.</p>
+    </div>
+    <p style="flex: 0 1 380px; margin: 0; font-size: 17px; line-height: 1.6; color: #585C53">Per pulire, lavare e prenderti cura di te servono molti meno flaconi di quelli che vende la pubblicità.</p>
+  </section>
+
+
+  <div style="max-width: 1180px; margin: 0 auto; padding: 0 24px">
+    <figure style="margin: 0; position: relative; height: 440px; border-radius: 32px; overflow: hidden; background: #DFE0D6"><img src="{{ foto('photo-1679590988942-82d1575a83ae') }}" alt="Barattolo di vetro con sapone" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; display: block"><figcaption style="position: absolute; right: 16px; bottom: 14px; font-size: 12px; color: #F7F4EE; background: rgba(29,32,27,0.45); padding: 4px 10px; border-radius: 999px">Foto: <a href="https://unsplash.com/photos/wCDM6tWpQr4" style="color: #F7F4EE; text-decoration: underline">Semiha Weber</a>, Unsplash</figcaption></figure>
+  </div>
+
+
+  <section style="max-width: 1180px; margin: 0 auto; padding: 112px 24px; display: flex; flex-wrap: wrap; gap: 48px">
+    <div style="flex: 1 1 360px; display: flex; flex-direction: column; gap: 14px">
+      <p style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #9A5638">Il kit di base</p>
+      <h2 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: clamp(38px, 5vw, 60px); line-height: 1.04; font-weight: 500; letter-spacing: -0.03em">I cinque prodotti di base.</h2>
+      <p style="margin: 0; font-size: 16px; line-height: 1.6; color: #585C53">Sono usi domestici comuni e si vede subito se funzionano. Dove serve una fonte, la trovi nelle voci qui sotto.</p>
+    </div>
+    <ul style="flex: 1 1 520px; list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px">
+      <li style="background: #EDE7DB; border-radius: 20px; padding: 22px; display: flex; flex-direction: column; gap: 6px"><span style="font-family: Newsreader, Georgia, serif; font-size: 26px; font-weight: 500">Sapone neutro</span><span style="font-size: 14px; line-height: 1.5; color: #585C53">Superfici, pavimenti, mani.</span></li>
+      <li style="background: #EDE7DB; border-radius: 20px; padding: 22px; display: flex; flex-direction: column; gap: 6px"><span style="font-family: Newsreader, Georgia, serif; font-size: 26px; font-weight: 500">Aceto o acido citrico</span><span style="font-size: 14px; line-height: 1.5; color: #585C53">Calcare. Mai su marmo e pietra.</span></li>
+      <li style="background: #EDE7DB; border-radius: 20px; padding: 22px; display: flex; flex-direction: column; gap: 6px"><span style="font-family: Newsreader, Georgia, serif; font-size: 26px; font-weight: 500">Bicarbonato</span><span style="font-size: 14px; line-height: 1.5; color: #585C53">Abrasivo delicato, odori.</span></li>
+      <li style="background: #EDE7DB; border-radius: 20px; padding: 22px; display: flex; flex-direction: column; gap: 6px"><span style="font-family: Newsreader, Georgia, serif; font-size: 26px; font-weight: 500">Panno in microfibra</span><span style="font-size: 14px; line-height: 1.5; color: #585C53">Toglie lo sporco con poca chimica.</span></li>
+      <li style="background: var(--accent); color: #F7F4EE; border-radius: 20px; padding: 22px; display: flex; flex-direction: column; gap: 6px"><span style="font-family: Newsreader, Georgia, serif; font-size: 26px; font-weight: 500">Un detersivo con il fiore</span><span style="font-size: 14px; line-height: 1.5; color: #E1E8DE">{{ 'EU Ecolabel, per bucato e piatti. K1' | fonti }}</span></li>
+    </ul>
+  </section>
+
+
+  <section style="max-width: 1180px; margin: 0 auto; padding: 0 24px 64px">
+    <div style="background: #F1E3D6; border-radius: 22px; padding: 26px 28px; display: flex; gap: 16px; align-items: flex-start">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#7A4A2E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 auto; margin-top: 2px"><path d="M10.3 3.9L1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"></path><path d="M12 9v4M12 17h.01"></path></svg>
+      <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #4A2E1D"><strong>Sicurezza.</strong> Non mescolare mai candeggina con aceto, anticalcare o ammoniaca: si liberano gas tossici. Tieni tutti i prodotti lontano dai bambini, anche quelli «naturali».</p>
+    </div>
+  </section>
+
+
+  {% include 'partials/voci.html' %}
+
+  <section style="max-width: 1180px; margin: 0 auto; padding: 0 24px 112px">
+    <a href="{{ url_for('page', slug='dove-comprare') }}" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 24px; background: #EDE7DB; color: #1D201B; border-radius: 28px; padding: 40px 44px">
+      <span style="display: flex; flex-direction: column; gap: 8px; max-width: 680px">
+        <span style="font-size: 13px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #9A5638">Compra dalla rete</span>
+        <span style="font-family: Newsreader, Georgia, serif; font-size: clamp(28px, 3.2vw, 40px); font-weight: 500; letter-spacing: -0.025em; line-height: 1.12">Detersivi e saponi tramite i GAS.</span>
+        <span style="font-size: 16px; line-height: 1.55; color: #585C53">{{ 'Alcuni produttori hanno listini dedicati ai GAS, con confezioni grandi o sfuse: per esempio La Saponaria, a Pesaro. Meno plastica, prezzo più basso. R37' | fonti(link=False) }}</span>
+      </span>
+      <span style="font-size: 16px; font-weight: 500; color: var(--accent)">Apri la mappa</span>
+    </a>
+  </section>
+
+
+  <section style="border-top: 1px solid #DDD6C8">
+    <div style="max-width: 1180px; margin: 0 auto; padding: 72px 24px; display: flex; flex-direction: column; gap: 24px">
+      <h2 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: 32px; font-weight: 500; letter-spacing: -0.02em">Fonti del capitolo</h2>
+      {% with codes = ['K1', 'K2', 'K3', 'K4', 'K5', 'K6', 'K7', 'K8', 'K9', 'S7', 'V2'] %}{% include 'partials/fonti_lista.html' %}{% endwith %}
+      <a href="{{ url_for('page', slug='metodo') }}" style="font-size: 15px; font-weight: 500; color: var(--accent)">Link completi e punti da verificare</a>
+    </div>
+  </section>
+
+
+  <section style="max-width: 1180px; margin: 0 auto; padding: 0 24px 96px">
+    <div style="border-top: 1px solid #DDD6C8; padding-top: 36px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 24px; align-items: center">
+      <a href="{{ url_for('page', slug='vestire') }}" style="display: flex; flex-direction: column; gap: 2px; color: #1D201B"><span style="font-size: 13px; color: #585C53">Capitolo 2</span><span style="font-family: Newsreader, Georgia, serif; font-size: 30px; font-weight: 500; letter-spacing: -0.02em">Vestire</span></a>
+      <a href="{{ url_for('page', slug='digitale') }}" style="display: flex; flex-direction: column; gap: 2px; text-align: right; color: #1D201B"><span style="font-size: 13px; color: #585C53">Capitolo 4</span><span style="font-family: Newsreader, Georgia, serif; font-size: 30px; font-weight: 500; letter-spacing: -0.02em">Digitale</span></a>
+    </div>
+  </section>
+{% endblock %}

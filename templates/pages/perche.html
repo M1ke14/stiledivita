@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% block content %}
+  <section style="max-width: 1180px; margin: 0 auto; padding: 120px 24px 72px; display: flex; flex-direction: column; gap: 22px">
+    <p style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #9A5638">Introduzione</p>
+    <h1 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: clamp(64px, 11vw, 148px); line-height: 0.94; font-weight: 500; letter-spacing: -0.045em">Perché ho fatto <i style="font-weight: 400; color: var(--accent)">questo sito.</i></h1>
+    {% if meta.sottotitolo %}<p style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: clamp(24px, 2.8vw, 34px); line-height: 1.3; color: #3D4139; font-style: italic; max-width: 760px">{{ meta.sottotitolo }}</p>{% endif %}
+  </section>
+
+  <section style="max-width: 1180px; margin: 0 auto; padding: 0 24px 112px; display: flex; flex-wrap: wrap; gap: 56px; align-items: flex-start">
+    <article class="prosa" style="flex: 1 1 560px; max-width: 760px">
+      {{ body }}
+    </article>
+  </section>
+
+  {% if meta.idee %}
+  <section style="background: #EDE7DB">
+    <div style="max-width: 1180px; margin: 0 auto; padding: 112px 24px; display: flex; flex-direction: column; gap: 48px">
+      <div style="display: flex; flex-direction: column; gap: 12px; max-width: 720px">
+        <p style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #9A5638">La filosofia</p>
+        <h2 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: clamp(38px, 5vw, 60px); line-height: 1.04; font-weight: 500; letter-spacing: -0.03em">Le idee su cui <i style="font-weight: 400">si basa il sito.</i></h2>
+      </div>
+      <ol style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column">
+        {% for idea in meta.idee %}
+        <li style="display: flex; flex-wrap: wrap; gap: 12px 40px; padding: 32px 0; border-top: 1px solid #CFC6B5{% if loop.last %}; border-bottom: 1px solid #CFC6B5{% endif %}">
+          <span style="flex: 0 0 64px; font-family: Newsreader, Georgia, serif; font-size: 34px; font-style: italic; color: var(--accent)">{{ loop.index }}</span>
+          <h3 style="flex: 1 1 340px; margin: 0; font-family: Newsreader, Georgia, serif; font-size: 34px; font-weight: 500; letter-spacing: -0.02em; line-height: 1.1">{{ idea.titolo }}</h3>
+          <p style="flex: 1 1 380px; margin: 0; font-size: 17px; line-height: 1.6; color: #3D4139">{{ idea.testo }}</p>
+        </li>
+        {% endfor %}
+      </ol>
+    </div>
+  </section>
+  {% endif %}
+
+  <section style="max-width: 1180px; margin: 0 auto; padding: 112px 24px; display: flex; flex-direction: column; gap: 40px">
+    <h2 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: clamp(34px, 4.2vw, 50px); line-height: 1.06; font-weight: 500; letter-spacing: -0.03em">Alcune cose da sapere.</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px">
+      <div style="border: 1px solid #DDD6C8; border-radius: 22px; padding: 28px; display: flex; flex-direction: column; gap: 8px"><h3 style="margin: 0; font-size: 18px; font-weight: 600">Gratis</h3><p style="margin: 0; font-size: 15px; line-height: 1.55; color: #585C53">Il sito non vende niente e non guadagna sui link.</p></div>
+      <div style="border: 1px solid #DDD6C8; border-radius: 22px; padding: 28px; display: flex; flex-direction: column; gap: 8px"><h3 style="margin: 0; font-size: 18px; font-weight: 600">Senza sponsor</h3><p style="margin: 0; font-size: 15px; line-height: 1.55; color: #585C53">Nessun marchio paga per esserci o per sparire.</p></div>
+      <div style="border: 1px solid #DDD6C8; border-radius: 22px; padding: 28px; display: flex; flex-direction: column; gap: 8px"><h3 style="margin: 0; font-size: 18px; font-weight: 600">Niente consigli medici</h3><p style="margin: 0; font-size: 15px; line-height: 1.55; color: #585C53">Per la salute chiedi al tuo medico.</p></div>
+      <div style="border: 1px solid #DDD6C8; border-radius: 22px; padding: 28px; display: flex; flex-direction: column; gap: 8px"><h3 style="margin: 0; font-size: 18px; font-weight: 600">Sempre in aggiornamento</h3><p style="margin: 0; font-size: 15px; line-height: 1.55; color: #585C53">Ogni fonte dice quando l'ho controllata l'ultima volta.</p></div>
+    </div>
+  </section>
+
+  <section style="max-width: 1180px; margin: 0 auto; padding: 0 24px 112px">
+    <div style="background: var(--accent); color: #F7F4EE; border-radius: 28px; padding: 48px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 28px">
+      <div style="display: flex; flex-direction: column; gap: 10px; max-width: 620px">
+        <span style="font-size: 13px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #CFDCCB">Da dove iniziare</span>
+        <span style="font-family: Newsreader, Georgia, serif; font-size: clamp(30px, 3.6vw, 44px); font-weight: 500; letter-spacing: -0.025em; line-height: 1.1">Puoi partire dal cibo oppure dalla mappa.</span>
+      </div>
+      <div style="display: flex; gap: 12px; flex-wrap: wrap">
+        <a href="{{ url_for('page', slug='cibo') }}" style="background: #F7F4EE; color: #1D201B; border-radius: 999px; padding: 14px 24px; font-size: 15px; font-weight: 500">Inizia dal cibo</a>
+        <a href="{{ url_for('page', slug='dove-comprare') }}" style="border: 1px solid #CFDCCB; color: #F7F4EE; border-radius: 999px; padding: 14px 24px; font-size: 15px; font-weight: 500">Trova la rete vicino a te</a>
+      </div>
+    </div>
+  </section>
+{% endblock %}

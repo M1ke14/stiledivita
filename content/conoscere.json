@@ -1,0 +1,485 @@
+{
+ "D": {
+  "passi": [
+   {
+    "id": "p1",
+    "n": "1",
+    "titolo": "Cos'è un GAS",
+    "frase": "Un gruppo di famiglie che compra insieme, direttamente da piccoli produttori che conosce.",
+    "come": "Il gruppo sceglie i produttori, raccoglie gli ordini dei soci, compra e distribuisce. Ogni GAS si organizza da sé: non c'è una sede centrale né un regolamento unico. Spesso c'è un referente per ogni produttore e un calendario con le scadenze degli ordini. Il prezzo cercato è giusto per chi produce e sostenibile per chi compra. A volte si risparmia anche.",
+    "costo": "Di solito una quota associativa piccola, quando c'è. Il tempo è quello di un ordine e di un ritiro. Prima o poi ti verrà chiesto di seguire un produttore: è il modo in cui il gruppo sta in piedi.",
+    "settimana": "Cerca il tuo comune sulla mappa di e-circles o su quella della Rete di economia solidale. Scrivi a un gruppo e chiedi di partecipare a una consegna, prima di iscriverti.",
+    "attenzione": "Molti GAS sono informali e cambiano nel tempo. Un gruppo in mappa può non essere più attivo. Se non ne trovi uno vicino, di solito un nuovo GAS nasce da uno vicino che si divide.",
+    "fonti": [
+     "R4",
+     "R15",
+     "R16"
+    ]
+   },
+   {
+    "id": "p2",
+    "n": "2",
+    "titolo": "Cos'è una CSA",
+    "frase": "Una comunità che paga in anticipo il lavoro di un'azienda agricola e ne divide il raccolto, nel bene e nel male.",
+    "come": "All'inizio dell'anno agricolo si fa un piano delle colture e un bilancio. Il bilancio diviso per il numero di soci dà la quota. Poi ogni settimana ricevi la tua parte del raccolto. Ad Arvaia, a Bologna, la quota intera vale in media 6 o 7 kg di verdura a settimana, ritirati in 8 punti della città per 50 settimane l'anno. La quota serve a pagare la produzione di tutta la stagione.",
+    "costo": "Dipende dalla CSA. Ad Arvaia si entra come soci con 100 euro di capitale sociale più 15 euro di spese, poi si paga la quota annuale. Ci si può offrire per lavori nei campi o nella distribuzione.",
+    "settimana": "Chiedi a un GAS vicino se conosce una CSA. In Italia le CSA sono ancora poche: in uno studio del 2021 ne sono state mappate 16.",
+    "attenzione": "Se il raccolto va male, ricevi meno. È il patto. Prima di pagare un anno intero, visita i campi e chiedi come sono andati gli anni passati.",
+    "fonti": [
+     "R18",
+     "R19",
+     "R20"
+    ]
+   },
+   {
+    "id": "p3",
+    "n": "3",
+    "titolo": "Cooperative sociali",
+    "frase": "Imprese nate per l'interesse della comunità, che offrono servizi sociali (tipo A) o danno lavoro a persone svantaggiate (tipo B).",
+    "come": "Nelle cooperative di tipo B almeno il 30% dei lavoratori è una persona svantaggiata: persone con disabilità, con dipendenze, in uscita dal carcere. Lavorano in agricoltura, nel tessile, nel riuso, nelle pulizie. A Milano, Vesti Solidale raccoglie abiti usati dal 1998 e su 145 lavoratori il 31% è svantaggiato secondo la legge.",
+    "costo": "Compri come in un negozio normale. Nessun impegno.",
+    "settimana": "Cerca \"albo regionale cooperative sociali\" con il nome della tua regione. Ogni Regione tiene un albo pubblico.",
+    "attenzione": "\"Cooperativa sociale\" dice come è organizzata l'impresa. Il prodotto valutalo come faresti con chiunque.",
+    "fonti": [
+     "R1",
+     "R33"
+    ]
+   },
+   {
+    "id": "p4",
+    "n": "4",
+    "titolo": "Prodotti dai beni confiscati",
+    "frase": "Pasta, olio, vino, legumi coltivati su terreni tolti alle mafie e affidati a cooperative.",
+    "come": "La legge 109 del 1996 ha reso possibile l'uso sociale dei beni confiscati. È nata da una raccolta di oltre un milione di firme promossa da Libera. Nel 2019 Libera contava 777 realtà del terzo settore che gestiscono beni confiscati, in 17 regioni. Molti prodotti del circuito Libera Terra sono biologici.",
+    "costo": "Nessun impegno. Si trovano nella bottega online di Libera Terra, in alcune botteghe del commercio equo e in alcuni supermercati.",
+    "settimana": "Sostituisci un solo prodotto della dispensa, per esempio la pasta.",
+    "attenzione": "Il valore è soprattutto sociale. Il prodotto viene spesso dal Sud: se vivi lontano, non è \"locale\".",
+    "fonti": [
+     "R7",
+     "R30",
+     "R31"
+    ]
+   },
+   {
+    "id": "p5",
+    "n": "5",
+    "titolo": "Mercati contadini",
+    "frase": "Mercati dove vendono gli agricoltori della zona, soprattutto quello che coltivano o allevano loro (DM 20/11/2007).",
+    "come": "Ci sono reti nazionali con regole proprie. I Mercati della Terra seguono le linee guida di Slow Food. Campagna Amica, legata a Coldiretti, ha una ricerca per mercati e aziende. A Bologna i mercati di Campi Aperti controllano i produttori con una garanzia partecipata.",
+    "costo": "Una mattina, di solito nel fine settimana.",
+    "settimana": "Vai al mercato più vicino e fai una sola domanda a un banco: dove si coltiva, come si tratta.",
+    "attenzione": "Non tutti i mercati all'aperto sono mercati contadini. Se un banco vende banane o arance a novembre in Piemonte, è un rivenditore.",
+    "fonti": [
+     "C21",
+     "R10",
+     "R11",
+     "R22"
+    ]
+   },
+   {
+    "id": "p6",
+    "n": "6",
+    "titolo": "Fattorie sociali e agricoltura sociale",
+    "frase": "Aziende agricole che usano il lavoro nei campi per includere persone fragili o per offrire servizi alla comunità (L. 141/2015).",
+    "come": "La legge riconosce quattro tipi di attività: inserimento lavorativo, servizi sociali per la comunità, attività terapeutiche, educazione. Le Regioni tengono elenchi delle fattorie sociali. Campagna Amica ha una sezione con ricerca dedicata.",
+    "costo": "Compri prodotti, oppure partecipi a una visita o a un corso.",
+    "settimana": "Cerca \"elenco regionale fattorie sociali\" con la tua regione.",
+    "attenzione": "Il riconoscimento riguarda l'attività sociale. Se ti interessa il metodo di coltivazione, chiedi se sono anche biologici.",
+    "fonti": [
+     "R8",
+     "R11"
+    ]
+   },
+   {
+    "id": "p7",
+    "n": "7",
+    "titolo": "Commercio equo",
+    "frase": "Commercio con produttori di paesi poveri, con prezzo giusto, filiera trasparente e niente lavoro minorile o forzato.",
+    "come": "In Italia Equo Garantito verifica le organizzazioni che aderiscono alla Carta italiana dei criteri. Quasi 200 punti vendita aderiscono. Il sito ha l'elenco delle botteghe regione per regione.",
+    "costo": "Prezzi un po' più alti dei prodotti convenzionali. Nessun impegno.",
+    "settimana": "Compra lì una cosa che in Europa non cresce: caffè, cacao, tè, zucchero di canna, spezie.",
+    "attenzione": "I prodotti arrivano da lontano. Per ciò che si coltiva in Europa, è meglio il produttore vicino.",
+    "fonti": [
+     "R9"
+    ]
+   },
+   {
+    "id": "p8",
+    "n": "8",
+    "titolo": "DES e reti di economia solidale",
+    "frase": "Reti locali che mettono in contatto GAS, produttori, cooperative e associazioni di un territorio.",
+    "come": "Un DES (distretto di economia solidale) fa circolare informazioni, prodotti e servizi tra chi ne fa parte. I distretti più attivi elencati dalla rete nazionale sono a Bergamo, in Brianza, a Parma, Varese, Torino, Como, Treviso e Roma. Alcune Regioni li riconoscono per legge.",
+    "costo": "Di solito niente. Puoi solo leggere il loro sito o andare a una fiera.",
+    "settimana": "Cerca se c'è un DES nella tua provincia nell'archivio delle organizzazioni della Rete di economia solidale.",
+    "attenzione": "Le reti sono fatte di volontari. Alcuni siti non sono aggiornati.",
+    "fonti": [
+     "R6",
+     "R16",
+     "R28",
+     "R29"
+    ]
+   }
+  ],
+  "appro": [
+   {
+    "id": "b1",
+    "titolo": "Breve storia dei GAS in Italia",
+    "paras": [
+     {
+      "h": "",
+      "t": "Il primo GAS nasce a Fidenza nel 1994. Pochi anni dopo i gruppi si collegano in una rete, nel 1997. Nel 1999, al primo incontro nazionale a Fidenza, scrivono il Documento base dei GAS. Il testo spiega cosa distingue un gruppo solidale da un semplice gruppo d'acquisto: il consumo critico, le relazioni tra le persone, il rispetto per chi produce e per la natura. Parla di un modello di sviluppo «costruito dal basso»."
+     },
+     {
+      "h": "",
+      "t": "Negli anni Duemila i GAS crescono molto. Nel 2014 Cristina Grasseni li descrive come una delle forme più diffuse di rete alimentare alternativa in Italia. Secondo l'Osservatorio OCIS, citato da Avvenire nel 2024, i GAS censiti sono circa mille ma quelli reali sono almeno il doppio. La rete europea delle CSA conferma l'ordine di grandezza: circa mille GAS registrati e almeno altrettanti non registrati."
+     },
+     {
+      "h": "",
+      "t": "Con il tempo nascono i distretti di economia solidale, che uniscono GAS, produttori e associazioni dello stesso territorio, e un coordinamento nazionale, il Tavolo RES. Alcune istituzioni li riconoscono: la Provincia di Trento nel 2010, l'Umbria nel 2011, l'Emilia-Romagna nel 2014, il Friuli Venezia Giulia nel 2017."
+     },
+     {
+      "h": "",
+      "t": "Oggi i GAS affrontano una sfida diversa. Il cibo di qualità si trova anche altrove, e molte persone comprano meglio ma da sole. Chi resta in un GAS lo fa anche per la relazione con il gruppo e con i produttori."
+     }
+    ],
+    "fonti": [
+     "R2",
+     "R3",
+     "R6",
+     "R14",
+     "R16",
+     "R17",
+     "R19",
+     "R27",
+     "R28",
+     "R29"
+    ]
+   },
+   {
+    "id": "b2",
+    "titolo": "Come funziona una CSA, in soldi",
+    "paras": [
+     {
+      "h": "",
+      "t": "In una CSA paghi all'inizio della stagione e con quei soldi il contadino copre la produzione. La dichiarazione europea sulle CSA, adottata a Ostrava nel 2016, la definisce un accordo diretto e di lungo periodo tra chi coltiva e chi mangia, con rischi, responsabilità e benefici condivisi."
+     },
+     {
+      "h": "",
+      "t": "L'esempio più studiato in Italia è Arvaia, cooperativa di Bologna. Ogni anno agricolo va dal 1° aprile al 31 marzo. I soci approvano il piano delle colture e il bilancio di previsione. Il bilancio diviso per il numero di soci iscritti dà una \"quota media consigliata\". In assemblea i soci si impegnano a coprire il bilancio: chi può mette di più, chi non può mette meno. Chi entra a metà anno paga solo le settimane rimaste."
+     },
+     {
+      "h": "",
+      "t": "Cosa ottiene il contadino: un reddito sicuro prima di seminare, senza dover vendere a un grossista a un prezzo che non decide. Cosa ottiene il socio: verdura freschissima, la sicurezza di sapere da dove viene, e voce nelle decisioni."
+     },
+     {
+      "h": "",
+      "t": "Le CSA italiane però sono poche e piccole. Uno studio del 2021 ne ha mappate 16 tra Lombardia, Veneto, Trentino, Emilia-Romagna, Marche, Toscana, Lazio e Puglia; un anno dopo quattro avevano chiuso. Il problema più citato è tenere i soci nel tempo. Solo due CSA su sedici variavano la quota in base alle possibilità dei soci. Secondo gli autori la grande diffusione dei GAS spiega in parte perché le CSA in Italia crescono più lentamente. La prima CSA italiana è considerata CAPS, nella zona di Pisa."
+     },
+     {
+      "h": "Attenzione al pagamento anticipato",
+      "t": "Pagare prima funziona quando c'è fiducia e trasparenza. Il caso Funky Tomato lo mostra al contrario: un progetto di pomodoro senza sfruttamento, con preordini da GAS e privati, dal 2019 ha lasciato molti ordini pagati senza consegna né rimborso, secondo quanto riportato dalla stampa nel 2021. Prima di pagare un anno intero, conosci le persone e chiedi i bilanci."
+     }
+    ],
+    "fonti": [
+     "R17",
+     "R18",
+     "R19",
+     "R20",
+     "R25",
+     "R26"
+    ]
+   },
+   {
+    "id": "b3",
+    "titolo": "Garanzia partecipata e biologico UE: cosa garantisce ciascuno",
+    "paras": [
+     {
+      "h": "Il biologico UE",
+      "t": "Il logo con la foglia è regolato dal Reg. (UE) 2018/848. Ogni operatore è controllato da un organismo terzo almeno una volta l'anno; la visita fisica può diventare ogni due anni solo se per tre anni non sono emersi problemi e il rischio è basso. I piccoli agricoltori vicini tra loro possono certificarsi in gruppo, con un sistema di controllo interno, per dividere i costi. Gli Stati possono esentare dal certificato chi vende biologico sfuso direttamente al consumatore, entro certi limiti di volume o fatturato. Garantisce il metodo di produzione. Non dice nulla su salari, prezzo pagato al contadino o distanza."
+     },
+     {
+      "h": "La garanzia partecipata (PGS)",
+      "t": "IFOAM, la federazione internazionale del biologico, la definisce un sistema di garanzia locale, in cui produttori e consumatori controllano insieme, sulla base di fiducia, reti sociali e scambio di conoscenze. Ci sono norme scritte insieme, visite alle aziende, un impegno firmato dal produttore e conseguenze chiare se le regole non si rispettano."
+     },
+     {
+      "h": "",
+      "t": "A Bologna lo fa Campi Aperti, che dal 2002 gestisce mercati contadini. Nel 2020 contava 150 produttori e 464 coproduttori. Le visite di ammissione e di controllo le fanno i soci; l'assemblea decide chi entra ed esce. Il limite: la UE non riconosce la PGS per usare la parola \"biologico\", quindi questi prodotti non hanno il logo. Circa metà dei produttori intervistati aveva anche la certificazione biologica ufficiale. Lo studio ha un campione piccolo e i risultati non si possono generalizzare."
+     },
+     {
+      "h": "In pratica",
+      "t": "Il logo UE ti dà un controllo indipendente sul metodo. La garanzia partecipata ti dà una relazione e un controllo fatto da persone che conosci. Non sono in competizione. Se compri da un GAS o da un mercato con garanzia partecipata e un produttore non ha il logo, chiedi come viene controllato."
+     }
+    ],
+    "fonti": [
+     "R21",
+     "R22",
+     "R23"
+    ]
+   },
+   {
+    "id": "b4",
+    "titolo": "Prezzo giusto e patti di filiera",
+    "paras": [
+     {
+      "h": "",
+      "t": "Un prezzo è \"giusto\" quando copre il lavoro, i costi e un reddito dignitoso per chi produce. Nei GAS il prezzo si concorda direttamente con il produttore, cercando un punto equo per entrambi. Nel commercio equo, il prezzo giusto e la filiera trasparente sono tra i criteri verificati da Equo Garantito."
+     },
+     {
+      "h": "",
+      "t": "Un patto di filiera mette d'accordo per iscritto più soggetti della stessa catena. Nel 2019 la rete Funky Tomato riuniva una cooperativa sociale di Scampia, un trasformatore, un'organizzazione di produttori pugliese, un'azienda bio lucana e Oxfam Italia, contro il caporalato nella filiera del pomodoro. Il comunicato stimava circa 400.000 lavoratori agricoli a rischio caporalato in Italia. Il caso poi è finito male: lo raccontiamo perché un patto vale quanto la sua gestione."
+     },
+     {
+      "h": "",
+      "t": "Cosa puoi chiedere a un produttore, senza imbarazzo:"
+     },
+     {
+      "h": "",
+      "t": "Quanto ti resta di questo prezzo?",
+      "li": true
+     },
+     {
+      "h": "",
+      "t": "Chi lavora con te, e con che contratto?",
+      "li": true
+     },
+     {
+      "h": "",
+      "t": "Vendi anche alla grande distribuzione? A che prezzo?",
+      "li": true
+     }
+    ],
+    "fonti": [
+     "R9",
+     "R15",
+     "R25",
+     "R26"
+    ]
+   },
+   {
+    "id": "b5",
+    "titolo": "Cosa dicono gli studi: filiera corta, km 0, impatto",
+    "paras": [
+     {
+      "h": "Sul clima, conta più cosa mangi che da dove viene",
+      "t": "Il trasporto pesa poco sulle emissioni del cibo: meno del 10% per la maggior parte dei prodotti, circa il 6% della dieta in uno studio europeo. Ridurre carne e latticini, soprattutto di bovini e ovini, conta molto di più che comprare locale."
+     },
+     {
+      "h": "Il km 0 non è sempre meglio",
+      "t": "Pomodori coltivati in serre riscaldate in Svezia usavano 10 volte l'energia di quelli importati dal Sud Europa. Il locale fuori stagione può costare più energia del lontano di stagione."
+     },
+     {
+      "h": "L'eccezione è l'aereo",
+      "t": "Il trasporto aereo emette circa 50 volte più del trasporto via nave per tonnellata e chilometro. Viaggiano in aereo soprattutto prodotti molto deperibili: asparagi, fagiolini, frutti di bosco fuori stagione. Evitarli ha senso."
+     },
+     {
+      "h": "Sul piano sociale le prove sono più solide, ma qualitative",
+      "t": "Gli studi sui GAS e sulle CSA descrivono fiducia, relazioni dirette e un reddito più stabile per i produttori. Sono quasi sempre studi di caso, con campioni piccoli, spesso scritti da ricercatori che partecipano a quei movimenti. Mancano grandi studi quantitativi su prezzi e redditi."
+     },
+     {
+      "h": "Cosa ne ricaviamo",
+      "t": "La filiera corta è una scelta forte per l'economia locale, la stagionalità e la relazione con chi produce. Per il clima, il primo passo resta cosa metti nel piatto. Le due cose si sommano: stagionale, poco processato, più vegetale, da chi conosci."
+     }
+    ],
+    "fonti": [
+     "R3",
+     "R19",
+     "R22",
+     "R24"
+    ]
+   },
+   {
+    "id": "b6",
+    "titolo": "Le leggi regionali sull'economia solidale",
+    "paras": [
+     {
+      "h": "",
+      "t": "Non esiste una legge nazionale sui GAS. Alcune Regioni e Province autonome però li riconoscono:"
+     },
+     {
+      "h": "",
+      "t": "Provincia di Trento. Legge provinciale 17 giugno 2010, n. 13, sull'economia solidale e la responsabilità sociale d'impresa. Prevede i distretti di economia solidale e definisce i GAS.",
+      "li": true
+     },
+     {
+      "h": "",
+      "t": "Umbria. Legge regionale 10 febbraio 2011, n. 1, modificata nel 2012, a sostegno dei gruppi di acquisto solidale e popolare (GASP).",
+      "li": true
+     },
+     {
+      "h": "",
+      "t": "Emilia-Romagna. Legge regionale 23 luglio 2014, n. 19. Definisce RES, DES e GAS e crea un forum e un tavolo regionale.",
+      "li": true
+     },
+     {
+      "h": "",
+      "t": "Friuli Venezia Giulia. Legge regionale 23 marzo 2017, n. 4, con regolamento del 2018: assemblea annuale, forum regionale e contributi per progetti nelle scuole.",
+      "li": true
+     },
+     {
+      "h": "",
+      "t": "Altre Regioni hanno discusso proposte di legge. Le aggiungeremo solo quando troveremo il testo approvato."
+     }
+    ],
+    "fonti": [
+     "R6",
+     "R27",
+     "R28",
+     "R29"
+    ]
+   },
+   {
+    "id": "b7",
+    "titolo": "I vestiti usati e le cooperative sociali",
+    "paras": [
+     {
+      "h": "",
+      "t": "Gran parte della raccolta degli abiti usati in Italia passa da cooperative sociali. A Milano Vesti Solidale, cooperativa di tipo B nata nel 1998, raccoglie e seleziona abiti, gestisce negozi dell'usato e una sartoria sociale. A Napoli Ambiente Solidale, cooperativa di tipo B nata nel 2006, nel 2021 dava lavoro a circa 40 persone, molte in uscita dal carcere o da dipendenze."
+     },
+     {
+      "h": "",
+      "t": "Il settore è in crisi. Nei cassonetti arrivano sempre più capi di fast fashion in poliestere e misti, che non si rivendono e non si riciclano. Il presidente di Vesti Solidale ha detto che il valore di ciò che raccolgono è calato del 40%. I capi migliori, intanto, finiscono sulle app di rivendita. In Italia si producono circa 905.000 tonnellate di rifiuti tessili l'anno, e circa 725.000 finiscono nell'indifferenziato, secondo dati ISPRA riportati dal Post."
+     },
+     {
+      "h": "",
+      "t": "Cosa puoi fare: comprare meno e meglio (capitolo Vestire), mettere nel cassonetto solo capi puliti e usabili, controllare le regole del tuo comune per quelli rovinati. E comprare nei negozi dell'usato delle cooperative."
+     }
+    ],
+    "fonti": [
+     "R33",
+     "R34",
+     "R35"
+    ]
+   }
+  ],
+  "fonti": {
+   "R1": {
+    "t": "L. 381/1991, cooperative sociali",
+    "u": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1991-11-08;381"
+   },
+   "R2": {
+    "t": "Avvenire 2024, i 30 anni dei GAS",
+    "u": "https://www.avvenire.it/economia/pagine/i-30-anni-dei-gruppi-di-acquisto-solidale-la-sfida"
+   },
+   "R3": {
+    "t": "Grasseni 2014, Journal of Political Ecology",
+    "u": "https://doi.org/10.2458/v21i1.21131"
+   },
+   "R4": {
+    "t": "e-circles, schede dei gruppi d'acquisto",
+    "u": "https://e-circles.org"
+   },
+   "R6": {
+    "t": "L.R. Emilia-Romagna 19/2014",
+    "u": "https://economiasolidale.net/sites/default/files/LR_2014_19_v3.pdf"
+   },
+   "R7": {
+    "t": "Libera Terra",
+    "u": "https://www.liberaterra.it"
+   },
+   "R8": {
+    "t": "L. 141/2015, agricoltura sociale",
+    "u": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2015-08-18;141"
+   },
+   "R9": {
+    "t": "Equo Garantito",
+    "u": "https://www.equogarantito.org"
+   },
+   "R10": {
+    "t": "Fondazione Slow Food, Mercati della Terra",
+    "u": "https://www.fondazioneslowfood.com/it/cosa-facciamo/mercati-della-terra-slow-food/"
+   },
+   "R11": {
+    "t": "Campagna Amica",
+    "u": "https://www.campagnamica.it"
+   },
+   "R14": {
+    "t": "Documento base dei GAS, 1999",
+    "u": "https://economiasolidale.net/documento-base-dei-gas"
+   },
+   "R15": {
+    "t": "Rete di economia solidale, cos'è un GAS",
+    "u": "https://economiasolidale.net/cosa-e-un-gas"
+   },
+   "R16": {
+    "t": "Rete di economia solidale, i DES",
+    "u": "https://economiasolidale.net/distretti-di-economia-solidale-des"
+   },
+   "R17": {
+    "t": "URGENCI, Italia",
+    "u": "https://urgenci.net/italy/"
+   },
+   "R18": {
+    "t": "Dichiarazione europea sulle CSA, 2016",
+    "u": "https://www.urgenci.net/wp-content/uploads/2016/09/European-CSA-Declaration_final-1.pdf"
+   },
+   "R19": {
+    "t": "Piccoli, Rossi, Genova 2021, Sustainability",
+    "u": "https://www.mdpi.com/2071-1050/13/21/11986"
+   },
+   "R20": {
+    "t": "Arvaia, come funziona",
+    "u": "https://www.arvaia.it/come-funziona/"
+   },
+   "R21": {
+    "t": "IFOAM, linee guida PGS",
+    "u": "https://ch.ifoam.bio/sites/default/files/2020-05/pgs_guidelines_en.pdf"
+   },
+   "R22": {
+    "t": "Winkler et al. 2024, Frontiers",
+    "u": "https://www.frontiersin.org/articles/10.3389/fsufs.2024.1388853/full"
+   },
+   "R23": {
+    "t": "Reg. (UE) 2018/848, biologico",
+    "u": "https://eur-lex.europa.eu/legal-content/IT/TXT/?uri=CELEX:32018R0848"
+   },
+   "R24": {
+    "t": "Our World in Data, cibo e trasporto",
+    "u": "https://ourworldindata.org/food-choice-vs-eating-local"
+   },
+   "R25": {
+    "t": "Oxfam Italia, rete Funky Tomato 2019",
+    "u": "https://www.oxfamitalia.org/wp-content/uploads/2019/07/CS_Unaltra-filiera-e%CC%80-possibile_contratto-di-rete-2019-Funky-Tomato_29_5_2019_def.pdf"
+   },
+   "R26": {
+    "t": "GreenMe 2021, Funky Tomato",
+    "u": "https://www.greenme.it/?p=753264"
+   },
+   "R27": {
+    "t": "Regione Umbria, L.R. 1/2011 sui GASP",
+    "u": "https://regione.umbria.it/documents/18/2314667/Allegato+A+-+GASP+DISCIPLINARE/54e8880a-dc8c-4c5b-81eb-9b339dd2cc91"
+   },
+   "R28": {
+    "t": "L.P. Trento 13/2010",
+    "u": "https://base.socioeco.org/docs/trentino_legge_provinciale.pdf"
+   },
+   "R29": {
+    "t": "Friuli Venezia Giulia, L.R. 4/2017",
+    "u": "https://lexview-int.regione.fvg.it/FontiNormative/ScaricaDocumento.aspx?Id=6022"
+   },
+   "R30": {
+    "t": "Libera, almanacco dei beni confiscati 2026",
+    "u": "https://www.libera.it/documenti/schede/almanacco_beni_marzo_2026.pdf"
+   },
+   "R31": {
+    "t": "Il Fatto Quotidiano 2026, trent'anni della L. 109/96",
+    "u": "https://www.ilfattoquotidiano.it/2026/03/07/i-trentanni-della-legge-sulluso-dei-beni-confiscati-alle-mafie-don-ciotti-una-svolta-anche-nella-coscienza-collettiva/8315809/"
+   },
+   "R33": {
+    "t": "Caritas Ambrosiana, Vesti Solidale",
+    "u": "https://www.caritasambrosiana.it/Public/userfiles/files/scheda-Vesti-Solidale.pdf"
+   },
+   "R34": {
+    "t": "Il Post 2026, la raccolta degli abiti usati",
+    "u": "https://www.ilpost.it/2026/01/28/riciclo-vestiti-cassonetti-gialli-fast-fashion/"
+   },
+   "R35": {
+    "t": "Avvenire 2021, Ambiente Solidale",
+    "u": "https://www.avvenire.it/attualita/abiti-usati-cosi-i-cassonetti-battono-le-cosche_51185"
+   },
+   "C21": {
+    "t": "DM 20/11/2007, mercati degli agricoltori (testo su Regione Emilia-Romagna)",
+    "u": "https://agricoltura.regione.emilia-romagna.it/aiuti-imprese/temi/vendita-diretta/norme-vendita-diretta-prodotti-agricoli/decreto-ministero-agricoltura-20-novembre-2007"
+   }
+  }
+ }
+}

@@ -1,0 +1,30 @@
+{% set A = data.appro %}
+  <section id="approfondimenti" style="max-width: 1180px; margin: 0 auto; padding: 112px 24px; display: flex; flex-direction: column; gap: 36px" data-schede>
+    <div style="display: flex; flex-direction: column; gap: 12px; max-width: 760px">
+      <p style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #9A5638">Approfondimenti</p>
+      <h2 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: clamp(38px, 5vw, 60px); line-height: 1.04; font-weight: 500; letter-spacing: -0.03em">Per chi vuole capire meglio.</h2>
+      <p style="margin: 0; font-size: 17px; line-height: 1.55; color: #585C53">Letture di tre o quattro minuti. Dicono anche cosa non funziona e cosa non è dimostrato.</p>
+    </div>
+    <div role="tablist" aria-label="Approfondimenti" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 10px">
+      {% for a in A %}
+      <a class="appro-btn" role="tab" href="#{{ a.id }}" data-scheda="{{ a.id }}" aria-selected="false" style="border-radius: 18px; padding: 18px 20px; font-size: 15px; font-weight: 500; line-height: 1.35; border: 1px solid #DDD6C8; color: #1D201B">{{ a.titolo }}</a>
+      {% endfor %}
+    </div>
+    {% for a in A %}
+    <article id="{{ a.id }}" data-panel data-scheda-panel="{{ a.id }}" style="max-width: 720px; display: flex; flex-direction: column; gap: 22px; padding-top: 12px; scroll-margin-top: 90px">
+      <h3 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: clamp(34px, 4vw, 48px); font-weight: 500; letter-spacing: -0.025em; line-height: 1.06">{{ a.titolo }}</h3>
+      {% for p in a.paras %}
+      <div{% if p.li %} style="padding-left: 20px; border-left: 3px solid var(--accent)"{% endif %}>
+        {% if p.h %}<b style="display: block; font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #9A5638; margin-bottom: 6px">{{ p.h }}</b>{% endif %}
+        <p style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: 21px; line-height: 1.6; color: #2A2D27">{{ p.t }}</p>
+      </div>
+      {% endfor %}
+      <div style="display: flex; flex-direction: column; gap: 8px; border-top: 1px solid #DDD6C8; padding-top: 18px">
+        <span style="font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #6B6F65">Fonti</span>
+        {% for c in a.fonti %}{% set f = FONTI.get(c) %}
+        <span style="font-size: 14px; line-height: 1.45"><a class="fonte" href="{{ url_for('page', slug='fonti') }}#{{ c }}"><b>{{ c }}</b></a> {% if f and f.url %}<a href="{{ f.url }}" rel="noopener">{{ f.titolo }}</a>{% elif f %}{{ f.titolo }}{% endif %}</span>
+        {% endfor %}
+      </div>
+    </article>
+    {% endfor %}
+  </section>

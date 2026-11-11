@@ -1,0 +1,175 @@
+/* Guida alla vita sostenibile: stili di base.
+   Le singole sezioni usano ancora molti stili in linea presi dal mockup:
+   si possono spostare qui un po' alla volta. */
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url("../fonts/inter-latin-wght-normal.woff2") format("woff2-variations");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url("../fonts/inter-latin-ext-wght-normal.woff2") format("woff2-variations");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: "Newsreader";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 200 800;
+  src: url("../fonts/newsreader-latin-opsz-normal.woff2") format("woff2-variations");
+}
+@font-face {
+  font-family: "Newsreader";
+  font-style: italic;
+  font-display: swap;
+  font-weight: 200 800;
+  src: url("../fonts/newsreader-latin-opsz-italic.woff2") format("woff2-variations");
+}
+
+:root {
+  --accent: #2F4A36;
+  --clay: #9A5638;
+  --bg: #F7F4EE;
+  --linen: #EDE7DB;
+  --ink: #1D201B;
+  --text2: #3D4139;
+  --muted: #585C53;
+  --faint: #6B6F65;
+  --line: #DDD6C8;
+  --line2: #CFC6B5;
+  --warn-bg: #F1E3D6;
+  --warn-ink: #4A2E1D;
+  --serif: Newsreader, Georgia, serif;
+  --sans: Inter, -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+}
+
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { color: var(--ink); }
+button { font-family: inherit; }
+img { max-width: 100%; height: auto; }
+:focus-visible { outline: 3px solid var(--clay); outline-offset: 3px; border-radius: 6px; }
+
+.skip { position: absolute; left: -9999px; top: 8px; background: var(--ink); color: var(--bg); padding: 10px 16px; border-radius: 8px; z-index: 100; }
+.skip:focus { left: 16px; color: var(--bg); }
+
+/* Testata */
+.site-header {
+  position: sticky; top: 0; z-index: 1000;
+  background: rgba(247, 244, 238, 0.86);
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  border-bottom: 1px solid var(--line);
+}
+.nav { max-width: 1180px; margin: 0 auto; padding: 8px 24px; min-height: 56px; display: flex; align-items: center; justify-content: space-between; gap: 12px 24px; flex-wrap: wrap; }
+.brand { font-family: var(--serif); font-weight: 600; font-size: 22px; letter-spacing: -0.02em; color: var(--ink); }
+.nav-links { display: flex; gap: 6px 22px; font-size: 13px; flex-wrap: wrap; }
+.nav-links a { color: var(--text2); }
+.nav-links a[aria-current="page"] { color: var(--ink); font-weight: 600; }
+
+/* Piede */
+.site-footer { max-width: 1180px; margin: 0 auto; padding: 40px 24px 64px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 24px; font-size: 13px; color: var(--muted); border-top: 1px solid var(--line); }
+.site-footer p { margin: 0; max-width: 520px; line-height: 1.55; }
+.footer-links { display: flex; gap: 24px; flex-wrap: wrap; }
+.footer-links a { color: var(--text2); }
+
+/* Codici delle fonti */
+a.fonte { color: inherit; text-decoration: underline; text-decoration-color: var(--line2); text-underline-offset: 3px; }
+a.fonte:hover { color: var(--accent); text-decoration-color: currentColor; }
+
+/* Pulsanti a pillola e schede */
+.pill {
+  cursor: pointer; min-height: 44px; padding: 0 18px; border-radius: 980px;
+  font: inherit; font-size: 15px; font-weight: 500;
+  background: transparent; color: var(--text2); border: 1px solid var(--line2);
+  display: inline-flex; align-items: center; gap: 8px;
+}
+.pill[aria-selected="true"], .pill[aria-pressed="true"] { background: var(--accent); color: var(--bg); border-color: var(--accent); }
+.pill .dot { width: 9px; height: 9px; border-radius: 50%; display: inline-block; }
+.pill .n { opacity: 0.7; }
+
+.voce-btn {
+  cursor: pointer; min-height: 52px; padding: 12px 16px; border-radius: 16px;
+  font: inherit; font-size: 15px; text-align: left;
+  background: var(--bg); color: var(--ink); border: 1px solid var(--line);
+}
+.voce-btn[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); font-weight: 600; }
+.ghost-btn {
+  min-height: 44px; padding: 0 16px; border-radius: 980px; border: 1px solid var(--line2);
+  background: transparent; font: inherit; font-size: 14px; color: var(--text2); cursor: pointer;
+  display: inline-flex; align-items: center;
+}
+
+/* Con JavaScript attivo mostriamo un pannello alla volta.
+   Senza JavaScript si vede tutto, uno sotto l'altro. */
+.js [data-panel]:not(.is-open) { display: none !important; }
+.no-js-only { display: none; }
+html:not(.js) .no-js-only { display: block; }
+
+/* Liste di voci: due colonne su schermi larghi */
+.voci-grid { flex: 1 1 280px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; align-content: start; }
+
+/* Mappa */
+.mappa { width: 100%; aspect-ratio: 4 / 5; border-radius: 16px; overflow: hidden; background: #E3DCCD; }
+.leaflet-container { font-family: var(--sans); }
+.leaflet-popup-content { font-size: 14px; line-height: 1.45; }
+.leaflet-popup-content b { font-size: 15px; }
+.lista-rete { display: flex; flex-direction: column; max-height: 440px; overflow: auto; }
+.riga-rete { display: flex; align-items: center; gap: 12px; width: 100%; padding: 10px 12px; border: 0; border-radius: 12px; cursor: pointer; background: transparent; text-align: left; font: inherit; }
+.riga-rete:hover, .riga-rete[aria-pressed="true"] { background: var(--linen); }
+.riga-rete .dot { width: 10px; height: 10px; border-radius: 50%; flex: 0 0 10px; }
+select.regione { min-height: 44px; border-radius: 12px; border: 1px solid var(--line2); background: var(--bg); padding: 0 12px; font: inherit; font-size: 15px; color: var(--ink); }
+
+/* Testo lungo (pagina Perché, note) */
+.prosa { max-width: 680px; font-family: var(--serif); font-size: 21px; line-height: 1.65; color: #2A2D27; }
+.prosa h2 { font-size: 34px; font-weight: 500; letter-spacing: -0.02em; line-height: 1.15; margin: 48px 0 12px; }
+.prosa p { margin: 0 0 22px; }
+.prosa blockquote { margin: 28px 0; padding: 0 0 0 28px; border-left: 3px solid var(--accent); font-size: 28px; line-height: 1.3; font-style: italic; color: var(--ink); }
+.prosa a { text-decoration: underline; text-underline-offset: 3px; }
+
+/* Tabelle delle fonti */
+.tabella-fonti { width: 100%; border-collapse: collapse; font-size: 14px; line-height: 1.5; }
+.tabella-fonti th { text-align: left; font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--faint); padding: 10px 12px; border-bottom: 1px solid var(--line2); }
+.tabella-fonti td { padding: 14px 12px; border-bottom: 1px solid var(--line); vertical-align: top; color: var(--text2); }
+.tabella-fonti tr:target td { background: #E5EDE2; }
+.tabella-fonti td:first-child { font-weight: 600; color: var(--ink); white-space: nowrap; }
+.tabella-fonti .nota { display: block; margin-top: 6px; font-size: 13px; color: var(--clay); }
+
+@media (max-width: 720px) {
+  .nav { padding: 8px 0 0 24px; }
+  .nav-links { width: 100%; flex-wrap: nowrap; overflow-x: auto; gap: 18px; padding: 4px 24px 12px 0; scrollbar-width: none; }
+  .nav-links::-webkit-scrollbar { display: none; }
+  .nav-links a { white-space: nowrap; }
+  .voci-grid { grid-template-columns: 1fr 1fr; }
+  .tabella-fonti thead { display: none; }
+  .tabella-fonti tr { display: block; border-bottom: 1px solid var(--line); padding: 10px 0; }
+  .tabella-fonti td { display: block; border: 0; padding: 4px 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+
+/* Schede di Conoscere la rete */
+.scheda-btn[aria-selected="true"] { background: var(--accent); color: var(--bg) !important; }
+.scheda-btn[aria-selected="true"] span:first-child { color: #CFDCCB !important; }
+.scheda-btn:hover { background: rgba(47, 74, 54, 0.08); }
+.appro-btn:hover { border-color: var(--accent) !important; }
+.appro-btn[aria-selected="true"] { background: var(--accent); color: var(--bg) !important; border-color: var(--accent) !important; }

@@ -1,0 +1,165 @@
+{
+ "CATS": [
+  {
+   "id": "tutte",
+   "nome": "Tutte"
+  },
+  {
+   "id": "comunicare",
+   "nome": "Comunicare"
+  },
+  {
+   "id": "lavorare",
+   "nome": "Lavorare e archiviare"
+  },
+  {
+   "id": "navigare",
+   "nome": "Navigare e muoversi"
+  },
+  {
+   "id": "telefono",
+   "nome": "Telefono"
+  },
+  {
+   "id": "pagare",
+   "nome": "Pagare e comprare"
+  }
+ ],
+ "ALT": [
+  {
+   "cat": "navigare",
+   "al": "Google Search",
+   "nome": "Ecosia, Qwant",
+   "paese": "DE, FR",
+   "desc": "Due motori di ricerca europei che stanno costruendo insieme un indice proprio.",
+   "ver": true,
+   "fonti": "D7"
+  },
+  {
+   "cat": "comunicare",
+   "al": "Gmail",
+   "nome": "Tuta, Proton Mail",
+   "paese": "DE, CH",
+   "desc": "Email cifrata, senza pubblicità che legge la tua posta. Tuta ha i server in Germania.",
+   "ver": true,
+   "fonti": "D9"
+  },
+  {
+   "cat": "comunicare",
+   "al": "WhatsApp",
+   "nome": "Threema, Olvid",
+   "paese": "CH, FR",
+   "desc": "Non serve il numero di telefono. Olvid è certificata dall'agenzia francese per la sicurezza informatica.",
+   "ver": true,
+   "fonti": "D9"
+  },
+  {
+   "cat": "comunicare",
+   "al": "Instagram, X",
+   "nome": "Mastodon",
+   "paese": "DE",
+   "desc": "Social decentralizzato: nessun padrone unico, nessun algoritmo pubblicitario.",
+   "ver": true,
+   "fonti": "D11"
+  },
+  {
+   "cat": "comunicare",
+   "al": "YouTube",
+   "nome": "PeerTube",
+   "paese": "FR",
+   "desc": "Video su server indipendenti, sviluppato dall'associazione Framasoft.",
+   "ver": true,
+   "fonti": "D11"
+  },
+  {
+   "cat": "lavorare",
+   "al": "Google Drive, iCloud",
+   "nome": "Nextcloud, kDrive",
+   "paese": "DE, CH",
+   "desc": "File e foto su server europei. Nextcloud puoi anche ospitarlo a casa tua.",
+   "ver": true,
+   "fonti": "D11"
+  },
+  {
+   "cat": "lavorare",
+   "al": "Microsoft Office, Google Docs",
+   "nome": "LibreOffice, CryptPad",
+   "paese": "DE, FR",
+   "desc": "Gratuiti e open source. CryptPad cifra anche i documenti condivisi.",
+   "ver": true,
+   "fonti": "D11"
+  },
+  {
+   "cat": "lavorare",
+   "al": "ChatGPT",
+   "nome": "Le Chat, Mistral",
+   "paese": "FR",
+   "desc": "Assistente di intelligenza artificiale sviluppato in Europa.",
+   "ver": true,
+   "fonti": "D11"
+  },
+  {
+   "cat": "lavorare",
+   "al": "Google Traduttore",
+   "nome": "DeepL",
+   "paese": "DE",
+   "desc": "Traduttore automatico sviluppato in Germania.",
+   "ver": true,
+   "fonti": "D11"
+  },
+  {
+   "cat": "navigare",
+   "al": "Chrome",
+   "nome": "Vivaldi, Mullvad Browser",
+   "paese": "NO, SE",
+   "desc": "Browser che non vivono di pubblicità e bloccano il tracciamento.",
+   "ver": true,
+   "fonti": "D11"
+  },
+  {
+   "cat": "navigare",
+   "al": "Google Maps",
+   "nome": "OsmAnd, Organic Maps",
+   "paese": "NL, EE",
+   "desc": "Mappe di OpenStreetMap, funzionano anche senza connessione.",
+   "ver": true,
+   "fonti": "D9"
+  },
+  {
+   "cat": "telefono",
+   "al": "Android con Google",
+   "nome": "/e/OS di Murena",
+   "paese": "FR",
+   "desc": "Android senza i servizi Google, con le app di sempre.",
+   "ver": true,
+   "fonti": "D9"
+  },
+  {
+   "cat": "telefono",
+   "al": "Telefono usa e getta",
+   "nome": "Fairphone",
+   "paese": "NL",
+   "desc": "Smartphone modulare, pensato per essere riparato da te.",
+   "ver": true,
+   "fonti": "D11"
+  },
+  {
+   "cat": "pagare",
+   "al": "Apple Pay, PayPal",
+   "nome": "Wero",
+   "paese": "BE",
+   "desc": "Pagamenti tra conti bancari europei, creato da banche europee. In Italia dipende dalla tua banca.",
+   "ver": true,
+   "fonti": "D8"
+  },
+  {
+   "cat": "pagare",
+   "al": "Shein, Amazon",
+   "nome": "Vinted",
+   "paese": "LT",
+   "desc": "Compravendita di vestiti e oggetti usati tra persone.",
+   "ver": true,
+   "fonti": "D11"
+  }
+ ]
+}

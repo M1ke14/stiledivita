@@ -1,0 +1,446 @@
+{
+ "CATS": [
+  {
+   "id": "dispensa",
+   "nome": "Dispensa"
+  },
+  {
+   "id": "fresco",
+   "nome": "Banco fresco"
+  },
+  {
+   "id": "proteine",
+   "nome": "Carne e pesce"
+  },
+  {
+   "id": "pronti",
+   "nome": "Pronti e snack"
+  },
+  {
+   "id": "bevande",
+   "nome": "Bevande"
+  }
+ ],
+ "VOCI": [
+  {
+   "id": "pasta",
+   "cat": "dispensa",
+   "nome": "Pasta",
+   "intro": "Due ingredienti: semola di grano duro e acqua.",
+   "guarda": [
+    "Ingredienti: semola di grano duro e acqua (più le uova, se è all'uovo).",
+    "Paese di coltivazione e di molitura del grano: obbligatori sulla pasta prodotta in Italia, almeno fino al 31/12/2026.",
+    "Ogni tanto integrale: più fibre, come chiedono le linee guida."
+   ],
+   "dove": [
+    "Pastifici artigianali e botteghe della tua zona.",
+    "Al supermercato va benissimo, se leggi l'origine del grano."
+   ],
+   "attenzione": "La pasta ripiena confezionata ha spesso una lista lunga: aromi, conservanti, fibre aggiunte.",
+   "fonti": "C5, C16"
+  },
+  {
+   "id": "riso",
+   "cat": "dispensa",
+   "nome": "Riso",
+   "intro": "Un ingrediente solo, coltivato anche in Italia.",
+   "guarda": [
+    "Paese di coltivazione, lavorazione e confezionamento: obbligatori sul riso venduto in Italia.",
+    "Integrale o semigreggio per più fibre.",
+    "In lista solo: riso."
+   ],
+   "dove": [
+    "Risifici e aziende agricole, molte vendono online in modo diretto.",
+    "Mercati contadini e GAS."
+   ],
+   "attenzione": "Risotti pronti in busta e riso «aromatizzato» non sono più un alimento semplice.",
+   "fonti": "C16, C5"
+  },
+  {
+   "id": "farine",
+   "cat": "dispensa",
+   "nome": "Farine e cereali",
+   "intro": "Più il chicco è intero, più nutre.",
+   "guarda": [
+    "Tipo 1, tipo 2 e integrale contengono più parti del chicco della 00.",
+    "Origine del grano e nome del mulino.",
+    "Fiocchi d'avena, orzo, farro: un solo ingrediente."
+   ],
+   "dove": [
+    "Mulini a pietra e botteghe dello sfuso.",
+    "GAS: spesso comprano direttamente dal mulino."
+   ],
+   "attenzione": "Le miscele pronte per pane e dolci possono contenere additivi: guarda l'elenco.",
+   "fonti": "C5, C3"
+  },
+  {
+   "id": "legumi",
+   "cat": "dispensa",
+   "nome": "Legumi",
+   "intro": "Proteine vegetali che costano poco: 3 o 4 porzioni a settimana.",
+   "guarda": [
+    "Secchi: un solo ingrediente.",
+    "In vetro o in scatola: legumi, acqua, sale. Sciacquali prima di usarli.",
+    "Origine: ceci, lenticchie, fave e cicerchie crescono anche in Italia."
+   ],
+   "dove": [
+    "Mercati contadini, GAS, botteghe dello sfuso.",
+    "Cuocine tanti insieme e congela le porzioni."
+   ],
+   "attenzione": "Le «polpette vegetali» pronte sono spesso ultra-processate: i legumi semplici sono un'altra cosa.",
+   "fonti": "C5, C7, C3"
+  },
+  {
+   "id": "olio",
+   "cat": "dispensa",
+   "nome": "Olio extravergine",
+   "intro": "Il grasso di casa nostra. Conta la categoria scritta in etichetta.",
+   "guarda": [
+    "Categoria «olio extravergine di oliva»: acidità non oltre 0,8%.",
+    "Origine obbligatoria. «Miscela di oli UE e non UE» vuol dire che arriva da più Paesi.",
+    "DOP e IGP lo legano a una zona e a un disciplinare."
+   ],
+   "dove": [
+    "Al frantoio, dopo la raccolta (tra novembre e dicembre).",
+    "Botteghe e mercati contadini."
+   ],
+   "attenzione": "«Olio di oliva» senza «vergine» è una miscela con olio raffinato. Conserva l'olio al buio.",
+   "fonti": "C14, C13"
+  },
+  {
+   "id": "pomodoro",
+   "cat": "dispensa",
+   "nome": "Passata e pelati",
+   "intro": "Pomodoro e basta.",
+   "guarda": [
+    "Ingredienti: pomodoro, al massimo sale.",
+    "Paese di coltivazione e di trasformazione del pomodoro: obbligatori sulle confezioni italiane.",
+    "Meglio in vetro."
+   ],
+   "dove": [
+    "D'estate puoi farla in casa con i pomodori del mercato.",
+    "Aziende agricole e GAS."
+   ],
+   "attenzione": "I sughi pronti hanno spesso zucchero, amidi e aromi in lista.",
+   "fonti": "C16"
+  },
+  {
+   "id": "tonno",
+   "cat": "dispensa",
+   "nome": "Tonno in scatola",
+   "intro": "È un grande predatore: contiene più mercurio dei pesci piccoli.",
+   "guarda": [
+    "Specie: cerca il nome scientifico (es. Katsuwonus pelamis, il tonnetto striato).",
+    "«Pescato a canna» o «a lenza» è il metodo più selettivo. Sul tonno in scatola non è obbligatorio scriverlo: se c'è, è un buon segno.",
+    "Ingredienti: tonno, olio extravergine, sale. Meglio in vetro."
+   ],
+   "dove": [
+    "Le tonnare tradizionali del Mediterraneo, per esempio quella di Carloforte in Sardegna.",
+    "Pescheria di fiducia; al supermercato le linee «pescato a canna»."
+   ],
+   "attenzione": "Per donne in gravidanza e bambini l'EFSA consiglia di non preferire i grandi predatori. Alterna con sgombro, alici e sardine.",
+   "fonti": "C24, C10, C25"
+  },
+  {
+   "id": "zucchero",
+   "cat": "dispensa",
+   "nome": "Zucchero e miele",
+   "intro": "OMS: zuccheri liberi sotto il 10% delle calorie, meglio sotto il 5% (circa 25 g al giorno).",
+   "guarda": [
+    "Sono zuccheri liberi anche miele, sciroppi e succhi di frutta.",
+    "Miele: dal 14 giugno 2026 le miscele devono indicare tutti i Paesi d'origine con le percentuali.",
+    "Lo zucchero di canna è sempre zucchero."
+   ],
+   "dove": [
+    "Miele direttamente dagli apicoltori e ai mercati contadini."
+   ],
+   "attenzione": "Lo zucchero che pesa di più è quello nascosto: bibite, yogurt alla frutta, salse, biscotti.",
+   "fonti": "C6, C26"
+  },
+  {
+   "id": "caffe",
+   "cat": "dispensa",
+   "nome": "Caffè, tè e cacao",
+   "intro": "Arrivano da lontano: qui conta come sono coltivati.",
+   "guarda": [
+    "Dal 30 dicembre 2026 il regolamento UE contro la deforestazione si applica a caffè e cacao per le aziende grandi e medie; per le piccole dal 30 giugno 2027.",
+    "Marchi del commercio equo con controlli di terza parte.",
+    "Cioccolato: pochi ingredienti, cacao al primo posto."
+   ],
+   "dove": [
+    "Torrefazioni locali: chiedi l'origine del caffè.",
+    "Botteghe del commercio equo."
+   ],
+   "attenzione": "Capsule monouso: tanto imballaggio per pochi grammi di caffè.",
+   "fonti": "C20"
+  },
+  {
+   "id": "fruttasecca",
+   "cat": "dispensa",
+   "nome": "Frutta secca",
+   "intro": "Lo snack più semplice che esista. Una porzione è circa 30 g.",
+   "guarda": [
+    "Al naturale: senza sale, zucchero o oli aggiunti.",
+    "Origine: mandorle, noci e nocciole crescono anche in Italia.",
+    "Sfusa costa meno e non ha imballaggio."
+   ],
+   "dove": [
+    "Mercati contadini in autunno.",
+    "Negozi dello sfuso."
+   ],
+   "attenzione": "Le creme spalmabili hanno spesso più zucchero che frutta secca.",
+   "fonti": "C5"
+  },
+  {
+   "id": "pane",
+   "cat": "fresco",
+   "nome": "Pane",
+   "intro": "Per legge «fresco» ha un significato preciso.",
+   "guarda": [
+    "«Pane fresco»: processo continuo, senza congelamento e senza conservanti.",
+    "Se è stato congelato o ha conservanti va venduto come «pane conservato», in uno scaffale separato.",
+    "«Panificio» è solo chi fa tutto, dall'impasto alla cottura."
+   ],
+   "dove": [
+    "Il forno sotto casa (verifica che sia un panificio e non un punto vendita).",
+    "Pane con farine tipo 1, tipo 2 o integrali."
+   ],
+   "attenzione": "Pancarré e pane in cassetta contengono spesso zuccheri, oli e conservanti.",
+   "fonti": "C15, C5"
+  },
+  {
+   "id": "verdura",
+   "cat": "fresco",
+   "nome": "Verdura",
+   "intro": "OMS: almeno 400 g di frutta e verdura al giorno, circa 5 porzioni.",
+   "guarda": [
+    "Di stagione e del territorio.",
+    "Biologico (foglia verde UE) se puoi: niente pesticidi di sintesi.",
+    "Brutta ma buona: la forma non conta."
+   ],
+   "dove": [
+    "Mercato contadino, GAS, abbonamenti con un'azienda agricola.",
+    "Orti condivisi o in affitto."
+   ],
+   "attenzione": "Nei controlli EFSA sui dati 2024, oltre 125.000 campioni, circa il 2,4% supera i limiti: lavare bene resta una buona abitudine.",
+   "fonti": "C6, C12, C17"
+  },
+  {
+   "id": "frutta",
+   "cat": "fresco",
+   "nome": "Frutta",
+   "intro": "Meglio mangiarla intera.",
+   "guarda": [
+    "Il succo non sostituisce la frutta: lo dicono le linee guida.",
+    "Di stagione: ha viaggiato meno.",
+    "Quella esotica ogni tanto."
+   ],
+   "dove": [
+    "Mercato contadino e GAS.",
+    "D'inverno: agrumi del Sud, mele e pere conservate."
+   ],
+   "attenzione": "La frutta tagliata in vaschetta costa di più e dura meno.",
+   "fonti": "C5, C6"
+  },
+  {
+   "id": "uova",
+   "cat": "fresco",
+   "nome": "Uova",
+   "intro": "Il guscio racconta come vivevano le galline.",
+   "guarda": [
+    "Primo numero: 0 biologico, 1 all'aperto, 2 a terra, 3 in gabbia.",
+    "Poi il Paese: IT è Italia.",
+    "Scegli 0 o 1."
+   ],
+   "dove": [
+    "Dal contadino: vendute in azienda possono non avere il timbro.",
+    "Mercati contadini."
+   ],
+   "attenzione": "Pasta all'uovo, dolci e maionese non sempre dicono come sono allevate le galline: cerca la dicitura.",
+   "fonti": "C11"
+  },
+  {
+   "id": "latte",
+   "cat": "fresco",
+   "nome": "Latte e yogurt",
+   "intro": "Semplici, bianchi, il più possibile vicini.",
+   "guarda": [
+    "Origine del latte: «Paese di mungitura», obbligatoria sui prodotti italiani fino al 31/12/2026.",
+    "Yogurt bianco senza zuccheri aggiunti: la frutta aggiungila tu.",
+    "Latte fresco: dura meno, viaggia meno."
+   ],
+   "dove": [
+    "Latterie e caseifici.",
+    "Distributori di latte crudo: va bollito prima di berlo."
+   ],
+   "attenzione": "Yogurt alla frutta e da bere hanno spesso molto zucchero aggiunto.",
+   "fonti": "C16, C6"
+  },
+  {
+   "id": "formaggi",
+   "cat": "fresco",
+   "nome": "Formaggi",
+   "intro": "Latte, sale, caglio. Il resto è territorio.",
+   "guarda": [
+    "DOP: zona d'origine e disciplinare (in Sardegna: Pecorino Sardo, Fiore Sardo, Pecorino Romano).",
+    "Ingredienti: latte, sale, caglio, fermenti.",
+    "Origine del latte in etichetta."
+   ],
+   "dove": [
+    "Caseifici e pastori con vendita diretta.",
+    "Mercati contadini."
+   ],
+   "attenzione": "Formaggi fusi a fette e «preparati» sono un'altra categoria: leggi la denominazione. Le linee guida chiedono di limitarne la quantità.",
+   "fonti": "C13, C16, C5"
+  },
+  {
+   "id": "carne",
+   "cat": "proteine",
+   "nome": "Carne",
+   "intro": "La carne rossa è «probabilmente cancerogena» (IARC, gruppo 2A). Basta mangiarne meno.",
+   "guarda": [
+    "Manzo: l'etichetta dice per legge dove l'animale è nato, allevato e macellato.",
+    "Meno ma migliore: allevamenti locali, al pascolo o biologici.",
+    "Alterna con legumi, uova e pesce."
+   ],
+   "dove": [
+    "Macelleria di fiducia e aziende agricole con spaccio.",
+    "GAS: spesso comprano da piccoli allevatori."
+   ],
+   "attenzione": "Il modello EAT-Lancet 2025 prevede poca carne rossa: fa bene sia alla salute sia al pianeta.",
+   "fonti": "C8, C27, C5, C7"
+  },
+  {
+   "id": "salumi",
+   "cat": "proteine",
+   "nome": "Salumi",
+   "intro": "Carni lavorate: cancerogene di gruppo 1 per la IARC. Ogni 50 g al giorno il rischio di tumore al colon-retto sale del 18%.",
+   "guarda": [
+    "Ingredienti corti: carne, sale, spezie.",
+    "Origine della carne suina: obbligatoria in Italia fino al 31/12/2026.",
+    "DOP e IGP: disciplinare e territorio."
+   ],
+   "dove": [
+    "Norcinerie e aziende agricole con spaccio."
+   ],
+   "attenzione": "Gruppo 1 vuol dire che le prove sono solide. Il rischio però è molto più basso di quello del fumo. Da mangiare ogni tanto.",
+   "fonti": "C8, C16, C13"
+  },
+  {
+   "id": "pesce",
+   "cat": "proteine",
+   "nome": "Pesce fresco",
+   "intro": "EFSA: 1 o 2 porzioni a settimana sono associate a benefici per cuore e cervello.",
+   "guarda": [
+    "Al banco devono esserci: specie, «pescato» o «allevato», zona FAO e attrezzo di pesca.",
+    "Mediterraneo = zona FAO 37: il pesce più vicino.",
+    "Pesce azzurro piccolo (alici, sardine, sgombro): meno mercurio dei grandi predatori."
+   ],
+   "dove": [
+    "Pescheria di fiducia, mercato del porto.",
+    "Dai pescatori, dove è consentita la vendita diretta."
+   ],
+   "attenzione": "Pesce spada e tonno: occasionali, soprattutto in gravidanza e per i bambini.",
+   "fonti": "C9, C10, C24"
+  },
+  {
+   "id": "colazione",
+   "cat": "pronti",
+   "nome": "Biscotti e merendine",
+   "intro": "Qui si concentrano gli ultra-processati.",
+   "guarda": [
+    "Se trovi sciroppo di glucosio-fruttosio, aromi, emulsionanti o proteine isolate, è ultra-processato.",
+    "Lista corta, ingredienti riconoscibili.",
+    "Zuccheri per 100 g nella tabella nutrizionale."
+   ],
+   "dove": [
+    "Il forno di quartiere per i dolci.",
+    "Pane e marmellata, fiocchi d'avena, frutta, yogurt bianco."
+   ],
+   "attenzione": "In quasi 10 milioni di persone studiate, più ultra-processati vuol dire più rischi; sono studi osservazionali, quindi vanno presi con cautela.",
+   "fonti": "C1, C3, C4"
+  },
+  {
+   "id": "snack",
+   "cat": "pronti",
+   "nome": "Snack e piatti pronti",
+   "intro": "Comodi, ma fanno mangiare di più senza accorgersene.",
+   "guarda": [
+    "Sale: l'OMS consiglia meno di 5 g al giorno, e molto arriva dai cibi già pronti.",
+    "Lista ingredienti lunga = probabilmente ultra-processato.",
+    "Frutta secca e semi al posto delle patatine."
+   ],
+   "dove": [
+    "Il tuo freezer: cucina il doppio e congela, è il tuo «piatto pronto».",
+    "Gastronomie di quartiere che cucinano sul posto."
+   ],
+   "attenzione": "Nello studio randomizzato NIH con la dieta ultra-processata si mangiavano circa 500 kcal in più al giorno.",
+   "fonti": "C6, C2, C3"
+  },
+  {
+   "id": "surgelati",
+   "cat": "pronti",
+   "nome": "Surgelati",
+   "intro": "Dipende: una verdura surgelata è solo verdura, un piatto pronto surgelato spesso è un ultra-processato.",
+   "guarda": [
+    "Verdure, legumi e pesce al naturale: un solo ingrediente, ottima scorta.",
+    "Piatti pronti surgelati: lista lunga = ultra-processato.",
+    "Per il pesce la zona FAO è obbligatoria anche da congelato."
+   ],
+   "dove": [
+    "Al supermercato è la corsia più semplice, se scegli bene."
+   ],
+   "attenzione": "La surgelazione è una lavorazione minima; il problema sono gli ingredienti aggiunti.",
+   "fonti": "C3, C9"
+  },
+  {
+   "id": "acqua",
+   "cat": "bevande",
+   "nome": "Acqua",
+   "intro": "Quella del rubinetto deve rispettare la direttiva UE sull'acqua potabile.",
+   "guarda": [
+    "Chiedi al gestore del tuo comune le analisi: devono essere pubbliche.",
+    "Se senti il cloro, lasciala riposare in una caraffa.",
+    "Borraccia al posto delle bottiglie di plastica."
+   ],
+   "dove": [
+    "Il rubinetto e le «casette dell'acqua» comunali."
+   ],
+   "attenzione": "Microplastiche si trovano sia nell'acqua in bottiglia sia in quella del rubinetto; la UE ha appena definito come misurarle.",
+   "fonti": "C18"
+  },
+  {
+   "id": "bibite",
+   "cat": "bevande",
+   "nome": "Bibite e succhi",
+   "intro": "Il modo più facile di bere zucchero senza accorgersene.",
+   "guarda": [
+    "I succhi sono zuccheri liberi anche se «senza zuccheri aggiunti».",
+    "Acqua frizzante, tè e infusi senza zucchero.",
+    "Bibite «zero»: niente zucchero, ma restano ultra-processate."
+   ],
+   "dove": [
+    "Rubinetto e borraccia.",
+    "Infusi fatti in casa con erbe e scorze di agrumi."
+   ],
+   "attenzione": "Il succo non sostituisce la frutta.",
+   "fonti": "C6, C5, C3"
+  },
+  {
+   "id": "alcol",
+   "cat": "bevande",
+   "nome": "Vino e birra",
+   "intro": "Per l'OMS non esiste una quantità di alcol sicura: è cancerogeno di gruppo 1.",
+   "guarda": [
+    "Se bevi, meno è meglio.",
+    "Se compri, dal produttore: cantine e birrifici della tua zona.",
+    "DOP e DOC legano il vino a un territorio."
+   ],
+   "dove": [
+    "Cantine e birrifici artigianali."
+   ],
+   "attenzione": "Comprare vino del territorio è una scelta etica. Per la salute conta quanto ne bevi.",
+   "fonti": "C19, C13"
+  }
+ ]
+}

@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+  <section style="max-width: 1180px; margin: 0 auto; padding: 160px 24px; display: flex; flex-direction: column; gap: 24px">
+    <p style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #9A5638">Errore 404</p>
+    <h1 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: clamp(56px, 9vw, 120px); line-height: 0.95; font-weight: 500; letter-spacing: -0.045em">Questa pagina non c'è<i style="font-weight: 400; color: var(--accent)">.</i></h1>
+    <p style="margin: 0; font-size: 18px; color: #3D4139">Forse è stata spostata. Riparti dall'indice.</p>
+    <a href="{{ url_for('index') }}" style="align-self: flex-start; background: var(--accent); color: #F7F4EE; border-radius: 999px; padding: 14px 24px; font-size: 15px; font-weight: 500">Torna all'indice</a>
+  </section>
+{% endblock %}

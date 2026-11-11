@@ -1,0 +1,216 @@
+{% extends 'base.html' %}
+{% block content %}
+  <section style="max-width: 1180px; margin: 0 auto; padding: 112px 24px 80px; display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-end; justify-content: space-between">
+    <div style="flex: 1 1 560px; display: flex; flex-direction: column; gap: 20px">
+      <p style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #9A5638">Capitolo 2</p>
+      <h1 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: clamp(72px, 12vw, 152px); line-height: 0.92; font-weight: 500; letter-spacing: -0.045em">Vestire<i style="font-weight: 400; color: var(--accent)">.</i></h1>
+      <p style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: clamp(24px, 2.8vw, 34px); line-height: 1.25; color: #3D4139; font-style: italic; max-width: 640px">Fibre, marchi europei, usato e riparazione.</p>
+    </div>
+    <p style="flex: 0 1 380px; margin: 0; font-size: 17px; line-height: 1.6; color: #585C53">Il capo più sostenibile è quello che hai già. Quando compri: fibre naturali, filiera tracciata, produzione europea.</p>
+  </section>
+
+
+  <div style="max-width: 1180px; margin: 0 auto; padding: 0 24px">
+    <figure style="margin: 0; position: relative; height: 480px; border-radius: 32px; overflow: hidden; background: #DAD5C8"><img src="{{ foto('photo-1737276622070-0738531ad908') }}" alt="Tessuto chiaro con pieghe morbide" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; display: block"><figcaption style="position: absolute; right: 16px; bottom: 14px; font-size: 12px; color: #F7F4EE; background: rgba(29,32,27,0.45); padding: 4px 10px; border-radius: 999px">Foto: <a href="https://unsplash.com/photos/HVaRu3R1duw" style="color: #F7F4EE; text-decoration: underline">Alexander Nedviga</a>, Unsplash</figcaption></figure>
+  </div>
+
+
+  <section style="max-width: 1180px; margin: 0 auto; padding: 112px 24px; display: flex; flex-direction: column; gap: 40px">
+    <h2 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: clamp(38px, 5vw, 60px); line-height: 1.04; font-weight: 500; letter-spacing: -0.03em; max-width: 780px">Quanti vestiti compriamo in Europa.</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 0; border-top: 1px solid #CFC6B5">
+      <div style="padding: 28px 24px 28px 0; display: flex; flex-direction: column; gap: 8px">
+        <span style="font-family: Newsreader, Georgia, serif; font-size: 72px; font-weight: 500; letter-spacing: -0.04em; line-height: 1; color: var(--accent)">19 kg</span>
+        <span style="font-size: 15px; line-height: 1.5; color: #585C53">di tessili consumati a persona nel 2022 in UE</span>
+      </div>
+      <div style="padding: 28px 24px 28px 0; display: flex; flex-direction: column; gap: 8px">
+        <span style="font-family: Newsreader, Georgia, serif; font-size: 72px; font-weight: 500; letter-spacing: -0.04em; line-height: 1; color: var(--accent)">12 kg</span>
+        <span style="font-size: 15px; line-height: 1.5; color: #585C53">di vestiti buttati a persona ogni anno</span>
+      </div>
+      <div style="padding: 28px 24px 28px 0; display: flex; flex-direction: column; gap: 8px">
+        <span style="font-family: Newsreader, Georgia, serif; font-size: 72px; font-weight: 500; letter-spacing: -0.04em; line-height: 1; color: var(--accent)">2.700 l</span>
+        <span style="font-size: 15px; line-height: 1.5; color: #585C53">d'acqua stimati per una t-shirt di cotone</span>
+      </div>
+      <div style="padding: 28px 24px 28px 0; display: flex; flex-direction: column; gap: 8px">
+        <span style="font-family: Newsreader, Georgia, serif; font-size: 72px; font-weight: 500; letter-spacing: -0.04em; line-height: 1; color: var(--accent)">355 kg</span>
+        <span style="font-size: 15px; line-height: 1.5; color: #585C53">di CO₂ a persona per gli acquisti tessili del 2022</span>
+      </div>
+    </div>
+    <p style="margin: 0; font-size: 13px; color: #6B6F65">{{ "Fonte: Parlamento europeo su dati dell'Agenzia europea dell'ambiente, V3" | fonti }}</p>
+  </section>
+
+
+  <section style="background: #EDE7DB">
+    <div style="max-width: 1180px; margin: 0 auto; padding: 112px 24px; display: flex; flex-direction: column; gap: 40px">
+      <div style="display: flex; flex-direction: column; gap: 12px; max-width: 760px">
+        <p style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #9A5638">Le fibre</p>
+        <h2 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: clamp(38px, 5vw, 60px); line-height: 1.04; font-weight: 500; letter-spacing: -0.03em">Le fibre e cosa sapere su ognuna.</h2>
+        <p style="margin: 0; font-size: 18px; line-height: 1.55; color: #585C53">La composizione è sempre obbligatoria in etichetta. Dall'alto, in ordine di preferenza. <span style="color: #6B6F65">{{ 'V1' | fonti }}</span></p>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px">
+        <article style="background: var(--accent); color: #F7F4EE; border-radius: 26px; padding: 34px; display: flex; flex-direction: column; gap: 14px">
+          <span style="font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #CFDCCB">Prima scelta, europeo</span>
+          <h3 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: 44px; font-weight: 500; letter-spacing: -0.03em; line-height: 1">Lino</h3>
+          <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #E1E8DE">Francia, Belgio e Paesi Bassi producono circa tre quarti della fibra lunga di lino del mondo. Fresco d'estate, dura moltissimo.</p>
+          <p style="margin: 0; font-size: 14px; line-height: 1.5; color: #CFDCCB">{{ 'Cerca: Masters of Linen (filiera tutta europea), V7' | fonti }}</p>
+        </article>
+        <article style="background: #F7F4EE; border-radius: 26px; padding: 34px; display: flex; flex-direction: column; gap: 14px">
+          <span style="font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent)">Ottima, coltivata anche in Europa</span>
+          <h3 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: 44px; font-weight: 500; letter-spacing: -0.03em; line-height: 1">Canapa</h3>
+          <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #585C53">Resistente, si ammorbidisce con i lavaggi. Spesso mescolata al cotone biologico.</p>
+          <p style="margin: 0; font-size: 14px; line-height: 1.5; color: #6B6F65">{{ 'Cerca: composizione chiara in percentuale, V1, V7' | fonti }}</p>
+        </article>
+        <article style="background: #F7F4EE; border-radius: 26px; padding: 34px; display: flex; flex-direction: column; gap: 14px">
+          <span style="font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent)">Buona, se certificata</span>
+          <h3 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: 44px; font-weight: 500; letter-spacing: -0.03em; line-height: 1">Cotone biologico</h3>
+          <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #585C53">In Europa se ne coltiva poco (Grecia, Spagna): quasi sempre arriva da lontano. Conta la certificazione.</p>
+          <p style="margin: 0; font-size: 14px; line-height: 1.5; color: #6B6F65">{{ 'Cerca: GOTS «Organic» (almeno 95% bio), V6' | fonti }}</p>
+        </article>
+        <article style="background: #F7F4EE; border-radius: 26px; padding: 34px; display: flex; flex-direction: column; gap: 14px">
+          <span style="font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent)">Buona, rigenerata</span>
+          <h3 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: 44px; font-weight: 500; letter-spacing: -0.03em; line-height: 1">Cotone e lana rigenerati</h3>
+          <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #585C53">Fibre ricavate da scarti tessili. A Prato si fa da oltre un secolo.</p>
+          <p style="margin: 0; font-size: 14px; line-height: 1.5; color: #6B6F65">{{ 'Cerca: certificazione GRS (Global Recycled Standard), V12' | fonti }}</p>
+        </article>
+        <article style="background: #F7F4EE; border-radius: 26px; padding: 34px; display: flex; flex-direction: column; gap: 14px">
+          <span style="font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #9A5638">Con cautela, fibra artificiale</span>
+          <h3 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: 44px; font-weight: 500; letter-spacing: -0.03em; line-height: 1">Lyocell e viscosa</h3>
+          <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #585C53">Nascono dal legno ma sono fibre artificiali, lavorate chimicamente.</p>
+          <p style="margin: 0; font-size: 14px; line-height: 1.5; color: #6B6F65">{{ 'Cerca: EU Ecolabel o produzione europea dichiarata, V9' | fonti }}</p>
+        </article>
+        <article style="background: #F7F4EE; border: 1px solid #DDD6C8; border-radius: 26px; padding: 34px; display: flex; flex-direction: column; gap: 14px">
+          <span style="font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #6B6F65">Da evitare quando puoi</span>
+          <h3 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: 44px; font-weight: 500; letter-spacing: -0.03em; line-height: 1">Sintetici</h3>
+          <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #585C53">Poliestere, nylon, acrilico: derivano dal petrolio e rilasciano microplastiche, soprattutto nei primi lavaggi.</p>
+          <p style="margin: 0; font-size: 14px; line-height: 1.5; color: #6B6F65">{{ "Da 200.000 a 500.000 tonnellate l'anno negli oceani, V2" | fonti }}</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+
+  <section style="max-width: 1180px; margin: 0 auto; padding: 112px 24px; display: flex; flex-direction: column; gap: 40px">
+    <div style="display: flex; flex-direction: column; gap: 12px; max-width: 760px">
+      <p style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #9A5638">Dove comprare</p>
+      <h2 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: clamp(38px, 5vw, 60px); line-height: 1.04; font-weight: 500; letter-spacing: -0.03em">Quattro marchi europei controllati.</h2>
+      
+    </div>
+    <div style="overflow-x: auto; border-radius: 22px; border: 1px solid #DDD6C8">
+      <table style="width: 100%; min-width: 760px; border-collapse: collapse; font-size: 15px; line-height: 1.5">
+        <thead>
+          <tr style="background: #EDE7DB; text-align: left">
+            <th scope="col" style="padding: 18px 22px; font-weight: 600">Brand</th>
+            <th scope="col" style="padding: 18px 22px; font-weight: 600">Paese</th>
+            <th scope="col" style="padding: 18px 22px; font-weight: 600">Fibre principali</th>
+            <th scope="col" style="padding: 18px 22px; font-weight: 600">Dove produce</th>
+            <th scope="col" style="padding: 18px 22px; font-weight: 600">Fonte</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-top: 1px solid #DDD6C8">
+            <td style="padding: 18px 22px; font-family: Newsreader, Georgia, serif; font-size: 22px; font-weight: 500">MagicLinen</td>
+            <td style="padding: 18px 22px">Lituania</td>
+            <td style="padding: 18px 22px">Lino lavato (OEKO-TEX), tessuto dalla Lituania o da paesi vicini</td>
+            <td style="padding: 18px 22px">Lituania, laboratorio proprio</td>
+            <td style="padding: 18px 22px; color: #6B6F65">{{ 'V11' | fonti }}</td>
+          </tr>
+          <tr style="border-top: 1px solid #DDD6C8">
+            <td style="padding: 18px 22px; font-family: Newsreader, Georgia, serif; font-size: 22px; font-weight: 500">Rifò</td>
+            <td style="padding: 18px 22px">Italia</td>
+            <td style="padding: 18px 22px">Lana e cashmere rigenerati</td>
+            <td style="padding: 18px 22px">Entro 30 km da Prato</td>
+            <td style="padding: 18px 22px; color: #6B6F65">{{ 'V12' | fonti }}</td>
+          </tr>
+          <tr style="border-top: 1px solid #DDD6C8">
+            <td style="padding: 18px 22px; font-family: Newsreader, Georgia, serif; font-size: 22px; font-weight: 500">hessnatur</td>
+            <td style="padding: 18px 22px">Germania</td>
+            <td style="padding: 18px 22px">Cotone vergine biologico, lino, canapa</td>
+            <td style="padding: 18px 22px">Circa 58% in Paesi UE, il resto fuori</td>
+            <td style="padding: 18px 22px; color: #6B6F65">{{ 'V13' | fonti }}</td>
+          </tr>
+          <tr style="border-top: 1px solid #DDD6C8">
+            <td style="padding: 18px 22px; font-family: Newsreader, Georgia, serif; font-size: 22px; font-weight: 500">Grüne Erde</td>
+            <td style="padding: 18px 22px">Austria</td>
+            <td style="padding: 18px 22px">Cotone biologico, lino, senza elastan</td>
+            <td style="padding: 18px 22px">Paesi UE o partner selezionati</td>
+            <td style="padding: 18px 22px; color: #6B6F65">{{ 'V14' | fonti }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 16px">
+      <div style="background: #EDE7DB; border-radius: 22px; padding: 28px; display: flex; flex-direction: column; gap: 8px">
+        <h3 style="margin: 0; font-size: 20px; font-weight: 600">L'usato</h3>
+        <p style="margin: 0; font-size: 15px; line-height: 1.55; color: #585C53">Mercatini, negozi dell'usato, scambi. Online c'è Vinted, piattaforma lituana.</p>
+      </div>
+      <div style="background: #EDE7DB; border-radius: 22px; padding: 28px; display: flex; flex-direction: column; gap: 8px">
+        <h3 style="margin: 0; font-size: 20px; font-weight: 600">La sartoria</h3>
+        <p style="margin: 0; font-size: 15px; line-height: 1.55; color: #585C53">Orli, cerniere, toppe: un capo riparato vale più di uno nuovo.</p>
+      </div>
+      <div style="background: #EDE7DB; border-radius: 22px; padding: 28px; display: flex; flex-direction: column; gap: 8px">
+        <h3 style="margin: 0; font-size: 20px; font-weight: 600">I tessuti locali</h3>
+        <p style="margin: 0; font-size: 15px; line-height: 1.55; color: #585C53">Lanifici, tessiture e laboratori della tua regione. Alcune sartorie e laboratori di riuso sono cooperative sociali. <a href="{{ url_for('page', slug='dove-comprare') }}" style="color: var(--accent); font-weight: 500">Cercali nella mappa</a></p>
+      </div>
+    </div>
+  </section>
+
+
+  <section style="background: #1D201B; color: #F7F4EE">
+    <div style="max-width: 1180px; margin: 0 auto; padding: 112px 24px; display: flex; flex-wrap: wrap; gap: 56px">
+      <div style="flex: 1 1 380px; display: flex; flex-direction: column; gap: 14px">
+        <p style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #B9CBB4">Farli durare</p>
+        <h2 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: clamp(38px, 5vw, 60px); line-height: 1.04; font-weight: 500; letter-spacing: -0.03em">Usato, sartorie e riparazione.</h2>
+      </div>
+      <ol style="flex: 1 1 480px; list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; border-top: 1px solid #3A3E36">
+        <li style="padding: 22px 0; border-bottom: 1px solid #3A3E36; display: grid; grid-template-columns: 48px minmax(0, 1fr); gap: 14px"><span style="font-family: Newsreader, Georgia, serif; font-size: 26px; font-style: italic; color: #B9CBB4">1</span><span style="font-size: 17px; line-height: 1.55">Lava meno spesso e a pieno carico: le microplastiche escono soprattutto nei primi lavaggi. <span style="color: #8F9388">{{ 'V2' | fonti }}</span></span></li>
+        <li style="padding: 22px 0; border-bottom: 1px solid #3A3E36; display: grid; grid-template-columns: 48px minmax(0, 1fr); gap: 14px"><span style="font-family: Newsreader, Georgia, serif; font-size: 26px; font-style: italic; color: #B9CBB4">2</span><span style="font-size: 17px; line-height: 1.55">Ripara prima di sostituire: bottoni, orli, cuciture.</span></li>
+        <li style="padding: 22px 0; border-bottom: 1px solid #3A3E36; display: grid; grid-template-columns: 48px minmax(0, 1fr); gap: 14px"><span style="font-family: Newsreader, Georgia, serif; font-size: 26px; font-style: italic; color: #B9CBB4">3</span><span style="font-size: 17px; line-height: 1.55">Quello che non usi: vendilo, regalalo, o portalo nella raccolta dei tessili, obbligatoria in tutta l'UE dal 2025. <span style="color: #8F9388">{{ 'V5' | fonti }}</span></span></li>
+        <li style="padding: 22px 0; border-bottom: 1px solid #3A3E36; display: grid; grid-template-columns: 48px minmax(0, 1fr); gap: 14px"><span style="font-family: Newsreader, Georgia, serif; font-size: 26px; font-style: italic; color: #B9CBB4">4</span><span style="font-size: 17px; line-height: 1.55">Diffida degli impermeabilizzanti «antimacchia»: spesso sono PFAS, che la UE sta valutando di limitare. <span style="color: #8F9388">{{ 'V10' | fonti }}</span></span></li>
+      </ol>
+    </div>
+  </section>
+
+
+  <section style="max-width: 1180px; margin: 0 auto; padding: 112px 24px; display: flex; flex-direction: column; gap: 32px">
+    <h2 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: clamp(34px, 4vw, 48px); line-height: 1.05; font-weight: 500; letter-spacing: -0.03em">Le nuove regole europee sul tessile.</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px">
+      <div style="border-top: 2px solid var(--accent); padding-top: 18px; display: flex; flex-direction: column; gap: 6px"><span style="font-family: Newsreader, Georgia, serif; font-size: 34px; font-weight: 500">2025</span><span style="font-size: 15px; line-height: 1.5; color: #585C53">Raccolta separata dei tessili obbligatoria in tutta l'UE. <span style="color: #6B6F65">{{ 'V5' | fonti }}</span></span></div>
+      <div style="border-top: 2px solid var(--accent); padding-top: 18px; display: flex; flex-direction: column; gap: 6px"><span style="font-family: Newsreader, Georgia, serif; font-size: 34px; font-weight: 500">2026</span><span style="font-size: 15px; line-height: 1.5; color: #585C53">Le grandi aziende non possono più distruggere vestiti e scarpe invenduti. <span style="color: #6B6F65">{{ 'V3' | fonti }}</span></span></div>
+      <div style="border-top: 2px solid var(--accent); padding-top: 18px; display: flex; flex-direction: column; gap: 6px"><span style="font-family: Newsreader, Georgia, serif; font-size: 34px; font-weight: 500">2028</span><span style="font-size: 15px; line-height: 1.5; color: #585C53">I produttori pagano raccolta e riciclo dei loro tessili. <span style="color: #6B6F65">{{ 'V5' | fonti }}</span></span></div>
+      <div style="border-top: 2px solid #CFC6B5; padding-top: 18px; display: flex; flex-direction: column; gap: 6px"><span style="font-family: Newsreader, Georgia, serif; font-size: 34px; font-weight: 500; color: #6B6F65">In discussione</span><span style="font-size: 15px; line-height: 1.5; color: #585C53">Restrizione universale dei PFAS: parere scientifico ECHA a marzo 2026, decisione UE non ancora presa. <span style="color: #6B6F65">{{ 'V10' | fonti }}</span></span></div>
+    </div>
+  </section>
+
+
+  <section style="max-width: 1180px; margin: 0 auto; padding: 0 24px 112px">
+    <div style="background: #EDE7DB; border-radius: 28px; padding: 40px 44px; display: flex; flex-direction: column; gap: 22px">
+      <div style="display: flex; flex-direction: column; gap: 8px; max-width: 720px">
+        <span style="font-size: 13px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #9A5638">Compra dalla rete</span>
+        <span style="font-family: Newsreader, Georgia, serif; font-size: clamp(28px, 3.2vw, 40px); font-weight: 500; letter-spacing: -0.025em; line-height: 1.12">Cooperative sociali che lavorano l'usato.</span>
+        <span style="font-size: 16px; line-height: 1.55; color: #585C53">Una parte della raccolta degli abiti usati passa da cooperative sociali di tipo B. La raccolta è in crisi: nei cassonetti arriva sempre più fast fashion che non si rivende. Metti nel cassonetto solo capi puliti e usabili. <span style="color: #6B6F65">{{ 'R34' | fonti }}</span></span>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px">
+        <div style="background: #F7F4EE; border-radius: 20px; padding: 22px; display: flex; flex-direction: column; gap: 6px"><b style="font-size: 17px">Vesti Solidale</b><span style="font-size: 14px; color: #6B6F65">Cinisello Balsamo (MI)</span><span style="font-size: 15px; line-height: 1.5; color: #3D4139">Raccolta, negozi dell'usato e sartoria sociale. Il 31% dei lavoratori è svantaggiato. <span style="color: #6B6F65">{{ 'R33' | fonti }}</span></span></div>
+        <div style="background: #F7F4EE; border-radius: 20px; padding: 22px; display: flex; flex-direction: column; gap: 6px"><b style="font-size: 17px">Ambiente Solidale</b><span style="font-size: 14px; color: #6B6F65">Napoli</span><span style="font-size: 15px; line-height: 1.5; color: #3D4139">Raccolta e riciclo degli abiti, lavoro per chi esce dal carcere o dalle dipendenze. Dati del 2021. <span style="color: #6B6F65">{{ 'R35' | fonti }}</span></span></div>
+        <div style="background: #F7F4EE; border-radius: 20px; padding: 22px; display: flex; flex-direction: column; gap: 6px"><b style="font-size: 17px">Made in Carcere</b><span style="font-size: 14px; color: #6B6F65">Lecce</span><span style="font-size: 15px; line-height: 1.5; color: #3D4139">Borse e accessori da scampoli di tessuto, cuciti in carcere dalla cooperativa Officina Creativa. <span style="color: #6B6F65">{{ 'R36' | fonti }}</span></span></div>
+      </div>
+      <a href="{{ url_for('page', slug='conoscere') }}" style="font-size: 15px; font-weight: 500; color: var(--accent); text-decoration: underline; text-underline-offset: 4px">Cosa sono le cooperative sociali</a>
+    </div>
+  </section>
+
+
+  <section style="border-top: 1px solid #DDD6C8">
+    <div style="max-width: 1180px; margin: 0 auto; padding: 72px 24px; display: flex; flex-direction: column; gap: 24px">
+      <h2 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: 32px; font-weight: 500; letter-spacing: -0.02em">Fonti del capitolo</h2>
+      {% with codes = ['V1', 'V2', 'V3', 'V4', 'V5', 'V6', 'V7', 'V8', 'V9', 'R33', 'R34', 'R35', 'R36', 'V10', 'V11', 'V12', 'V13', 'V14'] %}{% include 'partials/fonti_lista.html' %}{% endwith %}
+      <a href="{{ url_for('page', slug='metodo') }}" style="font-size: 15px; font-weight: 500; color: var(--accent)">Link completi e punti da verificare</a>
+    </div>
+  </section>
+
+
+  <section style="max-width: 1180px; margin: 0 auto; padding: 0 24px 96px">
+    <div style="border-top: 1px solid #DDD6C8; padding-top: 36px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 24px; align-items: center">
+      <a href="{{ url_for('page', slug='cibo') }}" style="display: flex; flex-direction: column; gap: 2px; color: #1D201B"><span style="font-size: 13px; color: #585C53">Capitolo 1</span><span style="font-family: Newsreader, Georgia, serif; font-size: 30px; font-weight: 500; letter-spacing: -0.02em">Cibo</span></a>
+      <a href="{{ url_for('page', slug='casa') }}" style="display: flex; flex-direction: column; gap: 2px; text-align: right; color: #1D201B"><span style="font-size: 13px; color: #585C53">Capitolo 3</span><span style="font-family: Newsreader, Georgia, serif; font-size: 30px; font-weight: 500; letter-spacing: -0.02em">Casa e cura</span></a>
+    </div>
+  </section>
+{% endblock %}

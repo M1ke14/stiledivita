@@ -1,0 +1,1037 @@
+{
+ "C1": {
+  "codice": "C1",
+  "gruppo": "Cibo",
+  "titolo": "Lane et al., BMJ 2024, Umbrella review sugli ultra-processati",
+  "url": "https://www.bmj.com/content/384/bmj-2023-077310",
+  "tipo": "Revisione sistematica",
+  "sostiene": "Più ultra-processati = rischio maggiore per 32 esiti di salute (quasi 10 milioni di partecipanti; studi osservazionali)",
+  "nota": ""
+ },
+ "C2": {
+  "codice": "C2",
+  "gruppo": "Cibo",
+  "titolo": "Hall et al., Cell Metabolism 2019",
+  "url": "https://doi.org/10.1016/j.cmet.2019.05.008",
+  "tipo": "Studio randomizzato",
+  "sostiene": "Con dieta ultra-processata si mangiano circa 500 kcal/giorno in più (20 persone, 4 settimane)",
+  "nota": ""
+ },
+ "C3": {
+  "codice": "C3",
+  "gruppo": "Cibo",
+  "titolo": "Monteiro et al., FAO 2019, Classificazione NOVA",
+  "url": "https://www.fao.org/3/ca5644en/ca5644en.pdf",
+  "tipo": "Rapporto tecnico",
+  "sostiene": "Come riconoscere un ultra-processato dalla lista ingredienti",
+  "nota": ""
+ },
+ "C4": {
+  "codice": "C4",
+  "gruppo": "Cibo",
+  "titolo": "Lancet Series on Ultra-Processed Foods, 2025",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/41270766/",
+  "tipo": "Serie peer-reviewed",
+  "sostiene": "Sintesi aggiornata delle prove e delle politiche",
+  "nota": "Link aggiornato dopo la verifica del 4/11/2026"
+ },
+ "C5": {
+  "codice": "C5",
+  "gruppo": "Cibo",
+  "titolo": "CREA, Linee guida per una sana alimentazione, rev. 2018",
+  "url": "https://ats-brescia.it/system/files/pagina_standard/files/1263/6013/LINEE-GUIDA%20DEFINITIVO.pdf",
+  "tipo": "Linee guida pubbliche IT",
+  "sostiene": "Più frutta, verdura, integrali e legumi (3–4 porzioni/settimana); limitare carne rossa, salumi, zuccheri, sale",
+  "nota": ""
+ },
+ "C6": {
+  "codice": "C6",
+  "gruppo": "Cibo",
+  "titolo": "OMS Europa, Nutrizione, dati e raccomandazioni",
+  "url": "https://www.who.int/europe/news-room/photo-stories/item/data-and-statistics",
+  "tipo": "Agenzia pubblica",
+  "sostiene": "Zuccheri liberi sotto il 10% dell'energia (ideale 5%), sale sotto 5 g/giorno, 400 g di frutta e verdura",
+  "nota": ""
+ },
+ "C7": {
+  "codice": "C7",
+  "gruppo": "Cibo",
+  "titolo": "EAT-Lancet Commission 2025",
+  "url": "https://doi.org/10.1016/S0140-6736(25)01201-2",
+  "tipo": "Commissione scientifica",
+  "sostiene": "Dieta ricca di vegetali, poca carne rossa, buona per salute e pianeta",
+  "nota": "Link aggiornato dopo la verifica del 4/11/2026"
+ },
+ "C8": {
+  "codice": "C8",
+  "gruppo": "Cibo",
+  "titolo": "IARC, comunicato n. 240 (2015)",
+  "url": "https://www.iarc.who.int/wp-content/uploads/2018/07/pr240_E.pdf",
+  "tipo": "Agenzia OMS",
+  "sostiene": "Carni lavorate: Gruppo 1 (cancerogene); carne rossa: Gruppo 2A; +18% rischio colon-retto ogni 50 g/giorno di carne lavorata",
+  "nota": ""
+ },
+ "C9": {
+  "codice": "C9",
+  "gruppo": "Cibo",
+  "titolo": "Reg. (UE) 1379/2013, art. 35",
+  "url": "https://eur-lex.europa.eu/eli/reg/2013/1379/oj",
+  "tipo": "Legge UE",
+  "sostiene": "Pesce fresco/congelato: obbligo di specie, pescato/allevato, zona FAO, attrezzo di pesca",
+  "nota": ""
+ },
+ "C10": {
+  "codice": "C10",
+  "gruppo": "Cibo",
+  "titolo": "EFSA 2015, Benefici del pesce vs metilmercurio e EFSA NDA 2014",
+  "url": "https://doi.org/10.2903/j.efsa.2015.3982",
+  "tipo": "Agenzia UE",
+  "sostiene": "1–2 porzioni di pesce a settimana (3–4 in gravidanza) con benefici; limitare le specie ricche di mercurio",
+  "nota": "Verifica 4/11/2026: EFSA 2015: 1–2 porzioni a settimana per lo sviluppo neurologico, 3–4 per il cuore negli adulti; non «3–4 in gravidanza»"
+ },
+ "C11": {
+  "codice": "C11",
+  "gruppo": "Cibo",
+  "titolo": "Reg. delegato (UE) 2023/2465, codice delle uova",
+  "url": "https://eur-lex.europa.eu/eli/reg_del/2023/2465/oj",
+  "tipo": "Legge UE",
+  "sostiene": "Codice sul guscio: 0 bio, 1 aperto, 2 a terra, 3 gabbia",
+  "nota": "Link aggiornato dopo la verifica del 4/11/2026"
+ },
+ "C12": {
+  "codice": "C12",
+  "gruppo": "Cibo",
+  "titolo": "Reg. (UE) 2018/848, Biologico",
+  "url": "https://eur-lex.europa.eu/eli/reg/2018/848/oj",
+  "tipo": "Legge UE",
+  "sostiene": "Logo bio UE: almeno 95% di ingredienti agricoli biologici",
+  "nota": ""
+ },
+ "C13": {
+  "codice": "C13",
+  "gruppo": "Cibo",
+  "titolo": "Reg. (UE) 2024/1143, DOP e IGP",
+  "url": "https://eur-lex.europa.eu/eli/reg/2024/1143/oj/eng",
+  "tipo": "Legge UE",
+  "sostiene": "Cosa garantiscono DOP e IGP",
+  "nota": ""
+ },
+ "C14": {
+  "codice": "C14",
+  "gruppo": "Cibo",
+  "titolo": "Reg. delegato (UE) 2022/2104, Olio d'oliva e Commissione UE, Olio d'oliva",
+  "url": "https://eur-lex.europa.eu/eli/reg_del/2022/2104/oj/eng",
+  "tipo": "Legge UE",
+  "sostiene": "Categorie dell'olio, acidità dell'extravergine ≤ 0,8%, origine obbligatoria e diciture delle miscele",
+  "nota": ""
+ },
+ "C15": {
+  "codice": "C15",
+  "gruppo": "Cibo",
+  "titolo": "DM 1 ottobre 2018 n. 131, Pane fresco",
+  "url": "https://www.normattiva.it/eli/id/2018/11/19/18G00156/ORIGINAL",
+  "tipo": "Legge IT",
+  "sostiene": "Definizione di «pane fresco», «panificio» e obbligo della dicitura «pane conservato»",
+  "nota": ""
+ },
+ "C16": {
+  "codice": "C16",
+  "gruppo": "Cibo",
+  "titolo": "DM 26 dicembre 2025, Proroga origine in etichetta (GU 11/2/2026)",
+  "url": "https://www.unionalimentari.com/wp-content/uploads/2026/02/MASAF-decreto-26.12.2025-sperimentazione-origine-etichetta.pdf",
+  "tipo": "Legge IT",
+  "sostiene": "Origine obbligatoria per pasta, riso, pomodoro, latte e formaggi, salumi suini fino al 31/12/2026",
+  "nota": ""
+ },
+ "C17": {
+  "codice": "C17",
+  "gruppo": "Cibo",
+  "titolo": "EFSA, Residui di pesticidi, dati 2023",
+  "url": "https://www.efsa.europa.eu/en/news/pesticides-residues-food-whats-situation-eu",
+  "tipo": "Agenzia UE",
+  "sostiene": "58% dei campioni senza residui misurabili, 38,3% entro i limiti, 3,7% oltre i limiti",
+  "nota": "Verifica 4/11/2026: Usati i dati 2024: oltre 125.000 campioni, circa 2,4% oltre i limiti. Da ricontrollare a mano sulla pagina EFSA"
+ },
+ "C18": {
+  "codice": "C18",
+  "gruppo": "Cibo",
+  "titolo": "Direttiva (UE) 2020/2184, Acqua potabile",
+  "url": "https://eur-lex.europa.eu/eli/dir/2020/2184/oj",
+  "tipo": "Legge UE",
+  "sostiene": "Requisiti di qualità dell'acqua del rubinetto e diritto all'informazione",
+  "nota": ""
+ },
+ "C19": {
+  "codice": "C19",
+  "gruppo": "Cibo",
+  "titolo": "OMS 2023, Nessun livello di alcol è sicuro",
+  "url": "https://www.who.int/azerbaijan/news/item/04-01-2023-no-level-of-alcohol-consumption-is-safe-for-our-health",
+  "tipo": "Agenzia pubblica",
+  "sostiene": "L'alcol è cancerogeno di Gruppo 1; non esiste una soglia sicura",
+  "nota": ""
+ },
+ "C20": {
+  "codice": "C20",
+  "gruppo": "Cibo",
+  "titolo": "Reg. (UE) 2023/1115, Deforestazione (EUDR)",
+  "url": "https://eur-lex.europa.eu/eli/reg/2023/1115/oj",
+  "tipo": "Legge UE",
+  "sostiene": "Caffè, cacao, soia, olio di palma senza deforestazione; si applica dal 30/12/2026 (Reg. 2025/2650)",
+  "nota": "Verifica 4/11/2026: Piccole e micro imprese dal 30/6/2027 (Reg. 2025/2650)"
+ },
+ "C21": {
+  "codice": "C21",
+  "gruppo": "Cibo",
+  "titolo": "Regione Veneto, Mercati degli agricoltori (DM 20/11/2007)",
+  "url": "https://agricoltura.regione.emilia-romagna.it/aiuti-imprese/temi/vendita-diretta/norme-vendita-diretta-prodotti-agricoli/decreto-ministero-agricoltura-20-novembre-2007",
+  "tipo": "Pubblica amministrazione",
+  "sostiene": "Cosa sono i mercati di vendita diretta e chi può vendere",
+  "nota": "Link aggiornato dopo la verifica del 4/11/2026"
+ },
+ "C22": {
+  "codice": "C22",
+  "gruppo": "Cibo",
+  "titolo": "Rete italiana di economia solidale",
+  "url": "https://www.economiasolidale.net",
+  "tipo": "Rete di associazioni",
+  "sostiene": "Come trovare un gruppo d'acquisto solidale",
+  "nota": "Link aggiornato dopo la verifica del 4/11/2026"
+ },
+ "C23": {
+  "codice": "C23",
+  "gruppo": "Cibo",
+  "titolo": "Campagna Amica",
+  "url": "https://www.campagnamica.it",
+  "tipo": "Rete promossa da Coldiretti",
+  "sostiene": "Mappa dei mercati contadini (attenzione: è un'associazione di categoria)",
+  "nota": ""
+ },
+ "C24": {
+  "codice": "C24",
+  "gruppo": "Cibo",
+  "titolo": "EFSA 2004, Mercurio nel pesce",
+  "url": "https://www.efsa.europa.eu/en/press/news/040318",
+  "tipo": "Agenzia UE",
+  "sostiene": "Grandi predatori (pesce spada, tonno) contengono più metilmercurio",
+  "nota": ""
+ },
+ "C25": {
+  "codice": "C25",
+  "gruppo": "Cibo",
+  "titolo": "Commissione UE, FAQ informazione al consumatore sui prodotti ittici",
+  "url": "https://oceans-and-fisheries.ec.europa.eu/system/files/2020-11/2019-10-24-consumer-information-frequently-asked-questions.pdf",
+  "tipo": "Commissione UE",
+  "sostiene": "Il tonno in scatola è escluso dall'art. 35: zona FAO e attrezzo non sono obbligatori",
+  "nota": ""
+ },
+ "C26": {
+  "codice": "C26",
+  "gruppo": "Cibo",
+  "titolo": "Direttiva (UE) 2024/1438, Miele",
+  "url": "https://eur-lex.europa.eu/eli/dir/2024/1438/oj/eng",
+  "tipo": "Legge UE",
+  "sostiene": "Dal 14/6/2026 le miscele di miele indicano tutti i paesi d'origine con le percentuali",
+  "nota": ""
+ },
+ "C27": {
+  "codice": "C27",
+  "gruppo": "Cibo",
+  "titolo": "Reg. (CE) 1760/2000, etichetta della carne bovina",
+  "url": "https://eur-lex.europa.eu/eli/reg/2000/1760/oj",
+  "tipo": "Legge UE",
+  "sostiene": "Origine obbligatoria in etichetta per la carne bovina: nato, allevato e macellato in",
+  "nota": ""
+ },
+ "V1": {
+  "codice": "V1",
+  "gruppo": "Vestire",
+  "titolo": "Reg. (UE) 1007/2011, Etichette tessili",
+  "url": "https://eur-lex.europa.eu/eli/reg/2011/1007/oj",
+  "tipo": "Legge UE",
+  "sostiene": "La composizione delle fibre deve essere sempre in etichetta",
+  "nota": ""
+ },
+ "V2": {
+  "codice": "V2",
+  "gruppo": "Vestire",
+  "titolo": "EEA 2022, Microplastiche dai tessuti",
+  "url": "https://www.eea.europa.eu/publications/microplastics-from-textiles-towards-a-circular-economy-for-textiles-in-europe",
+  "tipo": "Agenzia UE",
+  "sostiene": "Sintetici: 200.000–500.000 t/anno di microplastiche negli oceani; il rilascio maggiore avviene nei primi lavaggi",
+  "nota": ""
+ },
+ "V3": {
+  "codice": "V3",
+  "gruppo": "Vestire",
+  "titolo": "Parlamento europeo, Fast fashion, i numeri",
+  "url": "https://www.europarl.europa.eu/topics/en/article/20201208STO93327/the-impact-of-textile-production-and-waste-on-the-environment-infographics",
+  "tipo": "Istituzione UE",
+  "sostiene": "19 kg di tessili comprati e circa 12 kg buttati a persona l'anno; 2.700 litri d'acqua per una t-shirt di cotone; divieto di distruggere invenduti dal 2026",
+  "nota": "Verifica 4/11/2026: 19 kg è «consumo» pro capite 2022"
+ },
+ "V4": {
+  "codice": "V4",
+  "gruppo": "Vestire",
+  "titolo": "Strategia UE per tessili sostenibili e circolari, COM(2022) 141",
+  "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52022DC0141",
+  "tipo": "Istituzione UE",
+  "sostiene": "Obiettivo 2030: capi durevoli, riparabili, riciclabili",
+  "nota": ""
+ },
+ "V5": {
+  "codice": "V5",
+  "gruppo": "Vestire",
+  "titolo": "Direttiva (UE) 2025/1898, Rifiuti tessili",
+  "url": "https://eur-lex.europa.eu/eli/dir/2025/1898/oj",
+  "tipo": "Legge UE",
+  "sostiene": "Raccolta separata dei tessili dal 1/1/2025; responsabilità del produttore entro il 2028",
+  "nota": ""
+ },
+ "V6": {
+  "codice": "V6",
+  "gruppo": "Vestire",
+  "titolo": "GOTS, Label grades",
+  "url": "https://global-standards.org/resources/labelling",
+  "tipo": "Standard privato",
+  "sostiene": "Soglie 95% e 70% di fibre biologiche",
+  "nota": "Link aggiornato dopo la verifica del 4/11/2026"
+ },
+ "V7": {
+  "codice": "V7",
+  "gruppo": "Vestire",
+  "titolo": "Alliance for European Flax-Linen & Hemp",
+  "url": "https://allianceflaxlinenhemp.eu",
+  "tipo": "Associazione di settore",
+  "sostiene": "Francia, Belgio e Paesi Bassi producono circa 3/4 della fibra lunga di lino mondiale",
+  "nota": ""
+ },
+ "V8": {
+  "codice": "V8",
+  "gruppo": "Vestire",
+  "titolo": "OEKO-TEX Standard 100",
+  "url": "https://www.oeko-tex.com/en/our-standards/oeko-tex-standard-100",
+  "tipo": "Standard privato",
+  "sostiene": "Test su sostanze nocive nel tessuto finito",
+  "nota": ""
+ },
+ "V9": {
+  "codice": "V9",
+  "gruppo": "Vestire",
+  "titolo": "EU Ecolabel, Prodotti tessili",
+  "url": "https://green-forum.ec.europa.eu/green-business/eu-ecolabel_en",
+  "tipo": "Marchio UE",
+  "sostiene": "Criteri ambientali su fibre e tintura",
+  "nota": "Link aggiornato dopo la verifica del 4/11/2026"
+ },
+ "V10": {
+  "codice": "V10",
+  "gruppo": "Vestire",
+  "titolo": "ECHA, PFAS",
+  "url": "https://echa.europa.eu/hot-topics/perfluoroalkyl-chemicals-pfas",
+  "tipo": "Agenzia UE",
+  "sostiene": "Proposta di restrizione universale dei PFAS (anche impermeabilizzanti tessili), in valutazione nel 2026",
+  "nota": "Verifica 4/11/2026: Parere RAC del 3/3/2026; SEAC atteso a fine 2026; decisione UE non ancora presa"
+ },
+ "V11": {
+  "codice": "V11",
+  "gruppo": "Vestire",
+  "titolo": "MagicLinen, Sostenibilità",
+  "url": "https://magiclinen.com/sustainability",
+  "tipo": "Sito del produttore",
+  "sostiene": "Lino europeo, confezione in Lituania",
+  "nota": "Verifica 4/11/2026: Produce in Lituania, tessuto dalla Lituania o paesi vicini"
+ },
+ "V12": {
+  "codice": "V12",
+  "gruppo": "Vestire",
+  "titolo": "Rifò, scheda della piattaforma UE per l'economia circolare",
+  "url": "https://circulareconomy.europa.eu/platform/en/node/1560",
+  "tipo": "Fonte UE",
+  "sostiene": "Cotone e lana rigenerati, filiera entro 30 km da Prato",
+  "nota": "Verifica 4/11/2026: Lana e cashmere rigenerati, entro 30 km da Prato"
+ },
+ "V13": {
+  "codice": "V13",
+  "gruppo": "Vestire",
+  "titolo": "hessnatur, Sustainability",
+  "url": "https://www.hessnatur.com/en-DE/sustainability",
+  "tipo": "Sito del produttore",
+  "sostiene": "100% cotone biologico; circa 58% della produzione in Paesi UE",
+  "nota": "Verifica 4/11/2026: Biologico il cotone vergine; 58% produzione UE confermato"
+ },
+ "V14": {
+  "codice": "V14",
+  "gruppo": "Vestire",
+  "titolo": "Utopia.de, Grüne Erde",
+  "url": "https://utopia.de/0/kaufberatung/www-grueneerde-com-127773",
+  "tipo": "Rivista di consumo",
+  "sostiene": "Produzione in Paesi UE o partner selezionati; niente elastan",
+  "nota": ""
+ },
+ "K1": {
+  "codice": "K1",
+  "gruppo": "Casa e cura",
+  "titolo": "EU Ecolabel, Detergenti e prodotti per la pulizia",
+  "url": "https://green-forum.ec.europa.eu/green-business/eu-ecolabel_en",
+  "tipo": "Marchio UE",
+  "sostiene": "Cosa garantisce il fiore UE su detersivi per bucato, piatti e superfici",
+  "nota": "Link aggiornato dopo la verifica del 4/11/2026"
+ },
+ "K2": {
+  "codice": "K2",
+  "gruppo": "Casa e cura",
+  "titolo": "Svanes et al., Am J Respir Crit Care Med 2018 (Università di Bergen) e repository Imperial College",
+  "url": "https://www.uib.no/en/news/115228/household-cleaning-can-be-bad-smoking-lung-function",
+  "tipo": "Studio di coorte (6.235 persone, 20 anni)",
+  "sostiene": "Uso regolare di spray per la pulizia associato a un calo più rapido della funzione polmonare nelle donne",
+  "nota": ""
+ },
+ "K3": {
+  "codice": "K3",
+  "gruppo": "Casa e cura",
+  "titolo": "Reg. (UE) 2023/2055, Microplastiche aggiunte",
+  "url": "https://single-market-economy.ec.europa.eu/sectors/chemicals/reach/restrictions/commission-regulation-eu-20232055-restriction-microplastics-intentionally-added-products_en",
+  "tipo": "Legge UE",
+  "sostiene": "Microsfere e glitter vietati dal 2023; cosmetici da risciacquo entro il 2027, gli altri entro il 2029–2035",
+  "nota": "Verifica 4/11/2026: Glitter di plastica sciolto vietato con eccezioni"
+ },
+ "K4": {
+  "codice": "K4",
+  "gruppo": "Casa e cura",
+  "titolo": "Reg. (CE) 1223/2009, Cosmetici",
+  "url": "https://eur-lex.europa.eu/eli/reg/2009/1223/oj",
+  "tipo": "Legge UE",
+  "sostiene": "Lista ingredienti INCI obbligatoria",
+  "nota": ""
+ },
+ "K5": {
+  "codice": "K5",
+  "gruppo": "Casa e cura",
+  "titolo": "Reg. (UE) 2023/1545, Allergeni delle fragranze (HPRA)",
+  "url": "https://www.hpra.ie/regulation/cosmetics/labelling-and-claims/cosmetic-products-labelling/labelling-of-cosmetic-fragrance-allergens",
+  "tipo": "Legge UE",
+  "sostiene": "Da 24 a oltre 80 allergeni da indicare; obbligo per i nuovi prodotti dal 31/7/2026",
+  "nota": "Verifica 4/11/2026: Da 26 (non 24) a oltre 80 allergeni dal 31/7/2026; prodotti già in vendita fino al 31/7/2028"
+ },
+ "K6": {
+  "codice": "K6",
+  "gruppo": "Casa e cura",
+  "titolo": "Reg. (UE) 2024/3190, Bisfenolo A",
+  "url": "https://trade.ec.europa.eu/access-to-markets/en/content/eu-prohibition-use-and-trade-bisphenol-20-january-2025",
+  "tipo": "Legge UE",
+  "sostiene": "BPA vietato nei materiali a contatto con alimenti dal 20/1/2025 (periodi transitori per alcuni prodotti)",
+  "nota": ""
+ },
+ "K7": {
+  "codice": "K7",
+  "gruppo": "Casa e cura",
+  "titolo": "ECHA, PFAS",
+  "url": "https://echa.europa.eu/hot-topics/perfluoroalkyl-chemicals-pfas",
+  "tipo": "Agenzia UE",
+  "sostiene": "Il PTFE delle padelle antiaderenti è un PFAS; restrizione universale ancora in valutazione",
+  "nota": "Verifica 4/11/2026: Parere RAC del 3/3/2026; SEAC atteso a fine 2026; decisione UE non ancora presa"
+ },
+ "K8": {
+  "codice": "K8",
+  "gruppo": "Casa e cura",
+  "titolo": "Nordic Swan Ecolabel",
+  "url": "https://www.nordic-swan-ecolabel.org",
+  "tipo": "Marchio pubblico nordico",
+  "sostiene": "Alternativa all'Ecolabel UE",
+  "nota": ""
+ },
+ "K9": {
+  "codice": "K9",
+  "gruppo": "Casa e cura",
+  "titolo": "COSMOS-standard",
+  "url": "https://www.cosmos-standard.org",
+  "tipo": "Standard privato",
+  "sostiene": "Cosmetici biologici e naturali",
+  "nota": ""
+ },
+ "D1": {
+  "codice": "D1",
+  "gruppo": "Digitale",
+  "titolo": "GDPR, Reg. (UE) 2016/679",
+  "url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
+  "tipo": "Legge UE",
+  "sostiene": "Diritto di accesso, cancellazione e portabilità dei dati",
+  "nota": ""
+ },
+ "D2": {
+  "codice": "D2",
+  "gruppo": "Digitale",
+  "titolo": "Digital Markets Act, Reg. (UE) 2022/1925",
+  "url": "https://eur-lex.europa.eu/eli/reg/2022/1925/oj",
+  "tipo": "Legge UE",
+  "sostiene": "Obblighi per le grandi piattaforme, tra cui la scelta del motore di ricerca e del browser",
+  "nota": ""
+ },
+ "D3": {
+  "codice": "D3",
+  "gruppo": "Digitale",
+  "titolo": "Reg. (UE) 2023/1670, Ecodesign smartphone (Commissione UE)",
+  "url": "https://single-market-economy.ec.europa.eu/news/new-eu-rules-durable-energy-efficient-and-repairable-smartphones-and-tablets-start-applying-2025-06-20_en",
+  "tipo": "Legge UE",
+  "sostiene": "Dal 20/6/2025 ricambi per almeno 7 anni dopo la fine delle vendite, consegnati in 5–10 giorni lavorativi",
+  "nota": ""
+ },
+ "D4": {
+  "codice": "D4",
+  "gruppo": "Digitale",
+  "titolo": "Reg. (UE) 2023/1669, Etichetta smartphone",
+  "url": "https://eur-lex.europa.eu/eli/reg_del/2023/1669/oj",
+  "tipo": "Legge UE",
+  "sostiene": "Classe di riparabilità, durata batteria, resistenza a cadute e acqua in etichetta",
+  "nota": ""
+ },
+ "D5": {
+  "codice": "D5",
+  "gruppo": "Digitale",
+  "titolo": "Direttiva (UE) 2024/1799, Diritto alla riparazione e recepimento italiano (Fieldfisher)",
+  "url": "https://certifico.com/news/decreto-legislativo-25-settembre-2026-n-176",
+  "tipo": "Legge UE e IT",
+  "sostiene": "Riparazione obbligatoria per alcuni prodotti; in Italia D.Lgs. 176/2026, in vigore dal 22/10/2026",
+  "nota": "Link aggiornato dopo la verifica del 4/11/2026"
+ },
+ "D6": {
+  "codice": "D6",
+  "gruppo": "Digitale",
+  "titolo": "Direttiva (UE) 2022/2380, Caricatore unico USB-C",
+  "url": "https://eur-lex.europa.eu/eli/dir/2022/2380/oj",
+  "tipo": "Legge UE",
+  "sostiene": "USB-C obbligatorio su telefoni e altri dispositivi",
+  "nota": ""
+ },
+ "D7": {
+  "codice": "D7",
+  "gruppo": "Digitale",
+  "titolo": "Ecosia, Indice di ricerca europeo",
+  "url": "https://blog.ecosia.org/launching-our-european-search-index/",
+  "tipo": "Sito del servizio",
+  "sostiene": "Ecosia (Berlino) e Qwant (Parigi) costruiscono un indice europeo proprio (EUSP/Staan)",
+  "nota": ""
+ },
+ "D8": {
+  "codice": "D8",
+  "gruppo": "Digitale",
+  "titolo": "EPI, Wero",
+  "url": "https://epicompany.eu",
+  "tipo": "Sito del servizio",
+  "sostiene": "Portafoglio di pagamento europeo creato da banche europee",
+  "nota": ""
+ },
+ "D9": {
+  "codice": "D9",
+  "gruppo": "Digitale",
+  "titolo": "European Alternatives e European Purpose",
+  "url": "https://european-alternatives.eu",
+  "tipo": "Directory indipendenti",
+  "sostiene": "Elenchi aggiornati di servizi europei",
+  "nota": ""
+ },
+ "D11": {
+  "codice": "D11",
+  "gruppo": "Digitale",
+  "titolo": "Pagine legali dei servizi digitali",
+  "url": "",
+  "tipo": "Siti dei produttori",
+  "sostiene": "Sede di ogni servizio, verificata il 4/11/2026",
+  "nota": ""
+ },
+ "S1": {
+  "codice": "S1",
+  "gruppo": "Soldi ed energia",
+  "titolo": "Banking on Climate Chaos 2026 (dati 2025)",
+  "url": "https://www.bankingonclimatechaos.org/wp-content/uploads/2026/06/BOCC_2026_vFINAL.pdf",
+  "tipo": "Rapporto di ONG",
+  "sostiene": "Le 65 banche più grandi hanno dato 906 miliardi di dollari ai combustibili fossili nel 2025; 8.700 miliardi dal 2016",
+  "nota": "Verifica 4/11/2026: Tolto «le europee calano di più»: il taglio maggiore è di BMO (Canada)"
+ },
+ "S2": {
+  "codice": "S2",
+  "gruppo": "Soldi ed energia",
+  "titolo": "GABV, Banche etiche in Europa",
+  "url": "https://www.gabv.org/declarations/the-regional-chapters/",
+  "tipo": "Rete internazionale",
+  "sostiene": "Banca Etica (Italia), GLS (Germania), Triodos (Paesi Bassi) e altre fanno parte della rete",
+  "nota": ""
+ },
+ "S3": {
+  "codice": "S3",
+  "gruppo": "Soldi ed energia",
+  "titolo": "BankTrack, Find a better bank",
+  "url": "https://www.banktrack.org/campaign/find_a_better_bank",
+  "tipo": "ONG",
+  "sostiene": "Elenco di banche membri di GABV e FEBEA",
+  "nota": ""
+ },
+ "S4": {
+  "codice": "S4",
+  "gruppo": "Soldi ed energia",
+  "titolo": "MASE, Decalogo CER",
+  "url": "https://www.mase.gov.it/sites/default/files/Decalogo-CER.pdf",
+  "tipo": "Ministero IT",
+  "sostiene": "Chi può costituire una comunità energetica rinnovabile; tariffa incentivante per 20 anni",
+  "nota": "Verifica 4/11/2026: Dal 2025 il contributo PNRR per le CER vale nei comuni fino a 50.000 abitanti"
+ },
+ "S5": {
+  "codice": "S5",
+  "gruppo": "Soldi ed energia",
+  "titolo": "D.Lgs. 199/2021, artt. 30–31 e DM 414/2023 (Decreto CACER)",
+  "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2021-11-08;199",
+  "tipo": "Legge IT",
+  "sostiene": "Base giuridica di CER e autoconsumo",
+  "nota": "Verifica 4/11/2026: Usare il formato ELI di Normattiva (controllo a mano)"
+ },
+ "S6": {
+  "codice": "S6",
+  "gruppo": "Soldi ed energia",
+  "titolo": "ènostra, Comunicato 10 anni",
+  "url": "https://www.enostra.it/wp-content/uploads/2026/05/Presentazione_Assemblea_09052026.pdf",
+  "tipo": "Sito della cooperativa",
+  "sostiene": "Cooperativa italiana di energia rinnovabile con oltre 15.000 soci",
+  "nota": "Link aggiornato dopo la verifica del 4/11/2026"
+ },
+ "S7": {
+  "codice": "S7",
+  "gruppo": "Soldi ed energia",
+  "titolo": "Reg. (UE) 2017/1369, Etichetta energetica",
+  "url": "https://eur-lex.europa.eu/eli/reg/2017/1369/oj",
+  "tipo": "Legge UE",
+  "sostiene": "Scala A–G e banca dati EPREL consultabile dal QR code",
+  "nota": ""
+ },
+ "S8": {
+  "codice": "S8",
+  "gruppo": "Soldi ed energia",
+  "titolo": "EPI, Wero",
+  "url": "https://epicompany.eu",
+  "tipo": "Sito del servizio",
+  "sostiene": "Pagamenti tra conti europei senza circuiti extra-UE",
+  "nota": ""
+ },
+ "S9": {
+  "codice": "S9",
+  "gruppo": "Soldi ed energia",
+  "titolo": "Agenzia delle Entrate, Guida «Ristrutturazioni edilizie: le agevolazioni fiscali», febbraio 2026 (L. 199/2025)",
+  "url": "https://www.agenziaentrate.gov.it/portale/web/guest/agevolazioni",
+  "tipo": "Agenzia pubblica",
+  "sostiene": "Detrazione fotovoltaico 2026: 50% abitazione principale, 36% altri immobili, 10 rate, tetto 96.000 €; dal 2027 è previsto il calo (36% / 30%).",
+  "nota": "Verifica 4/11/2026: Aliquote confermate dalla guida ANCE"
+ },
+ "S10": {
+  "codice": "S10",
+  "gruppo": "Soldi ed energia",
+  "titolo": "GSE, Ritiro Dedicato",
+  "url": "https://www.gse.it/servizi-per-te/fotovoltaico/ritiro-dedicato",
+  "tipo": "Ente pubblico",
+  "sostiene": "L'energia immessa in rete e non consumata viene ritirata e pagata dal GSE. Per i nuovi impianti lo Scambio sul posto non c'è più.",
+  "nota": "Verifica 4/11/2026: Il GSE non dice che lo Scambio sul posto è chiuso: frase da togliere o da coprire con fonte ARERA"
+ },
+ "R1": {
+  "codice": "R1",
+  "gruppo": "La rete",
+  "titolo": "L. 8 novembre 1991, n. 381, Disciplina delle cooperative sociali",
+  "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1991-11-08;381",
+  "tipo": "Legge italiana",
+  "sostiene": "Tipo A (servizi socio-sanitari ed educativi) e tipo B (inserimento lavorativo); nel tipo B almeno il 30% dei lavoratori è svantaggiato (art. 4).",
+  "nota": "Verifica 4/11/2026: Usare il formato ELI di Normattiva (controllo a mano)"
+ },
+ "R2": {
+  "codice": "R2",
+  "gruppo": "La rete",
+  "titolo": "Avvenire, «Hanno ancora senso i gruppi di acquisto solidale?», 18/10/2024",
+  "url": "https://www.avvenire.it/economia/pagine/i-30-anni-dei-gruppi-di-acquisto-solidale-la-sfida",
+  "tipo": "Giornale",
+  "sostiene": "Primo GAS a Fidenza nel 1994; secondo OCIS i GAS reali sono almeno il doppio dei 1.000 censiti.",
+  "nota": ""
+ },
+ "R3": {
+  "codice": "R3",
+  "gruppo": "La rete",
+  "titolo": "Grasseni C., «Seeds of Trust», Journal of Political Ecology 21, 2014",
+  "url": "https://doi.org/10.2458/v21i1.21131",
+  "tipo": "Studio peer-reviewed",
+  "sostiene": "Cosa sono i GAS e come funzionano (caso di studio).",
+  "nota": ""
+ },
+ "R4": {
+  "codice": "R4",
+  "gruppo": "La rete",
+  "titolo": "e-circles, mappa dei gruppi d'acquisto",
+  "url": "https://e-circles.org",
+  "tipo": "Directory",
+  "sostiene": "Schede di GAS Piombino, GAS MC (Macerata), GAS TS (Trieste) usate nella mappa.",
+  "nota": ""
+ },
+ "R5": {
+  "codice": "R5",
+  "gruppo": "La rete",
+  "titolo": "RIES, Rete italiana di economia solidale",
+  "url": "https://www.economiasolidale.net",
+  "tipo": "Rete di associazioni",
+  "sostiene": "DES e RES; Carta RES 2007.",
+  "nota": ""
+ },
+ "R6": {
+  "codice": "R6",
+  "gruppo": "La rete",
+  "titolo": "L.R. Emilia-Romagna 23 luglio 2014, n. 19",
+  "url": "https://economiasolidale.net/sites/default/files/LR_2014_19_v3.pdf",
+  "tipo": "Legge regionale",
+  "sostiene": "Definizione giuridica di RES, DES e GAS.",
+  "nota": ""
+ },
+ "R7": {
+  "codice": "R7",
+  "gruppo": "La rete",
+  "titolo": "Libera Terra · L. 109/1996 sul riuso sociale dei beni confiscati",
+  "url": "https://liberaterra.it/en/the-world-of-libera-terra/",
+  "tipo": "Associazione · legge",
+  "sostiene": "Cooperative su terreni confiscati (Placido Rizzotto, Terre Joniche, Terre di Don Peppe Diana); prodotti in gran parte bio.",
+  "nota": "Link aggiornato dopo la verifica del 4/11/2026"
+ },
+ "R8": {
+  "codice": "R8",
+  "gruppo": "La rete",
+  "titolo": "L. 18 agosto 2015, n. 141, Agricoltura sociale",
+  "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2015-08-18;141",
+  "tipo": "Legge italiana",
+  "sostiene": "Definizione di agricoltura sociale e fattorie sociali; elenchi regionali.",
+  "nota": "Verifica 4/11/2026: Usare il formato ELI di Normattiva (controllo a mano)"
+ },
+ "R9": {
+  "codice": "R9",
+  "gruppo": "La rete",
+  "titolo": "Equo Garantito",
+  "url": "https://www.equogarantito.org",
+  "tipo": "Associazione di categoria",
+  "sostiene": "Sistema di garanzia allineato agli standard WFTO; registro delle organizzazioni. Il Post (2023) per la bottega di via di Ripetta.",
+  "nota": ""
+ },
+ "R10": {
+  "codice": "R10",
+  "gruppo": "La rete",
+  "titolo": "Fondazione Slow Food, Mercati della Terra",
+  "url": "https://www.fondazioneslowfood.com/it/cosa-facciamo/mercati-della-terra-slow-food/",
+  "tipo": "Fondazione",
+  "sostiene": "Mercati contadini gestiti secondo le linee guida Slow Food (Milano, Imola).",
+  "nota": ""
+ },
+ "R11": {
+  "codice": "R11",
+  "gruppo": "La rete",
+  "titolo": "Campagna Amica",
+  "url": "https://www.campagnamica.it",
+  "tipo": "Fondazione (Coldiretti)",
+  "sostiene": "Rete di mercati contadini; mercato del Circo Massimo a Roma (fonte: Gambero Rosso).",
+  "nota": ""
+ },
+ "R12": {
+  "codice": "R12",
+  "gruppo": "La rete",
+  "titolo": "Arvaia · Gambero Rosso sulle CSA italiane",
+  "url": "https://www.arvaia.it",
+  "tipo": "Cooperativa · rivista",
+  "sostiene": "Come funziona una CSA; Arvaia a Bologna, Semi di Comunità a Roma.",
+  "nota": ""
+ },
+ "R13": {
+  "codice": "R13",
+  "gruppo": "La rete",
+  "titolo": "Istat, struttura e profili del settore non profit, anno 2023",
+  "url": "https://www.istat.it/comunicato-stampa/struttura-e-profili-del-settore-non-profit-anno-2023/",
+  "tipo": "Statistica ufficiale",
+  "sostiene": "14.343 cooperative sociali nell'ultima rilevazione, in calo; impiegano oltre metà dei lavoratori del non profit.",
+  "nota": "Link aggiornato dopo la verifica del 4/11/2026"
+ },
+ "R14": {
+  "codice": "R14",
+  "gruppo": "La rete",
+  "titolo": "Rete italiana di economia solidale, Documento base dei GAS (1999)",
+  "url": "https://economiasolidale.net/documento-base-dei-gas",
+  "tipo": "Documento della rete",
+  "sostiene": "Nato nel 1999 al primo incontro nazionale a Fidenza; principi dei GAS",
+  "nota": ""
+ },
+ "R15": {
+  "codice": "R15",
+  "gruppo": "La rete",
+  "titolo": "Rete italiana di economia solidale, Cos'è un GAS",
+  "url": "https://economiasolidale.net/cosa-e-un-gas",
+  "tipo": "Rete di associazioni",
+  "sostiene": "Definizione, funzionamento, prezzo equo, come nasce un nuovo GAS",
+  "nota": ""
+ },
+ "R16": {
+  "codice": "R16",
+  "gruppo": "La rete",
+  "titolo": "Rete italiana di economia solidale, Distretti di economia solidale",
+  "url": "https://economiasolidale.net/distretti-di-economia-solidale-des",
+  "tipo": "Rete di associazioni",
+  "sostiene": "Definizione di DES, elenco dei più attivi, archivio organizzazioni",
+  "nota": ""
+ },
+ "R17": {
+  "codice": "R17",
+  "gruppo": "La rete",
+  "titolo": "URGENCI, Italy (Demaldè, Rossi, Colombara)",
+  "url": "https://urgenci.net/italy/",
+  "tipo": "Rete internazionale CSA",
+  "sostiene": "Circa 1.000 GAS registrati e altrettanti non registrati; CAPS prima CSA; Tavolo RES",
+  "nota": ""
+ },
+ "R18": {
+  "codice": "R18",
+  "gruppo": "La rete",
+  "titolo": "URGENCI, European CSA Declaration (Ostrava, 2016)",
+  "url": "https://www.urgenci.net/wp-content/uploads/2016/09/European-CSA-Declaration_final-1.pdf",
+  "tipo": "Dichiarazione della rete europea",
+  "sostiene": "Definizione di CSA, rischi e benefici condivisi",
+  "nota": ""
+ },
+ "R19": {
+  "codice": "R19",
+  "gruppo": "La rete",
+  "titolo": "Piccoli, Rossi, Genova (2021), Sustainability 13(21):11986",
+  "url": "https://www.mdpi.com/2071-1050/13/21/11986",
+  "tipo": "Studio peer-reviewed",
+  "sostiene": "16 CSA italiane mappate; fiducia, prefinanziamento, problemi di adesione; legame con i GAS",
+  "nota": ""
+ },
+ "R20": {
+  "codice": "R20",
+  "gruppo": "La rete",
+  "titolo": "Arvaia, Come funziona",
+  "url": "https://www.arvaia.it/come-funziona/",
+  "tipo": "Sito della cooperativa",
+  "sostiene": "Quota, anno agricolo, 6-7 kg a settimana, 8 punti di ritiro, 100 + 15 euro per associarsi",
+  "nota": ""
+ },
+ "R21": {
+  "codice": "R21",
+  "gruppo": "La rete",
+  "titolo": "IFOAM, PGS Guidelines",
+  "url": "https://ch.ifoam.bio/sites/default/files/2020-05/pgs_guidelines_en.pdf",
+  "tipo": "Federazione internazionale del biologico",
+  "sostiene": "Definizione ed elementi della garanzia partecipata",
+  "nota": ""
+ },
+ "R22": {
+  "codice": "R22",
+  "gruppo": "La rete",
+  "titolo": "Winkler et al. (2024), Frontiers in Sustainable Food Systems 8",
+  "url": "https://www.frontiersin.org/articles/10.3389/fsufs.2024.1388853/full",
+  "tipo": "Studio peer-reviewed",
+  "sostiene": "Campi Aperti: 150 produttori e 464 coproduttori, visite di controllo, nessun logo bio UE",
+  "nota": ""
+ },
+ "R23": {
+  "codice": "R23",
+  "gruppo": "La rete",
+  "titolo": "Reg. (UE) 2018/848 sulla produzione biologica",
+  "url": "https://eur-lex.europa.eu/legal-content/IT/TXT/?uri=CELEX:32018R0848",
+  "tipo": "Legge UE",
+  "sostiene": "Controlli annuali (art. 38), gruppi di operatori (art. 36), esenzioni per la vendita diretta di sfuso (art. 35)",
+  "nota": ""
+ },
+ "R24": {
+  "codice": "R24",
+  "gruppo": "La rete",
+  "titolo": "Ritchie H., Our World in Data (2020), Food choice vs eating local",
+  "url": "https://ourworldindata.org/food-choice-vs-eating-local",
+  "tipo": "Sintesi di dati scientifici",
+  "sostiene": "Trasporto sotto il 10% delle emissioni; serre svedesi 10 volte l'energia; aereo 50 volte la nave",
+  "nota": ""
+ },
+ "R25": {
+  "codice": "R25",
+  "gruppo": "La rete",
+  "titolo": "Oxfam Italia, Comunicato rete Funky Tomato (29/5/2019)",
+  "url": "https://www.oxfamitalia.org/wp-content/uploads/2019/07/CS_Unaltra-filiera-e%CC%80-possibile_contratto-di-rete-2019-Funky-Tomato_29_5_2019_def.pdf",
+  "tipo": "ONG",
+  "sostiene": "Contratto di rete anti caporalato; stima di 400.000 lavoratori a rischio; preordini da GAS",
+  "nota": ""
+ },
+ "R26": {
+  "codice": "R26",
+  "gruppo": "La rete",
+  "titolo": "GreenMe (15/1/2021), Funky Tomato, come è finita",
+  "url": "https://www.greenme.it/?p=753264",
+  "tipo": "Giornale online",
+  "sostiene": "Ordini pagati non consegnati dal 2019; Oxfam ha ritirato il logo",
+  "nota": ""
+ },
+ "R27": {
+  "codice": "R27",
+  "gruppo": "La rete",
+  "titolo": "Regione Umbria, Disciplinare GASP (L.R. 10 febbraio 2011, n. 1)",
+  "url": "https://regione.umbria.it/documents/18/2314667/Allegato+A+-+GASP+DISCIPLINARE/54e8880a-dc8c-4c5b-81eb-9b339dd2cc91",
+  "tipo": "Atto regionale",
+  "sostiene": "Legge umbra sui GASP, modificata dalla L.R. 20/2012",
+  "nota": ""
+ },
+ "R28": {
+  "codice": "R28",
+  "gruppo": "La rete",
+  "titolo": "L.P. Trento 17 giugno 2010, n. 13",
+  "url": "https://base.socioeco.org/docs/trentino_legge_provinciale.pdf",
+  "tipo": "Legge provinciale",
+  "sostiene": "Economia solidale, distretti, definizione di GAS (all. A)",
+  "nota": ""
+ },
+ "R29": {
+  "codice": "R29",
+  "gruppo": "La rete",
+  "titolo": "Friuli Venezia Giulia, Regolamento della L.R. 23 marzo 2017, n. 4",
+  "url": "https://lexview-int.regione.fvg.it/FontiNormative/ScaricaDocumento.aspx?Id=6022",
+  "tipo": "Atto regionale",
+  "sostiene": "Forum, assemblea e contributi per l'economia solidale",
+  "nota": ""
+ },
+ "R30": {
+  "codice": "R30",
+  "gruppo": "La rete",
+  "titolo": "Libera, Almanacco dei beni confiscati (marzo 2026)",
+  "url": "https://www.libera.it/documenti/schede/almanacco_beni_marzo_2026.pdf",
+  "tipo": "Associazione",
+  "sostiene": "L. 109/96 in vigore dal 7/3/1996; 777 realtà gestori in 17 regioni (2019)",
+  "nota": ""
+ },
+ "R31": {
+  "codice": "R31",
+  "gruppo": "La rete",
+  "titolo": "Il Fatto Quotidiano (7/3/2026), I trent'anni della legge sui beni confiscati",
+  "url": "https://www.ilfattoquotidiano.it/2026/03/07/i-trentanni-della-legge-sulluso-dei-beni-confiscati-alle-mafie-don-ciotti-una-svolta-anche-nella-coscienza-collettiva/8315809/",
+  "tipo": "Giornale",
+  "sostiene": "Oltre un milione di firme a sostegno della legge 109/96",
+  "nota": ""
+ },
+ "R32": {
+  "codice": "R32",
+  "gruppo": "La rete",
+  "titolo": "ènostra, Proposta di convenzione per GAS e associazioni (2019)",
+  "url": "https://www.enostra.it/wp-content/uploads/2019/07/FAC-SIMILE_proposta-convenzione-G.A.S.-e-Associazioni-Locali_generale.pdf",
+  "tipo": "Documento della cooperativa",
+  "sostiene": "5% di sconto per 12 mesi ai soci dei GAS",
+  "nota": ""
+ },
+ "R33": {
+  "codice": "R33",
+  "gruppo": "La rete",
+  "titolo": "Caritas Ambrosiana, Scheda Vesti Solidale",
+  "url": "https://www.caritasambrosiana.it/Public/userfiles/files/scheda-Vesti-Solidale.pdf",
+  "tipo": "Ente non profit",
+  "sostiene": "Cooperativa di tipo B dal 1998; 145 lavoratori, 31% svantaggiati",
+  "nota": ""
+ },
+ "R34": {
+  "codice": "R34",
+  "gruppo": "La rete",
+  "titolo": "Il Post (28/1/2026), La raccolta degli abiti usati non funziona più",
+  "url": "https://www.ilpost.it/2026/01/28/riciclo-vestiti-cassonetti-gialli-fast-fashion/",
+  "tipo": "Giornale",
+  "sostiene": "Crisi della raccolta, valore calato del 40%, dati ISPRA sui rifiuti tessili",
+  "nota": ""
+ },
+ "R35": {
+  "codice": "R35",
+  "gruppo": "La rete",
+  "titolo": "Avvenire (aprile 2021), Abiti usati: così i cassonetti battono le cosche",
+  "url": "https://www.avvenire.it/attualita/abiti-usati-cosi-i-cassonetti-battono-le-cosche_51185",
+  "tipo": "Giornale",
+  "sostiene": "Ambiente Solidale, cooperativa di tipo B a Napoli dal 2006, circa 40 lavoratori",
+  "nota": ""
+ },
+ "R36": {
+  "codice": "R36",
+  "gruppo": "La rete",
+  "titolo": "Il Post (4/10/2021), Scampoli di normalità in carcere",
+  "url": "https://www.ilpost.it/2021/10/04/made-in-carcere/",
+  "tipo": "Giornale",
+  "sostiene": "Made in Carcere, cooperativa sociale Officina Creativa, Lecce; scampoli tessili",
+  "nota": ""
+ },
+ "R37": {
+  "codice": "R37",
+  "gruppo": "La rete",
+  "titolo": "La Saponaria, Pagina per i GAS",
+  "url": "https://www.lasaponaria.it/g-a-s",
+  "tipo": "Sito del produttore",
+  "sostiene": "Listino GAS, sconti collettivi, formati grandi; sede a Pesaro; società benefit",
+  "nota": ""
+ },
+ "R38": {
+  "codice": "R38",
+  "gruppo": "La rete",
+  "titolo": "GreenMe, Intervista a Pierpaoli srl (Lympha, Fòlia)",
+  "url": "https://www.greenme.it/news/interviste/detersivi-ecologici-biologici-e-alla-spina-intervista-a-paolo-chiavaroli-della-pierpaoli-srl/",
+  "tipo": "Giornale online",
+  "sostiene": "Lympha fornita alle botteghe del commercio equo; Fòlia alla spina",
+  "nota": ""
+ },
+ "M1": {
+  "codice": "M1",
+  "gruppo": "Dati della mappa",
+  "titolo": "e-circles, elenco dei gruppi d'acquisto",
+  "url": "https://e-circles.org/buying-groups",
+  "tipo": "895 GAS",
+  "sostiene": "Nessuna licenza dichiarata; gestito da Poco di Buono coop. sociale (Rimini)",
+  "nota": ""
+ },
+ "M2": {
+  "codice": "M2",
+  "gruppo": "Dati della mappa",
+  "titolo": "Fondazione Slow Food, Mercati della Terra in Italia",
+  "url": "https://www.fondazioneslowfood.com/it/nazioni-mercati/italia-it/",
+  "tipo": "56 mercati",
+  "sostiene": "Nessuna licenza aperta",
+  "nota": ""
+ },
+ "M3": {
+  "codice": "M3",
+  "gruppo": "Dati della mappa",
+  "titolo": "RICSA, Rete italiana CSA, elenco",
+  "url": "https://www.reteitalianacsa.it/elenco-csa/",
+  "tipo": "16 CSA",
+  "sostiene": "© RICSA 2026",
+  "nota": ""
+ },
+ "M4": {
+  "codice": "M4",
+  "gruppo": "Dati della mappa",
+  "titolo": "Libera Terra, il mondo di Libera Terra",
+  "url": "https://liberaterra.it/il-mondo-libera-terra/",
+  "tipo": "9",
+  "sostiene": "Nessuna licenza dichiarata",
+  "nota": ""
+ },
+ "M5": {
+  "codice": "M5",
+  "gruppo": "Dati della mappa",
+  "titolo": "Rete di economia solidale, archivio dei DES",
+  "url": "https://www.economiasolidale.net",
+  "tipo": "9 DES",
+  "sostiene": "CC BY-NC-ND",
+  "nota": ""
+ },
+ "M6": {
+  "codice": "M6",
+  "gruppo": "Dati della mappa",
+  "titolo": "Gambero Rosso sulle CSA e Campagna Amica Circo Massimo",
+  "url": "https://www.gamberorosso.it/notizie/csa-cose-e-come-funziona-il-sistema-della-comunita-che-supporta-lagricoltura-le-realta-italiane",
+  "tipo": "2",
+  "sostiene": "Articolo",
+  "nota": ""
+ },
+ "M7": {
+  "codice": "M7",
+  "gruppo": "Dati della mappa",
+  "titolo": "Coordinate dei comuni",
+  "url": "",
+  "tipo": "tutte",
+  "sostiene": "Dataset del 2018 senza licenza",
+  "nota": ""
+ }
+}

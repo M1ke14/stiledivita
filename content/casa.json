@@ -1,0 +1,217 @@
+{
+ "CATS": [
+  {
+   "id": "pulizia",
+   "nome": "Pulizia"
+  },
+  {
+   "id": "bucato",
+   "nome": "Bucato"
+  },
+  {
+   "id": "cucina",
+   "nome": "Cucina"
+  },
+  {
+   "id": "persona",
+   "nome": "Cura della persona"
+  }
+ ],
+ "VOCI": [
+  {
+   "id": "superfici",
+   "cat": "pulizia",
+   "nome": "Superfici e pavimenti",
+   "intro": "Acqua calda e sapone fanno quasi tutto.",
+   "fare": [
+    "Secchio d'acqua calda, sapone neutro e panno in microfibra.",
+    "Prodotti liquidi da diluire invece degli spray.",
+    "Arieggia mentre pulisci."
+   ],
+   "cerca": [
+    "Il fiore EU Ecolabel o il Cigno nordico.",
+    "Ricariche nei negozi dello sfuso."
+   ],
+   "attenzione": "«Igienizzante» e «antibatterico» non servono per la pulizia di tutti i giorni.",
+   "fonti": "K1, K8"
+  },
+  {
+   "id": "bagno",
+   "cat": "pulizia",
+   "nome": "Bagno e calcare",
+   "intro": "Contro il calcare serve un acido, come aceto o acido citrico.",
+   "fare": [
+    "Aceto o acido citrico sul calcare, poi risciacqua.",
+    "Bicarbonato come abrasivo delicato.",
+    "Spazzola e scovolo prima dei disgorganti chimici."
+   ],
+   "cerca": [
+    "Anticalcari con EU Ecolabel se compri un prodotto pronto."
+   ],
+   "attenzione": "Aceto e acido citrico rovinano marmo e pietra. Non mescolarli mai con la candeggina.",
+   "fonti": "K1, uso domestico comune"
+  },
+  {
+   "id": "spray",
+   "cat": "pulizia",
+   "nome": "Spray e profumatori",
+   "intro": "Quello che spruzzi, in parte lo respiri.",
+   "fare": [
+    "Versa il prodotto sul panno, senza spruzzarlo nell'aria.",
+    "Apri le finestre: è il miglior «deodorante».",
+    "Riduci profumatori per ambiente e candele profumate."
+   ],
+   "cerca": [
+    "Prodotti senza profumo o con pochi allergeni dichiarati."
+   ],
+   "attenzione": "Uno studio europeo su 6.235 persone seguite per 20 anni ha associato l'uso regolare di spray per pulire a un calo più rapido della funzione polmonare nelle donne. È un'associazione: servono altri studi per esserne sicuri.",
+   "fonti": "K2"
+  },
+  {
+   "id": "detersivo",
+   "cat": "bucato",
+   "nome": "Detersivo",
+   "intro": "Di più non lava meglio.",
+   "fare": [
+    "Dosa secondo la durezza dell'acqua e lo sporco.",
+    "Formati concentrati e ricariche.",
+    "Un solo detersivo per quasi tutto."
+   ],
+   "cerca": [
+    "EU Ecolabel: meno sostanze pericolose, materie prime sostenibili, imballaggio riciclabile."
+   ],
+   "attenzione": "Le capsule monodose sono comode ma vanno tenute lontano dai bambini.",
+   "fonti": "K1"
+  },
+  {
+   "id": "lavaggio",
+   "cat": "bucato",
+   "nome": "Lavaggio",
+   "intro": "Meno lavaggi, meno microplastiche.",
+   "fare": [
+    "Lavatrice a pieno carico.",
+    "da 30 a 40 °C per il bucato di tutti i giorni.",
+    "I capi sintetici lavali meno spesso: rilasciano più fibre nei primi lavaggi."
+   ],
+   "cerca": [
+    "Lavatrice in classe alta sull'etichetta energetica da A a G."
+   ],
+   "attenzione": "L'asciugatrice consuma molta energia: quando puoi, stendi.",
+   "fonti": "V2, S7"
+  },
+  {
+   "id": "ammorbidente",
+   "cat": "bucato",
+   "nome": "Ammorbidente e candeggina",
+   "intro": "Spesso se ne può fare a meno.",
+   "fare": [
+    "I capi in fibre naturali non hanno bisogno di ammorbidente.",
+    "Candeggina solo quando serve davvero.",
+    "Se hai la pelle sensibile, scegli prodotti senza profumo."
+   ],
+   "cerca": [
+    "Allergeni delle fragranze indicati in etichetta."
+   ],
+   "attenzione": "Il «profumo che dura settimane» spesso viene da fragranze in microcapsule di plastica: la UE le elimina entro il 2029.",
+   "fonti": "K3"
+  },
+  {
+   "id": "padelle",
+   "cat": "cucina",
+   "nome": "Padelle",
+   "intro": "Le migliori durano una vita.",
+   "fare": [
+    "Acciaio inox, ghisa e ferro: durano decenni e non contengono PFAS.",
+    "Se usi l'antiaderente, non scaldarlo vuoto.",
+    "Sostituiscilo quando il rivestimento è graffiato."
+   ],
+   "cerca": [
+    "Manici e coperchi sostituibili."
+   ],
+   "attenzione": "Il rivestimento antiaderente classico (PTFE) è un PFAS. La UE sta valutando una restrizione universale, per ora non approvata.",
+   "fonti": "K7"
+  },
+  {
+   "id": "contenitori",
+   "cat": "cucina",
+   "nome": "Contenitori",
+   "intro": "Vetro e acciaio per conservare e scaldare.",
+   "fare": [
+    "Vetro e acciaio per il frigo e il microonde.",
+    "Barattoli riusati per lo sfuso.",
+    "Borracce e caraffe al posto delle bottiglie."
+   ],
+   "cerca": [
+    "Il simbolo «bicchiere e forchetta» (idoneo al contatto con alimenti)."
+   ],
+   "attenzione": "Dal 20 gennaio 2025 il bisfenolo A è vietato nei materiali a contatto con il cibo in UE. Non scaldare cibo nella plastica resta una semplice precauzione.",
+   "fonti": "K6"
+  },
+  {
+   "id": "piatti",
+   "cat": "cucina",
+   "nome": "Piatti e lavastoviglie",
+   "intro": "Pieno carico, programma eco.",
+   "fare": [
+    "Lavastoviglie a pieno carico con il programma eco.",
+    "Niente prelavaggio sotto l'acqua corrente: basta togliere i residui.",
+    "Detersivo per piatti diluito in una bacinella."
+   ],
+   "cerca": [
+    "EU Ecolabel sul detersivo.",
+    "Classe energetica e consumi nel database EPREL (QR code sull'etichetta)."
+   ],
+   "attenzione": "Le pastiglie «tutto in uno» contengono più ingredienti di quanti ne servano.",
+   "fonti": "K1, S7"
+  },
+  {
+   "id": "sapone",
+   "cat": "persona",
+   "nome": "Sapone e shampoo",
+   "intro": "Più corta è la lista INCI, meglio è.",
+   "fare": [
+    "Saponette e shampoo solidi: niente plastica.",
+    "Un sapone per mani e corpo.",
+    "Meno prodotti, usati meglio."
+   ],
+   "cerca": [
+    "Lista ingredienti INCI (obbligatoria).",
+    "Certificazioni COSMOS o Cigno nordico."
+   ],
+   "attenzione": "Microplastiche nei prodotti da risciacquo: la UE le vieta entro ottobre 2027.",
+   "fonti": "K4, K3, K8, K9"
+  },
+  {
+   "id": "deodorante",
+   "cat": "persona",
+   "nome": "Dentifricio e deodorante",
+   "intro": "Piccole scelte, ogni giorno.",
+   "fare": [
+    "Spazzolino con testina sostituibile.",
+    "Deodorante in stick o crema invece dello spray.",
+    "Se hai la pelle sensibile, scegli prodotti senza profumo."
+   ],
+   "cerca": [
+    "Allergeni dichiarati: dal 31 luglio 2026 l'elenco obbligatorio passa da 26 a oltre 80 sostanze."
+   ],
+   "attenzione": "Le microsfere esfolianti di plastica sono vietate in UE dal 2023.",
+   "fonti": "K5, K3"
+  },
+  {
+   "id": "creme",
+   "cat": "persona",
+   "nome": "Creme e trucco",
+   "intro": "Ne servono meno di quanto dice la pubblicità.",
+   "fare": [
+    "Pochi prodotti: basta una crema che usi davvero.",
+    "Protezione solare quando serve.",
+    "Finisci un prodotto prima di aprirne un altro."
+   ],
+   "cerca": [
+    "INCI corto e marchi certificati (COSMOS, Cigno nordico)."
+   ],
+   "attenzione": "Il glitter di plastica sciolto è vietato dal 2023, con alcune eccezioni. Le microplastiche nel trucco escono gradualmente entro il 2035.",
+   "fonti": "K3, K4, K9"
+  }
+ ]
+}

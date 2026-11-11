@@ -1,0 +1,30 @@
+{% set cats = data.CATS %}{% set alt = data.ALT %}
+  <section id="alternative" style="max-width: 1180px; margin: 0 auto; padding: 96px 24px 112px; display: flex; flex-direction: column; gap: 32px" data-filtro>
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 20px">
+      <h2 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: clamp(38px, 5vw, 60px); line-height: 1.04; font-weight: 500; letter-spacing: -0.03em">Al posto di...</h2>
+      <p style="margin: 0; font-size: 15px; color: #585C53"><span data-conta>{{ alt | length }}</span> alternative</p>
+    </div>
+    <div role="tablist" aria-label="Categorie" style="display: flex; flex-wrap: wrap; gap: 8px">
+      {% for c in cats %}
+      <button type="button" class="pill" role="tab" data-filtro-cat="{{ c.id }}" aria-selected="{{ 'true' if loop.first else 'false' }}">{{ c.nome }}</button>
+      {% endfor %}
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(min(330px, 100%), 1fr)); gap: 16px">
+      {% for a in alt %}
+      <article data-cat="{{ a.cat }}" style="background: #EDE7DB; border-radius: 26px; padding: 30px; display: flex; flex-direction: column; gap: 14px; min-height: 250px">
+        <div style="display: flex; justify-content: space-between; align-items: center; gap: 12px">
+          <span style="font-size: 14px; color: #6B6F65; text-decoration: line-through; text-decoration-color: #A39C8E">{{ a.al }}</span>
+          <span style="font-size: 12px; font-weight: 600; letter-spacing: 0.08em; padding: 5px 10px; border-radius: 980px; background: #F7F4EE; color: #3D4139">{{ a.paese }}</span>
+        </div>
+        <h3 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: 36px; font-weight: 500; letter-spacing: -0.025em; line-height: 1.05">{{ a.nome }}</h3>
+        <p style="margin: 0; font-size: 15px; line-height: 1.55; color: #585C53; flex: 1 1 auto">{{ a.desc }}</p>
+        {% if a.ver %}
+        <span style="display: inline-flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 500; color: var(--accent)">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"></path></svg>
+          Sede verificata, {{ a.fonti | fonti }}
+        </span>
+        {% endif %}
+      </article>
+      {% endfor %}
+    </div>
+  </section>

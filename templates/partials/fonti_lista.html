@@ -1,0 +1,5 @@
+<ol style="list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 10px 32px; font-size: 14px; line-height: 1.5; color: #3D4139">
+  {% for c in codes %}{% set f = FONTI.get(c) %}
+  <li><b><a class="fonte" href="{{ url_for('page', slug='fonti') }}#{{ c }}">{{ c }}</a></b> {% if f %}{% if f.url %}<a href="{{ f.url }}" rel="noopener" style="color: #3D4139">{{ f.titolo }}</a>{% else %}{{ f.titolo }}{% endif %}{% endif %}</li>
+  {% endfor %}
+</ol>

@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  {% if site_base %}<base href="{{ site_base }}">{% endif %}
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page_title %}{{ page_title }} | {% endif %}Guida alla vita sostenibile</title>
+  <meta name="description" content="{{ description or 'Guida indipendente e senza scopo di lucro per mangiare, vestirsi e vivere in modo più sostenibile, con fonti verificabili.' }}">
+  <link rel="preload" href="{{ url_for('static', filename='fonts/inter-latin-wght-normal.woff2') }}" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="{{ url_for('static', filename='fonts/newsreader-latin-opsz-normal.woff2') }}" as="font" type="font/woff2" crossorigin>
+  <link rel="icon" href="{{ url_for('static', filename='favicon.svg') }}" type="image/svg+xml">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/site.css') }}">
+  {% block head %}{% endblock %}
+  <script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+  <a class="skip" href="#contenuto">Vai al contenuto</a>
+  <header class="site-header">
+    <nav aria-label="Principale" class="nav">
+      <a class="brand" href="{{ url_for('index') }}">Guida alla vita sostenibile</a>
+      <div class="nav-links">
+        {% for s in NAV %}
+        <a href="{{ url_for('page', slug=s) }}"{% if slug == s or (slug == 'conoscere' and s == 'dove-comprare') %} aria-current="page"{% endif %}>{{ PAGES[s][0] }}</a>
+        {% endfor %}
+      </div>
+    </nav>
+  </header>
+
+  <main id="contenuto">
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer class="site-footer">
+    <p>Questo sito è un progetto indipendente e senza scopo di lucro. Nessun link affiliato, nessuna pubblicità, nessun tracciamento.</p>
+    <div class="footer-links">
+      <a href="{{ url_for('page', slug='metodo') }}">Metodo</a>
+      <a href="{{ url_for('page', slug='fonti') }}">Tutte le fonti</a>
+      <a href="{{ url_for('page', slug='note') }}">Note e privacy</a>
+    </div>
+  </footer>
+  <script src="{{ url_for('static', filename='js/radici.js') }}" defer></script>
+  {% if GOATCOUNTER %}<script data-goatcounter="https://{{ GOATCOUNTER }}.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>{% endif %}
+  {% block scripts %}{% endblock %}
+</body>
+</html>

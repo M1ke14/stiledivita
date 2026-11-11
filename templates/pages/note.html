@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block content %}
+  <section style="max-width: 1180px; margin: 0 auto; padding: 112px 24px 48px; display: flex; flex-direction: column; gap: 20px">
+    <p style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #9A5638">Trasparenza</p>
+    <h1 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: clamp(56px, 9vw, 120px); line-height: 0.95; font-weight: 500; letter-spacing: -0.045em">Note e privacy<i style="font-weight: 400; color: var(--accent)">.</i></h1>
+  </section>
+  <section style="max-width: 1180px; margin: 0 auto; padding: 0 24px 112px">
+    <div class="prosa">
+      <p style="font-family: var(--sans); font-size: 15px; background: #F1E3D6; color: #4A2E1D; border-radius: 16px; padding: 16px 20px">Bozza da far rileggere prima della pubblicazione: completa i dati tra parentesi quadre.</p>
+
+      <h2>Chi cura il sito</h2>
+      <p>Questo sito è un progetto personale e senza scopo di lucro di Michele. Non vende nulla, non usa link affiliati, non ospita pubblicità.</p>
+
+      <h2 id="contatti">Contatti e segnalazioni</h2>
+      <p>Per segnalare un errore, una fonte superata o una realtà da aggiungere alla mappa scrivi a <a href="mailto:[indirizzo@esempio.it]">[indirizzo email]</a>. Controllo ogni correzione prima di pubblicarla.</p>
+
+      <h2>Cosa raccolgo</h2>
+      {% if GOATCOUNTER %}<p>Niente che ti identifichi. Il sito non usa cookie e non ha moduli. I caratteri tipografici e le foto sono ospitati sul sito stesso.</p>
+      <p>Conto le visite con <a href="https://www.goatcounter.com">GoatCounter</a>, un servizio open source che non usa cookie e non salva dati personali: vedo solo quante persone aprono le pagine, da quale sito arrivano, il browser e il paese. Mi serve solo per capire se qualcuno legge la guida. Vale la loro <a href="https://www.goatcounter.com/privacy">informativa sulla privacy</a>.</p>{% else %}<p>Niente. Il sito non usa cookie, non ha statistiche di visita e non ha moduli. I caratteri tipografici e le foto sono ospitati sul sito stesso.</p>{% endif %}
+      <p>L'unica eccezione è la mappa della pagina Dove comprare: le immagini della cartina arrivano dai server di OpenStreetMap, che vedono l'indirizzo IP di chi apre la pagina. Vale la loro <a href="https://osmfoundation.org/wiki/Privacy_Policy">informativa sulla privacy</a>.</p>
+      <p>Il sito è ospitato da GitHub Pages, che registra a sua volta dati tecnici di accesso secondo la propria informativa.</p>
+
+      <h2>Dati della mappa</h2>
+      <p>I punti della mappa vengono da elenchi pubblici: e-circles, Rete italiana CSA, Fondazione Slow Food, Libera Terra, Rete di economia solidale. Ogni scheda rimanda alla fonte. Se gestisci una di queste realtà e vuoi correggere o togliere i dati, scrivimi.</p>
+      <p>Mappa: &copy; contributori di <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>, dati con licenza ODbL.</p>
+
+      <h2>Licenza dei testi</h2>
+      <p>[Da decidere: per esempio CC BY-SA 4.0, che permette di riusare i testi citando il sito.]</p>
+    </div>
+  </section>
+{% endblock %}
