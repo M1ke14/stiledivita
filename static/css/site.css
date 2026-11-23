@@ -89,6 +89,13 @@
   --warn-ink: #4A2E1D;
   --warn-icon: #7A4A2E;
   /* categorie della rete, come sulla mappa */
+  /* colori fissi: non cambiano con il tema */
+  --fisso-carta: #F4F0E6;
+  --fisso-inchiostro: #1F1E19;
+  --fisso-notte: #1C1D18;
+  --fisso-notte-scura: #0E0F0B;
+  --fisso-verde: #2E4A35;
+  --fisso-su-verde-chiaro: #10110D;
   --cat-csa: #5E7F4F;
   --cat-mercati: #B07A2A;
   --cat-equo: #3B5249;
@@ -126,7 +133,7 @@ button { font-family: inherit; }
 button:disabled, [aria-disabled="true"] { opacity: 0.5; cursor: not-allowed; }
 img { max-width: 100%; height: auto; }
 :focus-visible { outline: 2px solid var(--clay); outline-offset: 3px; border-radius: 4px; }
-::selection { background: var(--sage-2); color: var(--ink); }
+::selection { background: var(--selezione, var(--sage-2)); color: var(--ink); }
 
 /* Niente corsivo decorativo nei titoli: la seconda metà resta nello stesso inchiostro */
 h1 i, h2 i, h3 i { font-style: normal !important; color: inherit !important; font-weight: inherit !important; }
@@ -237,7 +244,7 @@ select.regione { min-height: 40px; border-radius: 8px; border: 1px solid var(--l
 .tabella-fonti { width: 100%; border-collapse: collapse; font-size: 14px; line-height: 1.55; }
 .tabella-fonti th { text-align: left; font-size: 13px; font-weight: 500; color: var(--faint); padding: 12px; border-bottom: 1px solid var(--line2); }
 .tabella-fonti td { padding: 16px 12px; border-bottom: 1px solid var(--line); vertical-align: top; color: var(--text2); transition: background-color var(--slow) var(--ease); }
-.tabella-fonti tr:target td { background: var(--sage-2); }
+.tabella-fonti tr:target td { background: var(--selezione, var(--sage-2)); }
 .tabella-fonti td:first-child { font-family: var(--mono); font-size: 13px; color: var(--clay); white-space: nowrap; }
 .tabella-fonti .nota { display: block; margin-top: 8px; font-size: 13px; color: var(--clay); }
 
@@ -314,7 +321,7 @@ nav[aria-label="Indice dei capitoli"] a:hover > span:last-child { transform: tra
 /* Schede di Conoscere la rete */
 .scheda-btn { transition: background-color var(--fast) var(--ease), color var(--fast) var(--ease); }
 .scheda-btn[aria-selected="true"] { background: var(--accent); color: var(--bg) !important; }
-.scheda-btn[aria-selected="true"] span:first-child { color: var(--sage-2) !important; }
+.scheda-btn[aria-selected="true"] span:first-child { color: color-mix(in srgb, var(--bg) 80%, var(--accent)) !important; }
 .scheda-btn:hover { background: var(--accent-wash); }
 .appro-btn { transition: background-color var(--fast) var(--ease), color var(--fast) var(--ease), border-color var(--fast) var(--ease); }
 .appro-btn:hover { border-color: var(--accent) !important; }
@@ -335,3 +342,101 @@ nav[aria-label="Indice dei capitoli"] a:hover > span:last-child { transform: tra
 .scheda-rete > span:last-child { text-decoration-color: var(--on-accent-line) !important; transition: text-decoration-color var(--fast) var(--ease); }
 .scheda-rete:hover > span:last-child { text-decoration-color: currentColor !important; }
 .scheda-rete:hover { color: var(--bg) !important; }
+
+/* Tema scuro: stessi ruoli, carta scura e inchiostro chiaro.
+   Segue il sistema; il pulsante nella testata lo forza (data-theme su <html>). */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #161713; --card: #1E1F1A; --linen: #22231D;
+    --ink: #ECE7DC; --text2: #D2CDC1; --muted: #B5B0A4; --faint: #A09B8F;
+    --line: #34352D; --line2: #4A4B41;
+    --accent: #9CC3A5; --accent-hover: #B8D7BF; --clay: #E3A17B;
+    --selezione: #3A4A3D; --accent-wash: rgba(156, 195, 165, 0.10);
+    --night: #0E0F0B; --night-line: #2E2F28;
+    --warn-bg: #3A2A1F; --warn-ink: #F1DCCA; --warn-icon: #E3A17B;
+    --shadow-float: rgba(0, 0, 0, 0.4); --highlight: rgba(255, 255, 255, 0.06);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #161713; --card: #1E1F1A; --linen: #22231D;
+  --ink: #ECE7DC; --text2: #D2CDC1; --muted: #B5B0A4; --faint: #A09B8F;
+  --line: #34352D; --line2: #4A4B41;
+  --accent: #9CC3A5; --accent-hover: #B8D7BF; --clay: #E3A17B;
+  --selezione: #3A4A3D; --accent-wash: rgba(156, 195, 165, 0.10);
+  --night: #0E0F0B; --night-line: #2E2F28;
+  --warn-bg: #3A2A1F; --warn-ink: #F1DCCA; --warn-icon: #E3A17B;
+  --shadow-float: rgba(0, 0, 0, 0.4); --highlight: rgba(255, 255, 255, 0.06);
+  color-scheme: dark;
+}
+:root[data-theme="light"] { color-scheme: light; }
+/* Le sezioni scure e i blocchi verdi restano uguali in entrambi i temi:
+   fissano qui i colori che usano negli stili in linea. */
+[style*="background: var(--ink)"] { --ink: var(--fisso-notte); --bg: var(--fisso-carta); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) [style*="background: var(--ink)"] { --ink: var(--fisso-notte-scura); } }
+:root[data-theme="dark"] [style*="background: var(--ink)"] { --ink: var(--fisso-notte-scura); }
+[style*="background: var(--accent)"], [style*="background: var(--accent-2)"] { --accent: var(--fisso-verde); --bg: var(--fisso-carta); --ink: var(--fisso-inchiostro); }
+[style*="background: var(--accent)"] a.fonte { color: inherit; }
+.btn-primario, .voce-btn[aria-pressed="true"], .pill[aria-selected="true"] { color: var(--bg); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .btn-primario { color: var(--fisso-su-verde-chiaro); } }
+:root[data-theme="dark"] .btn-primario { color: var(--fisso-su-verde-chiaro); }
+
+/* Strumenti nella testata: cerca e tema */
+.nav { flex-wrap: nowrap; }
+.nav-links { flex: 1 1 auto; justify-content: flex-end; }
+.nav-strumenti { display: flex; gap: 4px; align-items: center; padding-left: 12px; border-left: 1px solid var(--line); }
+.nav-icona {
+  display: inline-flex; align-items: center; gap: 8px; min-height: 40px; padding: 0 12px; border-radius: 8px;
+  font: inherit; font-size: 14px; color: var(--muted); background: transparent; border: 0; cursor: pointer;
+  transition: color var(--fast) var(--ease), background-color var(--fast) var(--ease);
+}
+.nav-icona:hover, .nav-icona[aria-current="page"] { color: var(--ink); background: var(--linen); }
+.site-header .nav { max-width: 1280px; }
+.brand { white-space: nowrap; }
+.nav-links { flex-wrap: nowrap; }
+.nav-links a { padding: 8px; white-space: nowrap; }
+@media (max-width: 1599px) { .nav-icona span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; } .nav-icona { padding: 0 10px; } }
+/* Sotto i 1180px i capitoli vanno su una riga a parte, scorrevole */
+@media (max-width: 1180px) {
+  .nav { flex-wrap: wrap; padding: 8px 0 0 24px; }
+  .brand { order: 1; flex: 1 1 auto; }
+  .nav-strumenti { order: 2; border-left: 0; padding: 0 16px 0 0; }
+  .nav-links { order: 3; width: 100%; flex-wrap: nowrap; overflow-x: auto; justify-content: flex-start; padding: 4px 24px 8px 0; margin-left: -8px; scrollbar-width: none; }
+  .nav-links::-webkit-scrollbar { display: none; }
+  .nav-links a { white-space: nowrap; }
+}
+
+/* Piede */
+.footer-licenza { flex-basis: 100%; font-size: 13px; }
+.footer-licenza a { color: var(--text2); text-decoration: underline; text-decoration-color: var(--line2); text-underline-offset: 3px; }
+
+/* Ricerca */
+.campo-cerca {
+  min-height: 52px; padding: 0 16px; border-radius: 10px; border: 1px solid var(--line2); background: var(--card);
+  font: inherit; font-size: 18px; color: var(--ink); width: 100%;
+  transition: border-color var(--fast) var(--ease);
+}
+.campo-cerca::placeholder { color: var(--faint); }
+.campo-cerca:focus { border-color: var(--accent); }
+.risultato a { display: flex; flex-direction: column; gap: 4px; padding: 16px 12px; margin: 0 -12px; border-radius: 10px; color: var(--ink); border-top: 1px solid var(--line); }
+.risultato:first-child a { border-top: 0; }
+.risultato a:hover { background: var(--linen); color: var(--ink); }
+.risultato-gruppo { font-size: 13px; font-weight: 500; color: var(--clay); }
+.risultato-titolo { font-family: var(--serif); font-size: 22px; line-height: 1.2; }
+.risultato-testo { font-size: 15px; line-height: 1.55; color: var(--muted); }
+
+/* Stampa: solo il contenuto, nero su bianco */
+@media print {
+  .site-header, .site-footer, .non-stampare, .skip { display: none !important; }
+  :root { --bg: #fff; --ink: #000; --text2: #222; --muted: #333; --line: #bbb; }
+  body { background: #fff; }
+  .rv-on .rv-blocco, .rv-on .rv-parole .rv-w > span, .rv-on .rv-foto { opacity: 1 !important; transform: none !important; filter: none !important; clip-path: none !important; }
+  main > section:first-child { padding: 0 0 16px !important; }
+  .lista-spesa { padding: 0 !important; columns: 2 !important; font-size: 12px; }
+  .lista-spesa h2 { font-size: 20px !important; }
+}
+@media (max-width: 480px) {
+  .brand { font-size: 17px; gap: 8px; }
+  .nav-strumenti { padding-right: 8px; gap: 0; }
+  .nav-icona { padding: 0 8px; min-width: 44px; justify-content: center; }
+}

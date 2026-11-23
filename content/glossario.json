@@ -1,0 +1,158 @@
+[
+ {
+  "t": "Biologico UE",
+  "d": "Il logo con la foglia di stelle: almeno il 95% degli ingredienti agricoli è biologico, con controlli ogni anno.",
+  "f": "C12",
+  "p": "metodo"
+ },
+ {
+  "t": "CER",
+  "d": "Comunità energetica rinnovabile: cittadini, imprese, comuni e associazioni che producono e condividono energia rinnovabile.",
+  "f": "S4",
+  "p": "energia"
+ },
+ {
+  "t": "Cigno nordico",
+  "d": "Nordic Swan, il marchio ecologico ufficiale dei Paesi nordici, simile all'EU Ecolabel.",
+  "f": "K8",
+  "p": "casa"
+ },
+ {
+  "t": "Codice delle uova",
+  "d": "La prima cifra sul guscio: 0 biologico, 1 all'aperto, 2 a terra, 3 in gabbia.",
+  "f": "C11",
+  "p": "cibo"
+ },
+ {
+  "t": "Cooperativa sociale di tipo B",
+  "d": "Impresa che esiste per dare lavoro a persone svantaggiate, che per legge sono almeno il 30% dei lavoratori.",
+  "f": "R1",
+  "p": "dove-comprare"
+ },
+ {
+  "t": "COSMOS",
+  "d": "Standard europeo per cosmetici biologici e naturali certificati.",
+  "f": "K9",
+  "p": "casa"
+ },
+ {
+  "t": "CSA",
+  "d": "Comunità che supporta l'agricoltura: paghi a inizio stagione la tua quota del raccolto e ricevi ogni settimana quello che il campo dà.",
+  "f": "R12",
+  "p": "conoscere"
+ },
+ {
+  "t": "DES",
+  "d": "Distretto di economia solidale: rete locale di GAS, produttori e associazioni.",
+  "f": "R5",
+  "p": "dove-comprare"
+ },
+ {
+  "t": "DMA",
+  "d": "Digital Markets Act: la legge UE che obbliga le grandi piattaforme a farti scegliere motore di ricerca e browser predefiniti.",
+  "f": "D2",
+  "p": "digitale"
+ },
+ {
+  "t": "DOP e IGP",
+  "d": "Marchi UE che legano un prodotto a una zona d'origine e a un disciplinare scritto.",
+  "f": "C13",
+  "p": "metodo"
+ },
+ {
+  "t": "EPREL",
+  "d": "Il database europeo dell'etichetta energetica: il QR code sull'etichetta apre la scheda ufficiale del prodotto.",
+  "f": "S7",
+  "p": "energia"
+ },
+ {
+  "t": "Equo Garantito",
+  "d": "Il marchio italiano che identifica le organizzazioni del commercio equo verificate secondo gli standard WFTO.",
+  "f": "R9",
+  "p": "dove-comprare"
+ },
+ {
+  "t": "EU Ecolabel",
+  "d": "Il fiore dell'UE: meno sostanze pericolose, materie prime sostenibili, imballaggi riciclabili.",
+  "f": "K1",
+  "p": "casa"
+ },
+ {
+  "t": "GAS",
+  "d": "Gruppo d'acquisto solidale: famiglie che scelgono insieme i produttori e ordinano in gruppo.",
+  "f": "R2",
+  "p": "conoscere"
+ },
+ {
+  "t": "GDPR",
+  "d": "Il regolamento UE sulla protezione dei dati: puoi chiedere a un servizio una copia dei tuoi dati, la cancellazione e il trasferimento.",
+  "f": "D1",
+  "p": "digitale"
+ },
+ {
+  "t": "GOTS",
+  "d": "Standard per i tessili biologici: «Organic» vuol dire almeno 95% di fibre biologiche, «Made with organic» almeno 70%.",
+  "f": "V6",
+  "p": "vestire"
+ },
+ {
+  "t": "INCI",
+  "d": "La lista degli ingredienti dei cosmetici, obbligatoria per legge.",
+  "f": "K4",
+  "p": "casa"
+ },
+ {
+  "t": "Masters of Linen",
+  "d": "Marchio della filiera del lino tutta europea, dal campo al tessuto.",
+  "f": "V7",
+  "p": "vestire"
+ },
+ {
+  "t": "Microplastiche",
+  "d": "Frammenti di plastica sotto i 5 mm. Quelle aggiunte ai prodotti escono per legge in più tappe, dal 2023 al 2035.",
+  "f": "K3",
+  "p": "casa"
+ },
+ {
+  "t": "OEKO-TEX 100",
+  "d": "Il tessuto è testato per sostanze nocive. Non dice nulla su ambiente o condizioni di lavoro.",
+  "f": "V8",
+  "p": "vestire"
+ },
+ {
+  "t": "PFAS",
+  "d": "Sostanze chimiche che restano a lungo nell'ambiente, usate per esempio negli antiaderenti e negli impermeabilizzanti.",
+  "f": "K7",
+  "p": "casa"
+ },
+ {
+  "t": "PPWR",
+  "d": "Il regolamento UE sugli imballaggi, in vigore dal 12 agosto 2026.",
+  "f": "W2",
+  "p": "rifiuti-acqua"
+ },
+ {
+  "t": "Ritiro dedicato",
+  "d": "Il servizio del GSE che compra l'energia del tuo impianto che non consumi.",
+  "f": "S10",
+  "p": "energia"
+ },
+ {
+  "t": "Ultra-processati",
+  "d": "Alimenti con ingredienti che non useresti in cucina, come sciroppo di glucosio-fruttosio, aromi ed emulsionanti.",
+  "f": "C1",
+  "p": "cibo"
+ },
+ {
+  "t": "Wero",
+  "d": "Sistema di pagamento tra conti bancari europei, creato da banche europee.",
+  "f": "S8",
+  "p": "energia"
+ },
+ {
+  "t": "Zuccheri liberi",
+  "d": "Gli zuccheri aggiunti più quelli di miele, sciroppi e succhi. L'OMS consiglia di restare sotto il 10% delle calorie.",
+  "f": "C6",
+  "p": "cibo"
+ }
+]

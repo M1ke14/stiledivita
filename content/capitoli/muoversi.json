@@ -1,0 +1,38 @@
+{
+ "numero": 6,
+ "titolo": "Muoversi",
+ "sotto": "Piedi, bici, treno, autobus e viaggi.",
+ "intro": "Conta il mezzo e conta quante persone viaggiano insieme. Tra i mezzi a motore, il treno è quello che inquina meno per chilometro. T1",
+ "sezioni": [
+  {
+   "titolo": "Dal mezzo più leggero al più pesante",
+   "nota": "In ordine di preferenza. Basta spostare un viaggio alla settimana verso l'alto.",
+   "punti": [
+    {"t": "A piedi e in bici", "d": "Per i tragitti brevi non serve un motore. Una bici usata, con freni e catena in ordine, basta per anni."},
+    {"t": "Treno", "d": "Tra i mezzi a motore ha le emissioni più basse per passeggero e chilometro, secondo l'Agenzia europea dell'ambiente.", "fonti": "T1, T2"},
+    {"t": "Autobus e pullman", "d": "Su strada sono il mezzo più efficiente. Dove il treno non arriva, il pullman di linea è l'alternativa.", "fonti": "T2"},
+    {"t": "Auto, ma piena", "d": "Un'auto a benzina o diesel con una persona sola è tra i modi più inquinanti di muoversi. Se ti serve, riempila: car pooling, car sharing, un passaggio ai colleghi.", "fonti": "T1"},
+    {"t": "Aereo, quando non c'è altro", "d": "Insieme all'auto ha le emissioni più alte per chilometro. Per le tratte che si fanno in treno, prendi il treno.", "fonti": "T1"}
+   ]
+  },
+  {
+   "titolo": "I tuoi diritti in treno",
+   "nota": "Valgono in tutta l'UE dal 7 giugno 2023.",
+   "punti": [
+    {"t": "Ritardo di un'ora", "d": "Da 60 a 119 minuti di ritardo all'arrivo ti spetta il 25% del prezzo del biglietto.", "fonti": "T3"},
+    {"t": "Ritardo di due ore", "d": "Da 120 minuti in su ti spetta il 50%.", "fonti": "T3"},
+    {"t": "La bici sul treno", "d": "I treni nuovi o rinnovati devono avere almeno quattro posti per le biciclette.", "fonti": "T3"}
+   ]
+  },
+  {
+   "titolo": "Quando viaggi",
+   "punti": [
+    {"t": "Più vicino, più a lungo", "d": "Meno viaggi e più giorni per viaggio: lo stesso riposo con meno chilometri."},
+    {"t": "Il resto della guida vale anche in vacanza", "d": "Borraccia, mercati del posto, cibo di stagione, negozi indipendenti."}
+   ]
+  }
+ ],
+ "fonti": ["T1", "T2", "T3"],
+ "prev": "energia",
+ "next": "rifiuti-acqua"
+}

@@ -11,14 +11,14 @@ from pathlib import Path
 
 BASE = Path(__file__).parent
 DEST = BASE / "static" / "foto"
-URL = "https://images.unsplash.com/{id}?w=2000&q=80&fm=jpg&fit=crop"
+URL = "https://images.unsplash.com/{id}?w=2000&q=78&fm=webp&fit=crop"
 
 
 def main():
     DEST.mkdir(parents=True, exist_ok=True)
     foto = json.loads((BASE / "content" / "foto.json").read_text(encoding="utf-8"))
     for f in foto:
-        out = DEST / f"{f['id']}.jpg"
+        out = DEST / f"{f['id']}.webp"
         if out.exists():
             print("già presente:", out.name)
             continue

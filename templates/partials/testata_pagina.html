@@ -1,0 +1,6 @@
+{# Intestazione delle pagine di servizio: etichetta, titolo, una riga di spiegazione. #}
+  <section style="max-width: 1180px; margin: 0 auto; padding: 112px 24px 56px; display: flex; flex-direction: column; gap: 20px">
+    <p style="margin: 0; font-size: 14px; font-weight: 500; color: var(--clay)">{{ etichetta }}</p>
+    <h1 style="margin: 0; font-family: var(--serif); font-size: clamp(56px, 9vw, 120px); line-height: 0.95; font-weight: 400; letter-spacing: -0.028em">{{ page_title }}</h1>
+    {% if sottotitolo %}<p style="margin: 0; font-size: 18px; line-height: 1.6; color: var(--muted); max-width: 40rem">{{ sottotitolo }}</p>{% endif %}
+  </section>

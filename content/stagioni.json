@@ -1,0 +1,10 @@
+{
+ "fonte": "C28",
+ "nota": "Clima mediterraneo, che comprende l'Italia. È un elenco indicativo: al Nord e in montagna le stagioni si spostano.",
+ "stagioni": [
+  {"nome": "Primavera", "frutta": "Fragole, arance, ciliegie, albicocche, limoni, pompelmi, pere, mele", "verdura": "Cardi, carciofi, broccoli, asparagi, spinaci, piselli, fave, cipolle verdi, aglio verde, porri"},
+  {"nome": "Estate", "frutta": "Albicocche, nettarine, pesche, prugne, angurie, meloni, fichi", "verdura": "Pomodori, melanzane, zucchine, cetrioli, peperoni, rapanelli, carote, cardi, porri, lattughe"},
+  {"nome": "Autunno", "frutta": "Cachi, mele, pere, melograni, uva da tavola, kiwi", "verdura": "Indivie, cavolfiori, fagiolini, cardi, zucche, barbabietole, lattughe, cavoli"},
+  {"nome": "Inverno", "frutta": "Lamponi, fragole, kiwi, limoni, mandarini, arance, mele, pere, pompelmi", "verdura": "Cardi, carciofi, sedani, broccoli, cavolfiori, zucche, scarole, spinaci, lattughe"}
+ ]
+}

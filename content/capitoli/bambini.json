@@ -1,0 +1,22 @@
+{
+ "numero": 8,
+ "titolo": "Bambini",
+ "sotto": "Giocattoli, vestiti, cura e merende.",
+ "intro": "I bambini crescono in fretta: quasi tutto quello che serve si trova usato, e spesso dura più del tempo in cui serve.",
+ "sezioni": [
+  {
+   "titolo": "Cosa scegliere",
+   "punti": [
+    {"t": "Giocattoli", "d": "La nuova legge europea vieta nei giocattoli PFAS, interferenti endocrini e bisfenoli e introduce un passaporto digitale. Si applica in generale dal 1° agosto 2030: fino ad allora scegli giocattoli semplici, con il marchio CE e un produttore che puoi rintracciare.", "fonti": "B1, B2"},
+    {"t": "Vestiti", "d": "Si cambia taglia ogni pochi mesi: usato, scambi tra famiglie, mercatini. Le regole sulle fibre del capitolo Vestire valgono anche qui."},
+    {"t": "Cura della persona", "d": "Pochi prodotti e senza profumo se la pelle è sensibile. Dal 31 luglio 2026 l'elenco degli allergeni in etichetta passa da 26 a oltre 80 sostanze.", "fonti": "K5"},
+    {"t": "Merende", "d": "Gli zuccheri liberi dovrebbero restare sotto il 10% delle calorie, meglio sotto il 5%. Frutta, pane, yogurt bianco: merende semplici.", "fonti": "C6"},
+    {"t": "Borracce e contenitori", "d": "Vetro o acciaio. Dal 20 gennaio 2025 il bisfenolo A è vietato nei materiali a contatto con il cibo.", "fonti": "K6"},
+    {"t": "Glitter", "d": "Il glitter di plastica sciolto è vietato in UE dal 2023, con alcune eccezioni.", "fonti": "K3"}
+   ]
+  }
+ ],
+ "fonti": ["B1", "B2", "K3", "K5", "K6", "C6"],
+ "prev": "rifiuti-acqua",
+ "next": "dove-comprare"
+}

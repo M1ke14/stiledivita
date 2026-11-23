@@ -15,6 +15,13 @@ def page():
         yield {"slug": slug}
 
 
+@freezer.register_generator
+def extra():
+    yield "indice_ricerca", {}
+    yield "sitemap", {}
+    yield "robots", {}
+
+
 if __name__ == "__main__":
     freezer.freeze()
     # niente elaborazione Jekyll su GitHub Pages

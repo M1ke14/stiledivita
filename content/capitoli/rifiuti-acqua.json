@@ -1,0 +1,35 @@
+{
+ "numero": 7,
+ "titolo": "Rifiuti e acqua",
+ "sotto": "Raccolta differenziata, imballaggi e acqua del rubinetto.",
+ "intro": "Il rifiuto che pesa meno è quello che non nasce. Il secondo è quello che finisce nel bidone giusto.",
+ "numeri": [
+  {"n": "67,7%", "l": "di raccolta differenziata in Italia nel 2024", "fonti": "W1"},
+  {"n": "29,9 mln t", "l": "di rifiuti urbani nel 2024, il 2,3% in più del 2023", "fonti": "W1"},
+  {"n": "214 €", "l": "il costo medio a persona per gestirli, in un anno", "fonti": "W1"},
+  {"n": "42,4%", "l": "dell'acqua immessa nelle reti comunali va persa (2022)", "fonti": "W3"}
+ ],
+ "sezioni": [
+  {
+   "titolo": "Rifiuti",
+   "punti": [
+    {"t": "Prima di buttare", "d": "Ripara, regala, vendi. Dal 22 ottobre 2026 per alcuni prodotti il produttore deve offrire la riparazione anche dopo la garanzia.", "fonti": "D5"},
+    {"t": "Le regole del tuo comune", "d": "Cosa va in quale bidone cambia da comune a comune. Segui il calendario e le istruzioni del tuo gestore, non le regole generiche trovate online."},
+    {"t": "Meno imballaggi", "d": "Sfuso, confezioni grandi, ricariche. Dal 12 febbraio 2027 chi vende cibo e bevande da asporto deve accettare il contenitore che porti tu.", "fonti": "W2"},
+    {"t": "Un'etichetta sola", "d": "Dal 12 agosto 2028 un'etichetta europea dirà in quale raccolta va ogni imballaggio, uguale in tutti i Paesi.", "fonti": "W2"},
+    {"t": "Vestiti e tessili", "d": "La raccolta separata dei tessili è obbligatoria in tutta l'UE dal 2025. Nel cassonetto metti solo capi puliti e usabili.", "fonti": "V5, R34"}
+   ]
+  },
+  {
+   "titolo": "Acqua",
+   "punti": [
+    {"t": "Bevi quella del rubinetto", "d": "Deve rispettare i requisiti della direttiva europea sull'acqua potabile, che ti dà anche il diritto di sapere cosa contiene: chiedi i dati al tuo gestore.", "fonti": "C18"},
+    {"t": "In casa", "d": "Riduttori di flusso sui rubinetti, doccia al posto del bagno, lavatrice e lavastoviglie a pieno carico."},
+    {"t": "Le perdite", "d": "Nel 2022 le reti comunali hanno perso il 42,4% dell'acqua immessa. Se vedi una perdita in strada, segnalala al gestore.", "fonti": "W3"}
+   ]
+  }
+ ],
+ "fonti": ["W1", "W2", "W3", "C18", "D5", "V5", "R34"],
+ "prev": "muoversi",
+ "next": "bambini"
+}

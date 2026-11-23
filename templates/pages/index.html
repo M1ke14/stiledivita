@@ -3,8 +3,8 @@
   <section class="apertura">
     <div class="apertura-testo">
       <p style="margin: 0; font-size: 14px; font-weight: 500; color: var(--clay)">Guida indipendente e senza scopo di lucro</p>
-      <h1 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: clamp(44px, 5.6vw, 76px); line-height: 1.04; font-weight: 400; letter-spacing: -0.022em">Come mangiare, vestirsi e vivere <i>in modo più sostenibile.</i></h1>
-      <p style="margin: 0; font-size: clamp(18px, 1.6vw, 20px); line-height: 1.55; color: var(--muted); max-width: 34rem">Cosa comprare, dove e da chi, per dipendere meno dalle multinazionali e da ciò che è tossico: cibo, vestiti, casa, digitale, soldi ed energia. Ogni consiglio ha una fonte che puoi controllare.</p>
+      <h1 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: clamp(44px, 5.6vw, 76px); line-height: 1.04; font-weight: 400; letter-spacing: -0.022em">Come mangiare, vestirsi e vivere <i>in modo più sostenibile</i></h1>
+      <p style="margin: 0; font-size: clamp(18px, 1.6vw, 20px); line-height: 1.55; color: var(--muted); max-width: 34rem">Cosa comprare, dove e da chi, per dipendere meno dalle multinazionali e da ciò che è tossico: cibo, vestiti, casa, digitale, soldi, energia, trasporti e rifiuti. Ogni consiglio ha una fonte che puoi controllare.</p>
       <div style="display: flex; gap: 12px; flex-wrap: wrap; margin-top: 8px">
         <a class="btn btn-primario" href="{{ url_for('page', slug='cibo') }}">Apri la guida</a>
         <a class="btn btn-secondario" href="{{ url_for('page', slug='metodo') }}">Come scelgo le fonti
@@ -20,8 +20,8 @@
     <div style="background: var(--accent); color: var(--bg); border-radius: 16px; padding: clamp(32px, 6vw, 56px) clamp(24px, 5vw, 48px); display: flex; flex-direction: column; gap: 40px">
       <div style="display: flex; flex-direction: column; gap: 14px; max-width: 760px">
         <p style="margin: 0; font-size: 14px; font-weight: 500; letter-spacing: 0; color: var(--sage-2)">Il primo passo</p>
-        <h2 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: clamp(38px, 5vw, 64px); line-height: 1.02; font-weight: 400; letter-spacing: -0.022em">Fai la spesa con altre famiglie, <i style="font-weight: 400">direttamente da chi coltiva.</i></h2>
-        <p style="margin: 0; font-size: 18px; line-height: 1.55; color: var(--on-accent-2)">È il cambiamento che sposta di più: meno intermediari, prezzi chiari, cibo di stagione. In Italia ci sono due modi semplici per farlo.</p>
+        <h2 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: clamp(38px, 5vw, 64px); line-height: 1.02; font-weight: 400; letter-spacing: -0.022em">Fai la spesa con altre famiglie, <i style="font-weight: 400">direttamente da chi coltiva</i></h2>
+        <p style="margin: 0; font-size: 18px; line-height: 1.55; color: var(--on-accent-2)">È uno dei cambiamenti che pesano di più: meno intermediari, prezzi chiari, cibo di stagione. In Italia ci sono due modi semplici per farlo.</p>
       </div>
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 32px 48px">
         <a href="{{ url_for('page', slug='conoscere') }}" class="scheda-rete" style="border-top: 1px solid var(--on-accent-line); padding: 24px 0 0; display: flex; flex-direction: column; gap: 12px; color: var(--bg)">
@@ -48,13 +48,13 @@
   <section style="max-width: 1180px; margin: 0 auto; padding: 120px 24px; display: flex; flex-direction: column; gap: 56px">
     <div style="display: flex; flex-direction: column; gap: 14px; max-width: 720px">
       
-      <h2 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: clamp(38px, 5vw, 60px); line-height: 1.04; font-weight: 400; letter-spacing: -0.022em">Come si usa la guida.</h2>
+      <h2 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: clamp(38px, 5vw, 60px); line-height: 1.04; font-weight: 400; letter-spacing: -0.022em">Come si usa la guida</h2>
     </div>
     <ol style="list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 40px">
       <li style="display: flex; flex-direction: column; gap: 12px; border-top: 1px solid var(--line2); padding-top: 24px">
         <span style="font-family: var(--mono); font-size: 14px; font-variant-numeric: tabular-nums; color: var(--accent); line-height: 1; line-height: 1.6">1</span>
         <h3 style="margin: 0; font-size: 21px; font-weight: 550; letter-spacing: 0">Scegli un capitolo</h3>
-        <p style="margin: 0; font-size: 16px; line-height: 1.6; color: var(--muted)">Cibo, vestiti, casa, digitale, soldi ed energia. Parti da quello che ti pesa di più.</p>
+        <p style="margin: 0; font-size: 16px; line-height: 1.6; color: var(--muted)">Cibo, vestiti, casa, digitale, soldi ed energia, trasporti, rifiuti, bambini. Parti da quello che ti pesa di più.</p>
       </li>
       <li style="display: flex; flex-direction: column; gap: 12px; border-top: 1px solid var(--line2); padding-top: 24px">
         <span style="font-family: var(--mono); font-size: 14px; font-variant-numeric: tabular-nums; color: var(--accent); line-height: 1; line-height: 1.6">2</span>
@@ -107,8 +107,23 @@
           <span style="display: flex; flex-direction: column; gap: 6px"><span style="font-family: Newsreader, Georgia, serif; font-size: clamp(30px, 3.6vw, 44px); font-weight: 400; letter-spacing: -0.018em; line-height: 1.05">Soldi ed energia</span><span style="font-size: 16px; color: var(--muted)">Banche etiche, pagamenti europei, comunità energetiche.</span></span>
           <span style="font-size: 15px; color: var(--accent); font-weight: 500">Apri</span>
         </a>
-        <a href="{{ url_for('page', slug='dove-comprare') }}" style="display: grid; grid-template-columns: 80px minmax(0, 1fr) auto; gap: 24px; align-items: baseline; padding: 30px 0; border-bottom: 1px solid var(--line2); color: var(--ink)">
+        <a href="{{ url_for('page', slug='muoversi') }}" style="display: grid; grid-template-columns: 80px minmax(0, 1fr) auto; gap: 24px; align-items: baseline; padding: 30px 0; border-bottom: 1px solid var(--line2); color: var(--ink)">
           <span style="font-family: var(--mono); font-size: 13px; font-variant-numeric: tabular-nums; color: var(--clay); line-height: 1.6">06</span>
+          <span style="display: flex; flex-direction: column; gap: 6px"><span style="font-family: Newsreader, Georgia, serif; font-size: clamp(30px, 3.6vw, 44px); font-weight: 400; letter-spacing: -0.018em; line-height: 1.05">Muoversi</span><span style="font-size: 16px; color: var(--muted)">Piedi, bici, treno, autobus: cosa inquina meno e i tuoi diritti in treno.</span></span>
+          <span style="font-size: 15px; color: var(--accent); font-weight: 500">Apri</span>
+        </a>
+        <a href="{{ url_for('page', slug='rifiuti-acqua') }}" style="display: grid; grid-template-columns: 80px minmax(0, 1fr) auto; gap: 24px; align-items: baseline; padding: 30px 0; border-bottom: 1px solid var(--line2); color: var(--ink)">
+          <span style="font-family: var(--mono); font-size: 13px; font-variant-numeric: tabular-nums; color: var(--clay); line-height: 1.6">07</span>
+          <span style="display: flex; flex-direction: column; gap: 6px"><span style="font-family: Newsreader, Georgia, serif; font-size: clamp(30px, 3.6vw, 44px); font-weight: 400; letter-spacing: -0.018em; line-height: 1.05">Rifiuti e acqua</span><span style="font-size: 16px; color: var(--muted)">Raccolta differenziata, imballaggi, acqua del rubinetto.</span></span>
+          <span style="font-size: 15px; color: var(--accent); font-weight: 500">Apri</span>
+        </a>
+        <a href="{{ url_for('page', slug='bambini') }}" style="display: grid; grid-template-columns: 80px minmax(0, 1fr) auto; gap: 24px; align-items: baseline; padding: 30px 0; border-bottom: 1px solid var(--line2); color: var(--ink)">
+          <span style="font-family: var(--mono); font-size: 13px; font-variant-numeric: tabular-nums; color: var(--clay); line-height: 1.6">08</span>
+          <span style="display: flex; flex-direction: column; gap: 6px"><span style="font-family: Newsreader, Georgia, serif; font-size: clamp(30px, 3.6vw, 44px); font-weight: 400; letter-spacing: -0.018em; line-height: 1.05">Bambini</span><span style="font-size: 16px; color: var(--muted)">Giocattoli, vestiti, cura e merende.</span></span>
+          <span style="font-size: 15px; color: var(--accent); font-weight: 500">Apri</span>
+        </a>
+        <a href="{{ url_for('page', slug='dove-comprare') }}" style="display: grid; grid-template-columns: 80px minmax(0, 1fr) auto; gap: 24px; align-items: baseline; padding: 30px 0; border-bottom: 1px solid var(--line2); color: var(--ink)">
+          <span style="font-family: var(--mono); font-size: 13px; font-variant-numeric: tabular-nums; color: var(--clay); line-height: 1.6">09</span>
           <span style="display: flex; flex-direction: column; gap: 6px"><span style="font-family: Newsreader, Georgia, serif; font-size: clamp(30px, 3.6vw, 44px); font-weight: 400; letter-spacing: -0.018em; line-height: 1.05">Dove comprare</span><span style="font-size: 16px; color: var(--muted)">GAS, cooperative sociali, contadini e botteghe equosolidali su una mappa.</span></span>
           <span style="font-size: 15px; color: var(--accent); font-weight: 500">Apri</span>
         </a>
@@ -120,13 +135,13 @@
   <section style="max-width: 1180px; margin: 0 auto; padding: 120px 24px; display: flex; flex-wrap: wrap; gap: 48px; align-items: center">
     <div style="flex: 1 1 420px; display: flex; flex-direction: column; gap: 18px">
       <p style="margin: 0; font-size: 14px; font-weight: 500; letter-spacing: 0; color: var(--clay)">Su cosa si basa</p>
-      <h2 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: clamp(36px, 4.6vw, 56px); line-height: 1.05; font-weight: 400; letter-spacing: -0.022em">Standard europei, <i style="font-weight: 400">fonti pubbliche.</i></h2>
-      <p style="margin: 0; font-size: 17px; line-height: 1.6; color: var(--muted); max-width: 520px">Prima le leggi UE e le agenzie pubbliche (EFSA, EEA, ECHA, OMS), poi le revisioni scientifiche. Dove le fonti non sono d'accordo, lo scrivo.</p>
+      <h2 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: clamp(36px, 4.6vw, 56px); line-height: 1.05; font-weight: 400; letter-spacing: -0.022em">Standard europei, <i style="font-weight: 400">fonti pubbliche</i></h2>
+      <p style="margin: 0; font-size: 17px; line-height: 1.6; color: var(--muted); max-width: 520px">Prima le leggi UE e le agenzie pubbliche (EFSA, EEA, ECHA, OMS, ISPRA), poi le revisioni scientifiche. Dove le fonti non sono d'accordo, lo scrivo.</p>
       <a href="{{ url_for('page', slug='metodo') }}" style="font-size: 17px; font-weight: 500; color: var(--accent); min-height: 44px; display: inline-flex; align-items: center">Leggi il metodo</a>
     </div>
     <div style="flex: 1 1 420px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px 40px">
-      <div style="border-top: 1px solid var(--line2); padding: 20px 0 8px; display: flex; flex-direction: column; gap: 8px"><span style="font-family: Newsreader, Georgia, serif; font-size: 48px; font-weight: 400; letter-spacing: -0.022em; line-height: 1">22</span><span style="font-size: 14px; color: var(--muted)">leggi e regolamenti UE</span></div>
-      <div style="border-top: 1px solid var(--line2); padding: 20px 0 8px; display: flex; flex-direction: column; gap: 8px"><span style="font-family: Newsreader, Georgia, serif; font-size: 48px; font-weight: 400; letter-spacing: -0.022em; line-height: 1">5</span><span style="font-size: 14px; color: var(--muted)">agenzie pubbliche</span></div>
+      <div style="border-top: 1px solid var(--line2); padding: 20px 0 8px; display: flex; flex-direction: column; gap: 8px"><span style="font-family: Newsreader, Georgia, serif; font-size: 48px; font-weight: 400; letter-spacing: -0.022em; line-height: 1">{{ N_LEGGI_UE }}</span><span style="font-size: 14px; color: var(--muted)">leggi e regolamenti UE</span></div>
+      <div style="border-top: 1px solid var(--line2); padding: 20px 0 8px; display: flex; flex-direction: column; gap: 8px"><span style="font-family: Newsreader, Georgia, serif; font-size: 48px; font-weight: 400; letter-spacing: -0.022em; line-height: 1">6</span><span style="font-size: 14px; color: var(--muted)">agenzie pubbliche</span></div>
       <div style="border-top: 1px solid var(--line2); padding: 20px 0 8px; display: flex; flex-direction: column; gap: 8px"><span style="font-family: Newsreader, Georgia, serif; font-size: 48px; font-weight: 400; letter-spacing: -0.022em; line-height: 1">0</span><span style="font-size: 14px; color: var(--muted)">link affiliati</span></div>
       <div style="border-top: 1px solid var(--line2); padding: 20px 0 8px; display: flex; flex-direction: column; gap: 8px"><span style="font-family: Newsreader, Georgia, serif; font-size: 48px; font-weight: 400; letter-spacing: -0.022em; line-height: 1">0</span><span style="font-size: 14px; color: var(--muted)">pubblicità</span></div>
     </div>
@@ -136,8 +151,7 @@
   <section style="background: var(--ink); color: var(--bg)">
     <div style="max-width: 1180px; margin: 0 auto; padding: 120px 24px; display: flex; flex-direction: column; gap: 56px">
       <div style="display: flex; flex-direction: column; gap: 14px">
-        <p style="margin: 0; font-size: 14px; font-weight: 500; letter-spacing: 0; color: var(--sage)">Inizia da qui</p>
-        <h2 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: clamp(38px, 5vw, 60px); line-height: 1.04; font-weight: 400; letter-spacing: -0.022em; max-width: 720px">Da dove iniziare.</h2>
+        <h2 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: clamp(38px, 5vw, 60px); line-height: 1.04; font-weight: 400; letter-spacing: -0.022em; max-width: 720px">Da dove iniziare</h2>
       </div>
       <ol style="list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 32px">
         <li style="border-top: 1px solid var(--night-line); padding-top: 22px; display: flex; flex-direction: column; gap: 10px">

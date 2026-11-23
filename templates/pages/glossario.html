@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+  {% with etichetta = 'Per orientarsi', sottotitolo = 'Le sigle e i marchi che trovi nella guida, in una riga. Ogni voce rimanda al capitolo e alla fonte.' %}{% include 'partials/testata_pagina.html' %}{% endwith %}
+  <section style="max-width: 1180px; margin: 0 auto; padding: 0 24px 112px">
+    <dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(460px, 100%), 1fr)); gap: 0 64px">
+      {% for g in voci %}
+      <div id="{{ g.t | slug }}" style="padding: 24px 0; border-top: 1px solid var(--line2); display: flex; flex-direction: column; gap: 8px; scroll-margin-top: 96px">
+        <dt style="font-family: var(--serif); font-size: 26px; letter-spacing: -0.01em; line-height: 1.15">{{ g.t }}</dt>
+        <dd style="margin: 0; font-size: 16px; line-height: 1.6; color: var(--text2)">{{ g.d }} <span style="color: var(--faint)">{{ g.f | fonti }}</span></dd>
+        <dd style="margin: 0; font-size: 14px"><a href="{{ url_for('page', slug=g.p) }}">{{ PAGES[g.p][1] }}</a></dd>
+      </div>
+      {% endfor %}
+    </dl>
+  </section>
+{% endblock %}

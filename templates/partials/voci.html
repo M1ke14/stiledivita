@@ -10,7 +10,7 @@
       <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 20px">
         <div style="display: flex; flex-direction: column; gap: 10px">
           <p style="margin: 0; font-size: 14px; font-weight: 500; letter-spacing: 0; color: var(--clay)">{{ cfg.eyebrow }}</p>
-          <h2 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: clamp(38px, 5vw, 60px); line-height: 1.04; font-weight: 400; letter-spacing: -0.022em">Voce per voce.</h2>
+          <h2 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: clamp(38px, 5vw, 60px); line-height: 1.04; font-weight: 400; letter-spacing: -0.022em">Voce per voce</h2>
         </div>
         <p style="margin: 0; font-size: 15px; color: var(--muted)">{{ cfg.hint }}</p>
       </div>
@@ -56,6 +56,7 @@
             <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 16px; border-top: 1px solid var(--line); padding-top: 20px">
               <span style="font-size: 13px; color: var(--faint)">Fonti: {{ v.fonti | fonti }}</span>
               <div style="display: flex; gap: 8px; flex-wrap: wrap">
+                <button type="button" class="ghost-btn" data-copia="{{ v.id }}" hidden><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-right: 8px"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1"></path><path d="M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"></path></svg><span>Copia il link</span></button>
                 <a class="ghost-btn" href="#{{ prev.id }}" data-voce="{{ prev.id }}">Indietro: {{ prev.nome }}</a>
                 <a class="ghost-btn" href="#{{ next.id }}" data-voce="{{ next.id }}">Avanti: {{ next.nome }}</a>
               </div>

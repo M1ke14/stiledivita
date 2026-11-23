@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+  {% with etichetta = 'Da stampare', sottotitolo = 'Cosa guardare in etichetta per ogni voce del capitolo Cibo. Spunta quello che compri, oppure stampa la pagina e portala con te.' %}{% include 'partials/testata_pagina.html' %}{% endwith %}
+  <section style="max-width: 1180px; margin: 0 auto; padding: 0 24px 24px" class="non-stampare">
+    <button type="button" class="btn btn-primario" onclick="window.print()" style="border: 0; cursor: pointer; font: inherit; font-weight: 500">Stampa la lista</button>
+  </section>
+  <section class="lista-spesa" style="max-width: 1180px; margin: 0 auto; padding: 32px 24px 112px; columns: 3 320px; column-gap: 48px">
+    {% for c in data.CATS %}
+    <div style="break-inside: avoid; margin-bottom: 40px">
+      <h2 style="margin: 0 0 12px; font-family: var(--serif); font-size: 30px; font-weight: 400; letter-spacing: -0.01em">{{ c.nome }}</h2>
+      {% for v in data.VOCI if v.cat == c.id %}
+      <div style="break-inside: avoid; padding: 12px 0; border-top: 1px solid var(--line)">
+        <label style="display: flex; gap: 10px; align-items: baseline; font-weight: 500; cursor: pointer"><input type="checkbox" style="accent-color: var(--accent); width: 16px; height: 16px"> {{ v.nome }}</label>
+        <ul style="margin: 6px 0 0; padding: 0 0 0 26px; font-size: 14px; line-height: 1.5; color: var(--text2)">
+          {% for g in v.guarda %}<li>{{ g }}</li>{% endfor %}
+        </ul>
+      </div>
+      {% endfor %}
+    </div>
+    {% endfor %}
+  </section>
+{% endblock %}

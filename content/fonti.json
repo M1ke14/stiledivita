@@ -141,7 +141,7 @@
   "url": "https://www.unionalimentari.com/wp-content/uploads/2026/02/MASAF-decreto-26.12.2025-sperimentazione-origine-etichetta.pdf",
   "tipo": "Legge IT",
   "sostiene": "Origine obbligatoria per pasta, riso, pomodoro, latte e formaggi, salumi suini fino al 31/12/2026",
-  "nota": ""
+  "nota": "Verifica 23/11/2026: DM 26/12/2025, GU n. 34 dell'11/2/2026, regime prorogato fino al 31/12/2026."
  },
  "C17": {
   "codice": "C17",
@@ -492,7 +492,7 @@
   "url": "https://certifico.com/news/decreto-legislativo-25-settembre-2026-n-176",
   "tipo": "Legge UE e IT",
   "sostiene": "Riparazione obbligatoria per alcuni prodotti; in Italia D.Lgs. 176/2026, in vigore dal 22/10/2026",
-  "nota": "Link aggiornato dopo la verifica del 4/11/2026"
+  "nota": "Link aggiornato dopo la verifica del 4/11/2026 Verifica 23/11/2026: D.Lgs. 25 settembre 2026, n. 176, in GU il 7/10/2026, in vigore dal 22/10/2026."
  },
  "D6": {
   "codice": "D6",
@@ -546,7 +546,7 @@
   "url": "https://www.bankingonclimatechaos.org/wp-content/uploads/2026/06/BOCC_2026_vFINAL.pdf",
   "tipo": "Rapporto di ONG",
   "sostiene": "Le 65 banche più grandi hanno dato 906 miliardi di dollari ai combustibili fossili nel 2025; 8.700 miliardi dal 2016",
-  "nota": "Verifica 4/11/2026: Tolto «le europee calano di più»: il taglio maggiore è di BMO (Canada)"
+  "nota": "Verifica 4/11/2026: Tolto «le europee calano di più»: il taglio maggiore è di BMO (Canada) Verifica 23/11/2026: rapporto di giugno 2026, 906 miliardi nel 2025 e 8.700 miliardi dal 2016; 26 banche su 65 li hanno ridotti."
  },
  "S2": {
   "codice": "S2",
@@ -618,7 +618,7 @@
   "url": "https://www.agenziaentrate.gov.it/portale/web/guest/agevolazioni",
   "tipo": "Agenzia pubblica",
   "sostiene": "Detrazione fotovoltaico 2026: 50% abitazione principale, 36% altri immobili, 10 rate, tetto 96.000 €; dal 2027 è previsto il calo (36% / 30%).",
-  "nota": "Verifica 4/11/2026: Aliquote confermate dalla guida ANCE"
+  "nota": "Verifica 4/11/2026: Aliquote confermate dalla guida ANCE Verifica 23/11/2026: nel 2026 50% sull'abitazione principale e 36% sugli altri immobili, limite 96.000 euro; dal 2027 36% e 30%."
  },
  "S10": {
   "codice": "S10",
@@ -1033,5 +1033,86 @@
   "tipo": "tutte",
   "sostiene": "Dataset del 2018 senza licenza",
   "nota": ""
+ },
+ "C28": {
+  "codice": "C28",
+  "gruppo": "Cibo",
+  "titolo": "Commissione europea, Calendario dei prodotti ortofrutticoli",
+  "url": "https://agriculture.ec.europa.eu/farming/crops/fruit-and-vegetables/calendar_it",
+  "tipo": "Commissione UE",
+  "sostiene": "Frutta e verdura raccolte nell'UE per stagione, per il clima mediterraneo (Italia compresa); elenco non esaustivo",
+  "nota": "Verifica 23/11/2026"
+ },
+ "T1": {
+  "codice": "T1",
+  "gruppo": "Muoversi",
+  "titolo": "EEA, Transport and environment report 2020: Train or plane?",
+  "url": "https://www.eea.europa.eu/publications/transport-and-environment-report-2020",
+  "tipo": "Agenzia UE",
+  "sostiene": "Il treno ha le emissioni per passeggero-km più basse; aereo e auto, soprattutto con una persona sola, le più alte",
+  "nota": "Verifica 23/11/2026"
+ },
+ "T2": {
+  "codice": "T2",
+  "gruppo": "Muoversi",
+  "titolo": "EEA, Rail and waterborne: best for low-carbon motorised transport",
+  "url": "https://www.eea.europa.eu/publications/rail-and-waterborne-transport/rail-and-waterborne-best",
+  "tipo": "Agenzia UE",
+  "sostiene": "Treno il mezzo motorizzato più efficiente; autobus e pullman i più efficienti su strada",
+  "nota": "Verifica 23/11/2026"
+ },
+ "T3": {
+  "codice": "T3",
+  "gruppo": "Muoversi",
+  "titolo": "Reg. (UE) 2021/782, Diritti dei passeggeri nel trasporto ferroviario",
+  "url": "https://eur-lex.europa.eu/eli/reg/2021/782/oj",
+  "tipo": "Legge UE",
+  "sostiene": "Indennizzo del 25% del biglietto per ritardi da 60 a 119 minuti, 50% da 120 minuti; treni nuovi o rinnovati con almeno 4 posti per le bici; in vigore dal 7/6/2023",
+  "nota": "Verifica 23/11/2026"
+ },
+ "W1": {
+  "codice": "W1",
+  "gruppo": "Rifiuti e acqua",
+  "titolo": "ISPRA, Rapporto rifiuti urbani, edizione 2025 (dati 2024)",
+  "url": "https://www.isprambiente.gov.it/it/pubblicazioni/rapporti/rapporto-rifiuti-urbani-edizione-2025",
+  "tipo": "Agenzia pubblica",
+  "sostiene": "Nel 2024 29,9 milioni di tonnellate di rifiuti urbani (+2,3%), raccolta differenziata al 67,7% (Nord 74,2%, Centro 63,2%, Sud 60,2%), costo medio 214,4 euro per abitante",
+  "nota": "Verifica 23/11/2026"
+ },
+ "W2": {
+  "codice": "W2",
+  "gruppo": "Rifiuti e acqua",
+  "titolo": "Reg. (UE) 2025/40, Imballaggi e rifiuti di imballaggio (PPWR)",
+  "url": "https://eur-lex.europa.eu/eli/reg/2025/40/oj",
+  "tipo": "Legge UE",
+  "sostiene": "Si applica dal 12/8/2026; dal 12/2/2027 chi vende cibo e bevande da asporto deve accettare il contenitore del cliente; etichetta UE per la differenziata dal 12/8/2028",
+  "nota": "Verifica 23/11/2026"
+ },
+ "W3": {
+  "codice": "W3",
+  "gruppo": "Rifiuti e acqua",
+  "titolo": "Istat, Le statistiche dell'Istat sull'acqua, anni 2020-2022",
+  "url": "https://www.istat.it/comunicato-stampa/le-statistiche-dellistat-sullacqua-anni-2020-2022/",
+  "tipo": "Statistica ufficiale",
+  "sostiene": "Nel 2022 le reti comunali hanno perso il 42,4% dell'acqua immessa, 3,4 miliardi di metri cubi",
+  "nota": "Verifica 23/11/2026"
+ },
+ "B1": {
+  "codice": "B1",
+  "gruppo": "Bambini",
+  "titolo": "Reg. (UE) 2025/2509, Sicurezza dei giocattoli",
+  "url": "https://eur-lex.europa.eu/eli/reg/2025/2509/oj",
+  "tipo": "Legge UE",
+  "sostiene": "Vieta nei giocattoli PFAS, interferenti endocrini e bisfenoli; passaporto digitale del prodotto; in vigore dal 1/1/2026, si applica in generale dal 1/8/2030",
+  "nota": "Verifica 23/11/2026"
+ },
+ "B2": {
+  "codice": "B2",
+  "gruppo": "Bambini",
+  "titolo": "Consiglio dell'UE, Sicurezza dei giocattoli",
+  "url": "https://www.consilium.europa.eu/it/policies/toy-safety/",
+  "tipo": "Istituzione UE",
+  "sostiene": "Riassunto delle nuove regole: sostanze vietate, passaporto digitale, vendite online",
+  "nota": "Verifica 23/11/2026"
  }
 }

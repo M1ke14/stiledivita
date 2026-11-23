@@ -10,9 +10,21 @@
   <link rel="preload" href="{{ url_for('static', filename='fonts/newsreader-latin-opsz-normal.woff2') }}" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="{{ url_for('static', filename='fonts/ibm-plex-mono-latin-400-normal.woff2') }}" as="font" type="font/woff2" crossorigin>
   <link rel="icon" href="{{ url_for('static', filename='favicon.svg') }}" type="image/svg+xml">
+  <meta name="theme-color" content="#F4F0E6" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#161713" media="(prefers-color-scheme: dark)">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="it_IT">
+  <meta property="og:site_name" content="Guida alla vita sostenibile">
+  <meta property="og:title" content="{{ page_title or 'Guida alla vita sostenibile' }}">
+  <meta property="og:description" content="{{ description or 'Guida indipendente e senza scopo di lucro per mangiare, vestirsi e vivere in modo più sostenibile, con fonti verificabili.' }}">
+  <meta name="twitter:card" content="summary_large_image">
+  {% if SITE_URL %}<link rel="canonical" href="{{ SITE_URL }}{{ request.path }}">
+  <meta property="og:url" content="{{ SITE_URL }}{{ request.path }}">
+  <meta property="og:image" content="{{ SITE_URL }}/static/foto/photo-1788710737703-48dee6844122.webp">
+  <meta property="og:image:alt" content="Banco di verdure di stagione a un mercato">{% endif %}
   <link rel="stylesheet" href="{{ url_for('static', filename='css/site.css') }}">
   {% block head %}{% endblock %}
-  <script>(function(d){d.classList.add('js');if('IntersectionObserver' in window&&!(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches)){d.classList.add('rv-pre');setTimeout(function(){d.classList.remove('rv-pre')},1500)}})(document.documentElement)</script>
+  <script>(function(d){try{var t=localStorage.getItem('tema');if(t==='scuro'||t==='chiaro')d.setAttribute('data-theme',t==='scuro'?'dark':'light')}catch(e){}d.classList.add('js');if('IntersectionObserver' in window&&!(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches)){d.classList.add('rv-pre');setTimeout(function(){d.classList.remove('rv-pre')},1500)}})(document.documentElement)</script>
 </head>
 <body>
   <a class="skip" href="#contenuto">Vai al contenuto</a>
@@ -24,6 +36,10 @@
         <a href="{{ url_for('page', slug=s) }}"{% if slug == s or (slug == 'conoscere' and s == 'dove-comprare') %} aria-current="page"{% endif %}>{{ PAGES[s][0] }}</a>
         {% endfor %}
       </div>
+      <div class="nav-strumenti">
+        <a class="nav-icona" href="{{ url_for('page', slug='cerca') }}"{% if slug == 'cerca' %} aria-current="page"{% endif %}><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-3.5-3.5"></path></svg><span>Cerca</span></a>
+        <button type="button" class="nav-icona" data-tema><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"></path></svg><span data-tema-etichetta>Tema scuro</span></button>
+      </div>
     </nav>
   </header>
 
@@ -34,10 +50,16 @@
   <footer class="site-footer">
     <p>Questo sito è un progetto indipendente e senza scopo di lucro. Nessun link affiliato, nessuna pubblicità, nessun tracciamento.</p>
     <div class="footer-links">
+      <a href="{{ url_for('page', slug='perche') }}">Perché</a>
       <a href="{{ url_for('page', slug='metodo') }}">Metodo</a>
+      <a href="{{ url_for('page', slug='glossario') }}">Glossario</a>
+      <a href="{{ url_for('page', slug='lista') }}">Lista della spesa</a>
       <a href="{{ url_for('page', slug='fonti') }}">Tutte le fonti</a>
+      <a href="{{ url_for('page', slug='novita') }}">Cosa è cambiato</a>
       <a href="{{ url_for('page', slug='note') }}">Note e privacy</a>
+      <a href="mailto:micheles538@gmail.com">Scrivimi</a>
     </div>
+    <p class="footer-licenza">Testi con licenza <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.it" rel="license">CC BY-SA 4.0</a>. Foto dei rispettivi autori, Unsplash.</p>
   </footer>
   <script src="{{ url_for('static', filename='js/radici.js') }}" defer></script>
   <script src="{{ url_for('static', filename='js/rivela.js') }}" defer></script>

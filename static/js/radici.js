@@ -94,4 +94,45 @@
       });
     });
   });
+
+  /* Copia il link di una voce (Cibo e Casa) */
+  $all(document, '[data-copia]').forEach(function (b) {
+    if (!navigator.clipboard) return;
+    b.hidden = false;
+    var etichetta = b.querySelector('span');
+    b.addEventListener('click', function () {
+      var url = location.origin + location.pathname + '#' + b.getAttribute('data-copia');
+      navigator.clipboard.writeText(url).then(function () {
+        etichetta.textContent = 'Link copiato';
+      }, function () {
+        etichetta.textContent = 'Non riesco a copiare';
+      }).then(function () {
+        setTimeout(function () { etichetta.textContent = 'Copia il link'; }, 2000);
+      });
+    });
+  });
+
+  /* Tema chiaro o scuro: segue il sistema finché non scegli, poi ricorda la scelta */
+  var tema = document.querySelector('[data-tema]');
+  if (tema) {
+    var radice = document.documentElement;
+    var scuroSistema = window.matchMedia ? window.matchMedia('(prefers-color-scheme: dark)') : null;
+    var etichettaTema = tema.querySelector('[data-tema-etichetta]');
+    function eScuro() {
+      var t = radice.getAttribute('data-theme');
+      return t ? t === 'dark' : !!(scuroSistema && scuroSistema.matches);
+    }
+    function aggiorna() {
+      var scuro = eScuro();
+      etichettaTema.textContent = scuro ? 'Tema chiaro' : 'Tema scuro';
+    }
+    tema.addEventListener('click', function () {
+      var scuro = !eScuro();
+      radice.setAttribute('data-theme', scuro ? 'dark' : 'light');
+      try { localStorage.setItem('tema', scuro ? 'scuro' : 'chiaro'); } catch (e) {}
+      aggiorna();
+    });
+    if (scuroSistema && scuroSistema.addEventListener) scuroSistema.addEventListener('change', aggiorna);
+    aggiorna();
+  }
 })();

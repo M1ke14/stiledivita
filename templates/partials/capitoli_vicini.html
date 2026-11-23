@@ -1,0 +1,8 @@
+{# Capitolo precedente e successivo. Usa cap.prev e cap.next (slug). #}
+{% set p = CAPITOLI_INFO.get(cap.prev) %}{% set n = CAPITOLI_INFO.get(cap.next) %}
+  <section style="max-width: 1180px; margin: 0 auto; padding: 0 24px 96px">
+    <div style="border-top: 1px solid var(--line); padding-top: 36px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 24px; align-items: center">
+      {% if p %}<a href="{{ url_for('page', slug=cap.prev) }}" style="display: flex; flex-direction: column; gap: 2px; color: var(--ink)"><span style="font-size: 13px; color: var(--muted)">{{ p[0] }}</span><span style="font-family: var(--serif); font-size: 30px; font-weight: 400; letter-spacing: -0.012em">{{ p[1] }}</span></a>{% else %}<span></span>{% endif %}
+      {% if n %}<a href="{{ url_for('page', slug=cap.next) }}" style="display: flex; flex-direction: column; gap: 2px; text-align: right; color: var(--ink)"><span style="font-size: 13px; color: var(--muted)">{{ n[0] }}</span><span style="font-family: var(--serif); font-size: 30px; font-weight: 400; letter-spacing: -0.012em">{{ n[1] }}</span></a>{% endif %}
+    </div>
+  </section>

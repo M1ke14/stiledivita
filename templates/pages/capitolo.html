@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{# Capitoli scritti in content/capitoli/<slug>.json: stesso aspetto degli altri capitoli. #}
+{% block content %}
+  <section style="max-width: 1180px; margin: 0 auto; padding: 112px 24px 80px; display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-end; justify-content: space-between">
+    <div style="flex: 1 1 560px; display: flex; flex-direction: column; gap: 20px">
+      <p style="margin: 0; font-size: 14px; font-weight: 500; color: var(--clay)">Capitolo {{ cap.numero }}</p>
+      <h1 style="margin: 0; font-family: var(--serif); font-size: clamp(64px, 11vw, 140px); line-height: 0.94; font-weight: 400; letter-spacing: -0.028em">{{ cap.titolo }}</h1>
+      <p style="margin: 0; font-family: var(--serif); font-size: clamp(24px, 2.8vw, 34px); line-height: 1.25; color: var(--text2); max-width: 640px">{{ cap.sotto }}</p>
+    </div>
+    <p style="flex: 0 1 380px; margin: 0; font-size: 17px; line-height: 1.6; color: var(--muted)">{{ cap.intro | fonti }}</p>
+  </section>
+
+  {% if cap.numeri %}
+  <section style="max-width: 1180px; margin: 0 auto; padding: 0 24px 96px">
+    <ul style="list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr)); gap: 32px 40px">
+      {% for n in cap.numeri %}
+      <li style="border-top: 1px solid var(--line2); padding-top: 20px; display: flex; flex-direction: column; gap: 8px">
+        <span style="font-family: var(--serif); font-size: clamp(40px, 5vw, 56px); line-height: 1; letter-spacing: -0.02em">{{ n.n }}</span>
+        <span style="font-size: 15px; line-height: 1.5; color: var(--muted)">{{ n.l }} {% if n.fonti %}{{ n.fonti | fonti }}{% endif %}</span>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  {% for s in cap.sezioni %}
+  <section style="{% if loop.index is even %}background: var(--linen){% endif %}">
+    <div style="max-width: 1180px; margin: 0 auto; padding: 96px 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(340px, 100%), 1fr)); gap: 40px 64px; align-items: start">
+      <div style="display: flex; flex-direction: column; gap: 12px; position: sticky; top: 96px">
+        <h2 style="margin: 0; font-family: var(--serif); font-size: clamp(36px, 4.6vw, 56px); line-height: 1.04; font-weight: 400; letter-spacing: -0.022em">{{ s.titolo }}</h2>
+        {% if s.nota %}<p style="margin: 0; font-size: 16px; line-height: 1.6; color: var(--muted)">{{ s.nota }}</p>{% endif %}
+      </div>
+      <ol style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; grid-column: span 1">
+        {% for p in s.punti %}
+        <li style="display: grid; grid-template-columns: 40px minmax(0, 1fr); gap: 16px; padding: 24px 0; border-top: 1px solid var(--line2){% if loop.last %}; border-bottom: 1px solid var(--line2){% endif %}">
+          <span style="font-family: var(--mono); font-size: 13px; color: var(--clay); line-height: 1.9">{{ '%02d' % loop.index }}</span>
+          <span style="display: flex; flex-direction: column; gap: 6px">
+            <h3 style="margin: 0; font-family: var(--serif); font-size: 26px; font-weight: 400; letter-spacing: -0.01em; line-height: 1.15">{{ p.t }}</h3>
+            <span style="font-size: 16px; line-height: 1.6; color: var(--text2)">{{ p.d }}{% if p.fonti %} <span style="color: var(--faint)">{{ p.fonti | fonti }}</span>{% endif %}</span>
+          </span>
+        </li>
+        {% endfor %}
+      </ol>
+    </div>
+  </section>
+  {% endfor %}
+
+  <section style="border-top: 1px solid var(--line)">
+    <div style="max-width: 1180px; margin: 0 auto; padding: 72px 24px; display: flex; flex-direction: column; gap: 24px">
+      <h2 style="margin: 0; font-family: var(--serif); font-size: 32px; font-weight: 400; letter-spacing: -0.012em">Fonti del capitolo</h2>
+      {% with codes = cap.fonti %}{% include 'partials/fonti_lista.html' %}{% endwith %}
+      <a href="{{ url_for('page', slug='fonti') }}" style="font-size: 15px; font-weight: 500; color: var(--accent)">Link completi e punti da verificare</a>
+    </div>
+  </section>
+
+  {% include 'partials/capitoli_vicini.html' %}
+{% endblock %}

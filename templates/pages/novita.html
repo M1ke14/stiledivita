@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %}
+  {% with etichetta = 'Trasparenza', sottotitolo = 'Ogni modifica alla guida, dalla più recente. Se una fonte cambia o un dato viene corretto, lo trovi qui.' %}{% include 'partials/testata_pagina.html' %}{% endwith %}
+  <section style="max-width: 1180px; margin: 0 auto; padding: 0 24px 112px">
+    <ol style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column">
+      {% for v in voci %}
+      <li style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr)); gap: 12px 48px; padding: 32px 0; border-top: 1px solid var(--line2)">
+        <div style="display: flex; flex-direction: column; gap: 8px">
+          <time datetime="{{ v.data }}" style="font-family: var(--mono); font-size: 13px; color: var(--clay)">{{ v.data[8:10] }}/{{ v.data[5:7] }}/{{ v.data[:4] }}</time>
+          <h2 style="margin: 0; font-family: var(--serif); font-size: 28px; font-weight: 400; letter-spacing: -0.01em; line-height: 1.15">{{ v.titolo }}</h2>
+        </div>
+        <ul style="margin: 0; padding: 0 0 0 18px; display: flex; flex-direction: column; gap: 8px; font-size: 16px; line-height: 1.6; color: var(--text2)">
+          {% for p in v.punti %}<li>{{ p | fonti }}</li>{% endfor %}
+        </ul>
+      </li>
+      {% endfor %}
+    </ol>
+  </section>
+{% endblock %}

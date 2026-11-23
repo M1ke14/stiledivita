@@ -5,7 +5,8 @@
 # Guida: https://docs.codeberg.org/codeberg-pages/
 set -euo pipefail
 
-SITE_BASE="${SITE_BASE:-/radici/}" python3 freeze.py
+# SITE_URL (facoltativo): indirizzo completo, es. https://TUONOME.codeberg.page/radici
+SITE_BASE="${SITE_BASE:-/radici/}" SITE_URL="${SITE_URL:-}" python3 freeze.py
 
 tmp="$(mktemp -d)"
 git worktree add -f "$tmp" pages 2>/dev/null || git worktree add -f --orphan -b pages "$tmp"

@@ -32,7 +32,10 @@ jobs:
         env:
           # repository "qualcosa.github.io" -> sito alla radice "/"; altrimenti "/nome-repo/"
           SITE_BASE: ${{ endsWith(github.event.repository.name, '.github.io') && '/' || format('/{0}/', github.event.repository.name) }}
-        run: python freeze.py
+        # indirizzo completo, per anteprime nei social e sitemap
+        run: |
+          export SITE_URL="https://${GITHUB_REPOSITORY_OWNER,,}.github.io${SITE_BASE%/}"
+          python freeze.py
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
