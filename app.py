@@ -41,6 +41,7 @@ PAGES = {
     "rifiuti-acqua": ("Rifiuti e acqua", "Rifiuti e acqua", "Raccolta differenziata, imballaggi e acqua del rubinetto."),
     "bambini": ("Bambini", "Bambini", "Giocattoli, vestiti, cura e merende per i più piccoli."),
     "dove-comprare": ("Dove comprare", "Dove comprare", "GAS, CSA, mercati contadini e cooperative su una mappa."),
+    "iniziare": (None, "Da dove iniziare", "Dieci cambiamenti della guida, dai più facili a quelli che capitano ogni tanto, ognuno con la sua fonte."),
     "perche": (None, "Perché ho fatto questo sito", "Chi scrive questa guida e con quali idee."),
     "metodo": (None, "Metodo e marchi", "Come scelgo le fonti e cosa garantiscono i marchi europei."),
     "conoscere": (None, "Conoscere la rete", "GAS, CSA, cooperative sociali e commercio equo spiegati in un minuto."),
@@ -164,6 +165,8 @@ def page(slug):
         ctx["data"] = load_json("digitale.json")
     elif slug == "conoscere":
         ctx["data"] = load_json("conoscere.json")["D"]
+    elif slug == "iniziare":
+        ctx["data"] = load_json("iniziare.json")
     elif slug == "glossario":
         ctx["voci"] = load_json("glossario.json")
     elif slug == "novita":
@@ -201,6 +204,9 @@ def indice_ricerca():
         for s in cap["sezioni"]:
             for p in s["punti"]:
                 voci.append({"t": p["t"], "x": p["d"], "u": url_for("page", slug=slug), "g": cap["titolo"]})
+    for g in load_json("iniziare.json")["gruppi"]:
+        for p in g["passi"]:
+            voci.append({"t": p["t"], "x": p["d"] + " " + p["come"], "u": url_for("page", slug="iniziare") + "#" + slugify(p["t"]), "g": "Da dove iniziare"})
     for g in load_json("glossario.json"):
         voci.append({"t": g["t"], "x": g["d"], "u": url_for("page", slug="glossario") + "#" + slugify(g["t"]), "g": "Glossario"})
     for f in FONTI.values():

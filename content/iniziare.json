@@ -1,0 +1,93 @@
+{
+  "intro": "Dieci cambiamenti presi dalla guida e ordinati per fatica, non per importanza: prima quelli che chiedono pochi minuti, poi le abitudini, poi le scelte che capitano ogni tanto. Ognuno rimanda alla voce completa e alle sue fonti.",
+  "gruppi": [
+    {
+      "titolo": "Oggi, in pochi minuti",
+      "nota": "Non costano niente e non serve comprare nulla.",
+      "passi": [
+        {
+          "t": "Bevi l'acqua del rubinetto",
+          "d": "Deve rispettare la direttiva europea sull'acqua potabile, e hai diritto di sapere cosa contiene. Con una borraccia eviti le bottiglie di plastica.",
+          "come": "Chiedi al gestore del tuo comune le analisi. Se senti il cloro, lasciala riposare in una caraffa.",
+          "slug": "cibo", "ancora": "acqua", "voce": "Acqua",
+          "fonti": "C18"
+        },
+        {
+          "t": "Cambia motore di ricerca",
+          "d": "Le grandi piattaforme devono lasciarti scegliere il motore di ricerca predefinito. Ecosia e Qwant sono europei e stanno costruendo un indice proprio.",
+          "come": "Un minuto nelle impostazioni del browser.",
+          "slug": "digitale", "ancora": "", "voce": "Digitale",
+          "fonti": "D2, D7"
+        },
+        {
+          "t": "Butta via uno spray",
+          "d": "Quello che spruzzi, in parte lo respiri. Per quasi tutte le superfici bastano acqua calda e sapone.",
+          "come": "Versa il prodotto sul panno invece di spruzzarlo nell'aria, e apri le finestre.",
+          "slug": "casa", "ancora": "spray", "voce": "Spray e profumatori",
+          "fonti": "K2, K1"
+        },
+        {
+          "t": "Guarda di cosa è fatta la tua maglia",
+          "d": "La composizione delle fibre deve essere sempre scritta in etichetta. I capi sintetici rilasciano più microplastiche, soprattutto nei primi lavaggi.",
+          "come": "Leggi l'etichetta di tre capi che usi spesso e confrontala con le schede sulle fibre.",
+          "slug": "vestire", "ancora": "", "voce": "Vestire",
+          "fonti": "V1, V2"
+        }
+      ]
+    },
+    {
+      "titolo": "A ogni spesa e a ogni bucato",
+      "nota": "Abitudini: costano poco o fanno risparmiare, ma vanno ripetute.",
+      "passi": [
+        {
+          "t": "Leggi un'etichetta, a partire dalla pasta",
+          "d": "Due ingredienti, semola di grano duro e acqua. Sulla pasta prodotta in Italia l'origine del grano è obbligatoria.",
+          "come": "Alla prossima spesa guarda ingredienti e Paese di coltivazione del grano.",
+          "slug": "cibo", "ancora": "pasta", "voce": "Pasta",
+          "fonti": "C5, C16"
+        },
+        {
+          "t": "Più legumi, meno carne",
+          "d": "Le carni lavorate sono cancerogene di gruppo 1 per la IARC, la carne rossa probabilmente cancerogena. I legumi sono proteine vegetali che costano poco.",
+          "come": "Tre o quattro porzioni di legumi a settimana. Cuocine tanti insieme e congela le porzioni.",
+          "slug": "cibo", "ancora": "legumi", "voce": "Legumi",
+          "fonti": "C8, C5, C7"
+        },
+        {
+          "t": "Lavatrice piena, a 30 o 40 gradi",
+          "d": "Meno lavaggi vuol dire meno microplastiche, e di più non lava meglio: il detersivo va dosato.",
+          "come": "Aspetta il pieno carico, dosa secondo durezza dell'acqua e sporco, stendi invece di usare l'asciugatrice.",
+          "slug": "casa", "ancora": "lavaggio", "voce": "Lavaggio",
+          "fonti": "V2, K1, S7"
+        }
+      ]
+    },
+    {
+      "titolo": "Quando capita",
+      "nota": "Scelte che fai ogni tanto, ma che pesano di più.",
+      "passi": [
+        {
+          "t": "Per i tragitti brevi, a piedi o in bici. Per i viaggi, il treno",
+          "d": "Tra i mezzi a motore il treno ha le emissioni più basse per passeggero e chilometro. Auto con una persona sola e aereo hanno le più alte.",
+          "come": "Il prossimo viaggio che si può fare in treno, fallo in treno. Se arriva in ritardo di un'ora, ti spetta il 25% del biglietto.",
+          "slug": "muoversi", "ancora": "", "voce": "Muoversi",
+          "fonti": "T1, T3"
+        },
+        {
+          "t": "Prima di comprare, ripara o cerca l'usato",
+          "d": "In Europa compriamo 19 kg di tessili a persona l'anno. Dal 22 ottobre 2026, per alcuni prodotti, il produttore deve offrire la riparazione anche dopo la garanzia.",
+          "come": "Quando qualcosa si rompe, chiedi prima la riparazione. Per vestiti e oggetti per bambini prova mercatini e scambi.",
+          "slug": "rifiuti-acqua", "ancora": "", "voce": "Rifiuti e acqua",
+          "fonti": "V3, D5"
+        },
+        {
+          "t": "Fai una domanda alla tua banca",
+          "d": "Nel 2025 le 65 banche più grandi del mondo hanno dato 906 miliardi di dollari ai combustibili fossili.",
+          "come": "Chiedi per iscritto la politica della tua banca sui combustibili fossili. Puoi tenere il conto dove sei e spostare solo i risparmi.",
+          "slug": "energia", "ancora": "", "voce": "Soldi ed energia",
+          "fonti": "S1, S2"
+        }
+      ]
+    }
+  ]
+}

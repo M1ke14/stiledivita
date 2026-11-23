@@ -440,3 +440,9 @@ nav[aria-label="Indice dei capitoli"] a:hover > span:last-child { transform: tra
   .nav-strumenti { padding-right: 8px; gap: 0; }
   .nav-icona { padding: 0 8px; min-width: 44px; justify-content: center; }
 }
+
+/* Titolo di sezione che resta in vista accanto alla lista, solo quando le colonne sono due.
+   Su una colonna sola coprirebbe il testo che scorre sotto. */
+@media (min-width: 820px) {
+  .testa-sezione { position: sticky; top: 96px; }
+}
