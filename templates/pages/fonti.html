@@ -1,10 +1,10 @@
 {% extends 'base.html' %}
 {% block content %}
   <section style="max-width: 1180px; margin: 0 auto; padding: 112px 24px 56px; display: flex; flex-direction: column; gap: 20px">
-    <p style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #9A5638">Verificare</p>
-    <h1 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: clamp(56px, 9vw, 120px); line-height: 0.95; font-weight: 500; letter-spacing: -0.045em">Tutte le fonti<i style="font-weight: 400; color: var(--accent)">.</i></h1>
-    <p style="margin: 0; font-size: 18px; line-height: 1.6; color: #3D4139; max-width: 760px">Ogni codice che trovi nella guida (per esempio C3 o R15) porta qui. Apri il link e controlla che la fonte dica quello che ho scritto. Se trovi un errore, <a href="{{ url_for('page', slug='note') }}#contatti">scrivimi</a>.</p>
-    <p style="margin: 0; font-size: 15px; color: #585C53">{{ FONTI | length }} fonti. Ultima verifica completa: 4 novembre 2026.</p>
+    <p style="margin: 0; font-size: 14px; font-weight: 500; letter-spacing: 0; color: var(--clay)">Verificare</p>
+    <h1 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: clamp(56px, 9vw, 120px); line-height: 0.95; font-weight: 400; letter-spacing: -0.028em">Tutte le fonti<i style="font-weight: 400; color: var(--accent)">.</i></h1>
+    <p style="margin: 0; font-size: 18px; line-height: 1.6; color: var(--text2); max-width: 760px">Ogni codice che trovi nella guida (per esempio C3 o R15) porta qui. Apri il link e controlla che la fonte dica quello che ho scritto. Se trovi un errore, <a href="{{ url_for('page', slug='note') }}#contatti">scrivimi</a>.</p>
+    <p style="margin: 0; font-size: 15px; color: var(--muted)">{{ FONTI | length }} fonti. Ultima verifica completa: 4 novembre 2026.</p>
     <nav aria-label="Gruppi di fonti" style="display: flex; flex-wrap: wrap; gap: 8px; padding-top: 8px">
       {% for g in groups %}<a class="pill" href="#{{ g | lower | replace(' ', '-') }}">{{ g }}</a>{% endfor %}
       <a class="pill" href="#marchi">Marchi</a>
@@ -15,7 +15,7 @@
 
   {% for g, items in groups.items() %}
   <section id="{{ g | lower | replace(' ', '-') }}" style="max-width: 1180px; margin: 0 auto; padding: 40px 24px; display: flex; flex-direction: column; gap: 16px; scroll-margin-top: 80px">
-    <h2 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: 36px; font-weight: 500; letter-spacing: -0.02em">{{ g }}</h2>
+    <h2 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: 36px; font-weight: 400; letter-spacing: -0.012em">{{ g }}</h2>
     <table class="tabella-fonti">
       <thead><tr><th>Codice</th><th>Fonte</th><th>Tipo</th><th>Cosa sostiene nella guida</th></tr></thead>
       <tbody>
@@ -33,7 +33,7 @@
   {% endfor %}
 
   <section id="marchi" style="max-width: 1180px; margin: 0 auto; padding: 40px 24px; display: flex; flex-direction: column; gap: 16px; scroll-margin-top: 80px">
-    <h2 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: 36px; font-weight: 500; letter-spacing: -0.02em">Marchi e standard</h2>
+    <h2 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: 36px; font-weight: 400; letter-spacing: -0.012em">Marchi e standard</h2>
     <table class="tabella-fonti">
       <thead><tr><th>Marchio</th><th>Dove lo trovi</th><th>Cosa garantisce</th><th>Regola</th></tr></thead>
       <tbody>
@@ -45,7 +45,7 @@
   </section>
 
   <section id="servizi" style="max-width: 1180px; margin: 0 auto; padding: 40px 24px; display: flex; flex-direction: column; gap: 16px; scroll-margin-top: 80px">
-    <h2 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: 36px; font-weight: 500; letter-spacing: -0.02em">Servizi digitali citati</h2>
+    <h2 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: 36px; font-weight: 400; letter-spacing: -0.012em">Servizi digitali citati</h2>
     <table class="tabella-fonti">
       <thead><tr><th>Al posto di</th><th>Alternativa</th><th>Paese</th><th>Stato</th></tr></thead>
       <tbody>
@@ -57,8 +57,8 @@
   </section>
 
   <section id="foto" style="max-width: 1180px; margin: 0 auto; padding: 40px 24px 112px; display: flex; flex-direction: column; gap: 16px; scroll-margin-top: 80px">
-    <h2 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: 36px; font-weight: 500; letter-spacing: -0.02em">Foto</h2>
-    <p style="margin: 0; font-size: 16px; line-height: 1.6; color: #585C53; max-width: 720px">Le foto vengono da Unsplash e si possono usare gratis.</p>
+    <h2 style="margin: 0; font-family: Newsreader, Georgia, serif; font-size: 36px; font-weight: 400; letter-spacing: -0.012em">Foto</h2>
+    <p style="margin: 0; font-size: 16px; line-height: 1.6; color: var(--muted); max-width: 720px">Le foto vengono da Unsplash e si possono usare gratis.</p>
     <table class="tabella-fonti">
       <thead><tr><th>Pagina</th><th>Foto</th><th>Autore</th><th>Licenza</th></tr></thead>
       <tbody>
